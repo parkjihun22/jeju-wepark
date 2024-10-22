@@ -27,37 +27,36 @@ const section4Contents = [
 	{
 		imgSrc: section4_Image1,
 		title: "VISION",
-		text1: `대전 도안신도시의 중심 <br />
-			  힐스테이트가 완성하는 5,329세대<br />
-			  대전 최대 규모 브랜드 시티의 가치`,
-		text2: `대전 최대 규모 브랜드 시티의 가치`,
+		text1: `핵심 배후단지의 중심`,
+		text2: `한라산 아래 가장 큰 랜드마크 <br/>
+				초대형 복합문화 주거도시의 시작 `,
 		link: "/BusinessGuide/intro",
 		linkText: "더 알아보기 >"
 	},
 	{
 		imgSrc: section4_Image2,
 		title: "INFRA",
-		text1: `도보 통학 가능한 안심학세권`,
-		text2: `단지 인근 초·중학교 신설예정및 <br /> 
-				복용초, 유성중·고 등 우수한 교육 인프라`,
+		text1: `원스톱 인프라`,
+		text2: `대형마트,학교,병원,은행,극장 등 <br/>
+				제주의 다양한 생활 인프라 이용 가능 `,
 		link: "/LocationEnvironment/intro",
 		linkText: "더 알아보기 >"
 	},
 	{
 		imgSrc: section4_Image3,
 		title: "TRAFFIC",
-		text1: `대전을 잇는 광역교통망`,
-		text2: `도안대로, 동서대로, 성대로 유성IC, 현충원IC(추진중)<br />
-			  반경 1KM 내 트램역(예정)으로 편리한 교통망`,
+		text1: `제주를 잇는 편리한 교통망`,
+		text2: `연북로, 오남로와 인접하여 제주 어디로든<br />
+			  	빠르고 편리하게 이동 가능`,
 		link: "/LocationEnvironment/intro",
 		linkText: "더 알아보기 >"
 	},
 	{
 		imgSrc: section4_Image4,
 		title: "PREMIUM",
-		text1: `개발호재로 더욱 빛날 미래비전  <br />힐스테이트 도안리버파크`,
-		text2: `사업지 바로 옆 서남부종합스포츠타운(예정)과<br />
-		  		대전 국가산업단지(예정)으로 높아질 미래비전`,
+		text1: `쾌적한 자연환경`,
+		text2: `오등봉공원, 시민복지타운광장, 한천 등<br />
+		  		천혜의 자연을 누리는 쾌적한 주거환경`,
 		link: "/LocationEnvironment/primium",
 		linkText: "더 알아보기 >"
 	}
@@ -143,9 +142,9 @@ const Main = () => {
 					<div className={styles.imageContainer}>
 						<img src={mainImage} className={styles.mainImage} />
 						<div className={styles.mainImageTextBox}>
-							<div className={styles.mainImageText1}>대전 도안신도시의 NO.1브랜드 힐스테이트</div>
-							<div className={styles.mainImageText2}>중심생활까지 <span>ONE TOP!</span></div>
-							<div className={styles.mainImageText3}><span>힐스테이트</span> 도안리버파크 3,5단지</div>
+							<div className={styles.mainImageText1}>제주 최중심 공원 특화 프리미엄 아파트, WEPARK</div>
+							<div className={styles.mainImageText2}>총 1,401세대 제주 최대 스케일로 찾아옵니다</div>
+							<div className={styles.mainImageText3}><span>WEPARK</span> 제주</div>
 						</div>
 
 						<FixIcon type="absolute" />	
@@ -157,10 +156,11 @@ const Main = () => {
 							<div className={styles.textBox}>
 								<div className={styles.text1}>Location</div>
 								<div className={styles.text2}>" 방문 예약 고객 전원 신세계 상품권 100% 증정 "</div>
-								<div className={styles.text3}>- 대전의 중심 힐스테이트도안리버파크 <br />
-									- 대전 최대규모 5,239세대 <br />
-									- 사업지 바로 옆 서남부종합스포츠타운(예정)과 대전 국가산업단지(예정)으로 높아질 미래비전 <br />
-									- 단지 인근 초·중학교 신설예정및 복용초, 유성중·고 등 우수한 교육 인프라
+								<div className={styles.text3}>- 모두의 부러움이될 제주 위파크   <br />
+									- 제주 최대규모 1,401세대 <br />
+									- 제주 최중심 공원 특화 프리미엄 아파트 WEPARK <br />
+									- 제주를 잇는 편리한 교통망 연북로, 오남로와 인접하여<br/> 제주 어디로든
+									빠르고 편리하게 이동 가능
 								</div>
 
 								<div className={styles.text4}>
@@ -169,7 +169,7 @@ const Main = () => {
 							</div>
 
 							<div className={styles.menuBox}>
-								<div className={styles.text}><span>힐스테이트</span> 도안리버파크</div>
+								<div className={styles.text}><span>호반건설</span> 위파크 제주</div>
 								<Link to="brand/intro" className={styles.btn}> 브랜드 소개 {'>'}</Link>
 							</div>
 						</div>
@@ -180,14 +180,14 @@ const Main = () => {
 
 							<div className={styles.textBox}>
 								<div className={styles.title}>
-									대전의 중심에사는<br />
+									제주의 중심에사는<br />
 									<span>원탑 라이프의 시작!</span>
 								</div>
 								<div className={styles.subTitle}>
 									<div className={styles.textLine}></div>
 									<div className={styles.subText}>
 										찬란한 비전에 완벽한 주거가치까지 더해<br />
-										대전을 대표하는 프리미엄 라이프를 시작하다
+										제주을 대표하는 프리미엄 라이프를 시작하다
 									</div>
 								</div>
 							</div>
@@ -200,7 +200,7 @@ const Main = () => {
 						<div className={styles.section3}>
 							<div className={styles.textBox}>
 								<div className={`${styles.text1} fadeUpRepeat`}>완벽한 생활에서 준비된 미래까지</div>
-								<div className={`${styles.text2} fadeUpRepeat`}>기대한 모든 프리미엄이<br />힐스테이트 도안리버파크에서 펼쳐집니다</div>
+								<div className={`${styles.text2} fadeUpRepeat`}>기대한 모든 프리미엄이<br />제주 위파크에서 펼쳐집니다</div>
 								<div className={`${styles.text3} fadeUpRepeat`}>SPECIAL PLAN</div>
 								<div className={`${styles.text4} fadeUpRepeat`}>살수록 자부심이 차원이 다른 <br />프리미엄 주거라이프를 실현합니다</div>
 								<div className={`${styles.text5} fadeUpRepeat`}>주거의 품격과 가치를 높이는 <span>특화설계</span> <br />안전한 이동을 위한 세심한 <span>단지설계</span> <br />편리한 생활을 위한 최적의 <span>공간설계</span></div>
@@ -230,7 +230,7 @@ const Main = () => {
 							<div className={styles.imageBox}>
 								<img src={section5_Image1} />
 
-								<div className={styles.text1}>대전의 중심 힐스테이트 도안리버파크 </div>
+								<div className={styles.text1}>제주의 중심 제주 위파크 </div>
 								<div className={styles.text2}>THE NATURAL NOBILITY</div>
 								<div className={styles.text3}>당신의 삶, 그 고귀함이 계속되길</div>
 							</div>
@@ -255,13 +255,14 @@ const Main = () => {
 						<img src={mobileImageMain} className={styles.mainImage} />
 						<div className={styles.overlay}></div>
 						<div className={styles.mainImageTextBox}>
-							<div className={styles.mainImageTitle}>힐스테이트 도안리버파크</div>
+							<div className={styles.mainImageTitle}>제주 최중심 공원 특화<br/> 프리미엄 아파트 WEPARK</div>
 							<div className={styles.mainImageTextSub}>
-								대전 최대규모 5,239세대 미니신도시급 규모<br />
-								브랜드 평판1위 힐스테이트로 누리는 프리미엄
+								총 1,401세대 제주 최대 스케일<br />
+								최고의 중심입지 프리미엄으로 찾아옵니다
+					
 							</div>
 							<div className={styles.mainImageLine}></div>
-							<div className={styles.mainImageText}>11월 GRAND OPEN 예정</div>
+							<div className={styles.mainImageText}>GRAND OPEN</div>
 						</div>
 					</div>
 
@@ -269,11 +270,12 @@ const Main = () => {
 
 						<div className={styles.text1}>Location</div>
 						<div className={styles.text2}>" 방문 예약 고객 전원 신세계 상품권 100% 증정 "</div>
-						<div className={styles.text3}>- 대전의 중심 힐스테이트 도안리버파크 <br />
-									- 대전 최대규모 5,239세대 미니신도시급 아파트 <br />
-									- 사업지 바로 옆 서남부종합스포츠타운(예정)과<br />대전 국가산업단지(예정)으로 높아질 미래비전 <br />
-									- 단지 인근 초·중학교 신설예정및 복용초, 유성중·고 등 우수한 교육 인프라
-						</div>
+						<div className={styles.text3}>- 모두의 부러움이될 제주 위파크   <br />
+									- 제주 최대규모 1,401세대 <br />
+									- 제주 최중심 공원 특화 프리미엄 아파트 WEPARK <br />
+									- 제주를 잇는 편리한 교통망 연북로, 오남로와 인접하여<br/> 제주 어디로든
+									빠르고 편리하게 이동 가능
+								</div>
 
 						<div className={styles.text4}>
 							<a href="https://naver.me/xs350ipu" target="_black"> 관심고객 등록하기 {'>'}</a>
@@ -285,14 +287,14 @@ const Main = () => {
 
 							<div className={styles.textBox}>
 								<div className={styles.title}>
-									대전의 중심으로 사는<br />
+									제주의 중심으로 사는<br />
 									<span>원탑 라이프의 시작!</span>
 								</div>
 								<div className={styles.subTitle}>
 									<div className={styles.textLine}></div>
 									<div className={styles.subText}>
 										찬란한 비전에 완벽한 주거가치까지 더해<br />
-										대전을 대표하는 프리미엄 라이프를 시작하다
+										제주을 대표하는 프리미엄 라이프를 시작하다
 									</div>
 								</div>
 							</div>
@@ -302,7 +304,7 @@ const Main = () => {
 					<div className={styles.container3}>
 						<div className={styles.textbox}>
 							<div className={`${styles.text1} fadeUpRepeat`}>완벽한 생활에서 준비된 미래까지</div>
-							<div className={`${styles.text2} fadeUpRepeat`}>기대한 모든 프리미엄이<br /> 힐스테이트 도안리버파크에서 펼쳐집니다</div>
+							<div className={`${styles.text2} fadeUpRepeat`}>기대한 모든 프리미엄이<br /> 제주 위파크에서 펼쳐집니다</div>
 							<div className={`${styles.text3} fadeUpRepeat`}>SPECIAL PLAN</div>
 							<div className={`${styles.text4} fadeUpRepeat`}>살수록 자부심이 차원이 다른 <br />프리미엄 주거라이프를 실현합니다</div>
 							<div className={`${styles.text5} fadeUpRepeat`}>주거의 품격과 가치를 높이는 <span>특화설계</span> <br />안전한 이동을 위한 세심한 <span>단지설계</span> <br />편리한 생활을 위한 최적의 <span>공간설계</span></div>
@@ -334,7 +336,7 @@ const Main = () => {
 					<div className={styles.container5}>
 						<img src={section5_Image1} />
 
-						<div className={styles.text1}>대전의 중심 힐스테이트도안리버파크</div>
+						<div className={styles.text1}>제주의 중심 WEPARK</div>
 						<div className={styles.text2}>THE NATURAL NOBILITY</div>
 						<div className={styles.text3}>당신의 삶, 그 고귀함이 계속되길</div>
 					</div>

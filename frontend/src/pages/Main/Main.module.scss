@@ -12,8 +12,8 @@
 
     .mainImageTextBox {
         position: absolute;
-        top: 18vw;
-        left: 60vw;
+        top: 13vw;
+        left: 18vw;
         transform: translate(5%, -50%);
 
         margin-left: 3vw;
@@ -24,16 +24,18 @@
         text-align: left; /* 텍스트 가운대로 정렬 */
 
         .mainImageText1 {
-            color: #95271e;
+            font-family: 'HakgyoansimBareonbatangB';
+            color: #081b40;
             font-weight: 800;
-            font-size: 1vw;
+            font-size: 2.5vw;
 
         }
 
         .mainImageText2 {
+            font-family: 'HakgyoansimBareonbatangB';
             margin-top: 0.4vw;
-            font-weight: 400;
-            font-size: 1vw; 
+            font-weight: 200;
+            font-size: 1.5vw; 
 
             span {
                 font-weight: 600;
@@ -42,15 +44,15 @@
 
         .mainImageText3 {
             margin-top: 1.5vw;
-            color: #95271e;
+            color: #081b40;
             font-weight: 900;
             font-size: 1.5vw;
 
             span {
                 padding: 0.5vw 1vw;
-                background-color: #95271e;
-                border-bottom-left-radius: 1vw;
-                border-top-right-radius: 1vw;
+                background-color: #081b40;
+                border-bottom-left-radius: 0.5vw;
+                border-top-right-radius: 0.5vw;
 
                 color: #FFFFFF;
                 font-weight: 1vw;
@@ -60,7 +62,7 @@
 
         .mainImageText4 {
             margin-top: 1.5vw;
-            color: #95271e;
+            color: #081b40;
             font-weight: 600;
             font-size: 1vw;
         }
@@ -157,13 +159,13 @@
 
         .text {
             margin-top: 1.5vw;
-            color: #95271e;
+            color: #081b40;
             font-weight: 900;
             font-size: 2vw;
 
             span {
                 padding: 0.5vw 1vw;
-                background-color: #95271e;
+                background-color: #081b40;
                 border-bottom-left-radius: 1vw;
                 border-top-right-radius: 1vw;
 
@@ -175,9 +177,9 @@
         .btn {
             margin-top: 2vw;
             padding: 0.8vw 1.2vw;
-            border: 2px solid #95271e;
+            border: 2px solid #081b40;
             border-radius: 10vw;
-            color: #95271e;
+            color: #081b40;
             font-size: 1.2vw;
             font-weight: 800;
             text-decoration: none;
@@ -201,11 +203,11 @@
         justify-content: flex-start;
         align-items: flex-start;
 
-        margin: 8vw 0 0 2.5vw;
+        margin: 13vw 0 0 2.5vw;
         width: 100%;
 
         .title {
-            color: #95271e;
+            color: #081b40;
             font-family: 'HakgyoansimBareonbatangB';
             font-size: 2vw;
             font-weight: 400;
@@ -228,7 +230,7 @@
             width: 100%;
 
             .textLine {
-                border: 1.7px solid #95271e;
+                border: 1.7px solid #081b40;
                 width: 0;
                 height: 3.5vw;
             }
@@ -242,8 +244,8 @@
     }
 
     img {
-        margin: 5vw 0 0 0;
-        width: 50vw;
+        margin: 10vw 0 0 0;
+        width: 60vw;
 
     }
 }
@@ -320,8 +322,10 @@
     img {
         margin-top: 7vw;
         margin-right: 7vw;
-        width: 27vw;
+        width: 50vw;
+        
     }
+    
 }
 
 .section4 {
@@ -380,7 +384,7 @@
     }
 
     .box:hover {
-        background-color: #95271e;
+        background-color: #081b40;
         color: #fff7ea;
     }
 }
@@ -516,6 +520,7 @@
                 font-family: 'HakgyoansimBareonbatangB';
                 font-weight: 700;
                 font-size: 5vw;
+
             }
 
             .mainImageTextSub {
@@ -635,9 +640,9 @@
             .btn {
                 margin-top: 0.5vw;
                 padding: 1.5vw 2vw;
-                border: 2px solid #95271e;
+                border: 2px solid #081b40;
                 border-radius: 10vw;
-                color: #95271e;
+                color: #081b40;
                 font-size: 3vw;
                 font-weight: 800;
                 text-decoration: none;
@@ -817,7 +822,7 @@
         width: 100%;
 
         .title {
-            color: #95271e;
+            color: #081b40;
             font-family: 'HakgyoansimBareonbatangB';
             font-size: 4vw;
             font-weight: 400;
@@ -840,7 +845,7 @@
             width: 100%;
 
             .textLine {
-                border: 1.7px solid #00141b;
+                border: 1.7px solid #081b40;
                 width: 0;
                 height: 7vw;
             }
