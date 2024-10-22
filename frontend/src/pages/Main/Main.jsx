@@ -159,7 +159,7 @@ const Main = () => {
 								<div className={styles.text3}>- 모두의 부러움이될 제주 위파크   <br />
 									- 제주 최대규모 1,401세대 <br />
 									- 제주 최중심 공원 특화 프리미엄 아파트 WEPARK <br />
-									- 제주를 잇는 편리한 교통망 연북로, 오남로와 인접하여<br/> 제주 어디로든
+									- 제주를 잇는 편리한 교통망 연북로, 오남로와 인접하여 제주 어디로든
 									빠르고 편리하게 이동 가능
 								</div>
 
@@ -328,7 +328,8 @@ const Main = () => {
 								type={idx % 2 === 0 ? 'left' : 'right'}
 								titleImag={section.imgSrc}
 								title={section.title}
-								subText={section.text1}
+								subText1={section.text1}
+                				subText2={section.text2}
 							/>
 						))}
 					</div>

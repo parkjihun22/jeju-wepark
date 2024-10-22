@@ -6,7 +6,7 @@ import mobile2 from "../../assets/Main/mobile2.jpg";
 import mobile3 from "../../assets/Main/mobile4.jpg";
 import mobile4 from "../../assets/Main/mobile3.jpg";
 
-const MobileSectionBox = ({ type, titleImag, title, subText }) => {
+const MobileSectionBox = ({ type, titleImag, title, subText1, subText2 }) => {
     const [isClick, setIsClick] = useState(false);
     const [image, setImage] = useState();
 
@@ -15,7 +15,7 @@ const MobileSectionBox = ({ type, titleImag, title, subText }) => {
             "VISION": mobile1,
             "INFRA": mobile2,
             "TRAFFIC": mobile3,
-            "PREMIUM" : mobile4
+            "PREMIUM": mobile4
         };
         setImage(imageMap[title]);
     }, [title])
@@ -32,7 +32,12 @@ const MobileSectionBox = ({ type, titleImag, title, subText }) => {
                         <img src={titleImag} alt="" />
                         <div>{title}</div>
                     </div>
-                    {isClick && <div className={styles.subTextleft} dangerouslySetInnerHTML={{ __html: subText }} />}
+                    {isClick &&
+                        <div className={styles.subTextleft}>
+                            <div className={styles.subText1} dangerouslySetInnerHTML={{ __html: subText1 }} />
+                            <div className={styles.subText2} dangerouslySetInnerHTML={{ __html: subText2 }} />
+                        </div>
+                    }
                 </div>
             ) : (
                 <div className={`${isClick ? styles.onClicked : styles.unClicked} ${styles.rightContainer}`} onClick={() => setIsClick(!isClick)}>
@@ -44,7 +49,12 @@ const MobileSectionBox = ({ type, titleImag, title, subText }) => {
                         <img src={titleImag} alt="" />
                         <div>{title}</div>
                     </div>
-                    {isClick && <div className={styles.subTextright} dangerouslySetInnerHTML={{ __html: subText }} />}
+                    {isClick &&
+                        <div className={styles.subTextright}>
+                            <div className={styles.subText1} dangerouslySetInnerHTML={{ __html: subText1 }} />
+                            <div className={styles.subText2} dangerouslySetInnerHTML={{ __html: subText2 }} />
+                        </div>
+                    }
                 </div>
             )}
         </>
