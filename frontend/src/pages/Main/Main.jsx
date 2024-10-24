@@ -237,7 +237,7 @@ const Main = () => {
 							<div className={styles.textBox}>
 								<div className={styles.text1}>UNITPLAN</div>
 								<UnitplanBox />
-								<Link to="/FloorPlan/84A" className={styles.text2}>더 알아보기{'>'}</Link>
+								<Link to="/FloorPlan/59A" className={styles.text2}>더 알아보기{'>'}</Link>
 							</div>
 						</div>
 					</div>

@@ -6,14 +6,14 @@ import Header from "../../components/Header/Header";
 import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
-import Ready from "../../components/Ready/Ready";
+import page1 from "../../assets/BusinessGuide/BusinessGuide2/page1.jpg";
 import FixIcon from "../../components/FixIcon/FixIcon";
 
 const BusinessGuide2 = () => {
 	const menuContents = [
 		{ title: "사업안내", url: "/BusinessGuide/intro" },
 		{ title: "분양일정", url: "/BusinessGuide/plan" },
-		{ title: "계약서류안내", url: "/BusinessGuide/documents" }
+		{ title: "입주자모집공고", url: "/BusinessGuide/documents" }
 	];
 	const [isScroll, setIsScroll] = useState(false);
 	const { pathname } = useLocation(); // 현재 경로를 가져옴
@@ -49,7 +49,7 @@ const BusinessGuide2 = () => {
 
 			<MenuBar contents={menuContents} />
 
-			<Ready />
+			<img className={styles.img2} src={page1} />
 
 			<Footer />
 		</div>

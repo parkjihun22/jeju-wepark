@@ -2,15 +2,14 @@ import React, { useState, useEffect } from "react";
 import { useMediaQuery } from 'react-responsive';
 import { Link } from "react-router-dom";
 import { IoCall, IoCloseSharp } from "react-icons/io5";
-import { PiPhoneCallFill } from "react-icons/pi";
 import { AiOutlineMenu } from "react-icons/ai";
-import { FaExternalLinkAlt } from "react-icons/fa";
 
 import styles from "./Header.module.scss";
 import SlideMenu from "../../components/SlideMenu/SlideMenu";
 import logoImageHover from "../../assets/logo/mainlogo.png";
 import logoImage from "../../assets/logo/mainlogowhite.jpg";
 
+// 메뉴 배열
 const menuArray = [
 	{
 		title: "브랜드",
@@ -24,7 +23,7 @@ const menuArray = [
 		subMenu: [
 			{ subTitle: "사업안내", subUrl: "/BusinessGuide/intro" },
 			{ subTitle: "분양일정", subUrl: "/BusinessGuide/plan" },
-			{ subTitle: "계약서류안내", subUrl: "/BusinessGuide/documents" },
+			{ subTitle: "입주자모집공고", subUrl: "/BusinessGuide/documents" },
 		],
 	},
 	{
@@ -45,12 +44,14 @@ const menuArray = [
 	{
 		title: "세대안내",
 		subMenu: [
-			{ subTitle: "59A", subUrl: "/FloorPlan/59A" },
-			{ subTitle: "59B", subUrl: "/FloorPlan/59B" },
-			{ subTitle: "84A", subUrl: "/FloorPlan/84A" },
-			{ subTitle: "84B", subUrl: "/FloorPlan/84B" },
-			{ subTitle: "84C", subUrl: "/FloorPlan/114A" },
-			{ subTitle: "84D", subUrl: "/FloorPlan/114B" },
+			{ subTitle: "84A", subUrl: "/FloorPlan/59A" },
+			{ subTitle: "84B", subUrl: "/FloorPlan/59B" },
+			{ subTitle: "108A", subUrl: "/FloorPlan/108A" },
+			{ subTitle: "108B", subUrl: "/FloorPlan/108B" },
+			{ subTitle: "129", subUrl: "/FloorPlan/129" },
+			{ subTitle: "166P", subUrl: "/FloorPlan/166P" },
+			{ subTitle: "183P", subUrl: "/FloorPlan/183P" },
+			{ subTitle: "197P", subUrl: "/FloorPlan/197P" },
 		],
 	},
 	{
@@ -75,121 +76,101 @@ const Header = ({ isChanged }) => {
 
 	useEffect(() => {
 		console.log(isMenu);
-	}, [isMenu])
+	}, [isMenu]);
 
 	const handleMouseEnter = () => {
-		setIsMenu(!isMenu);
+		setIsMenu(true);
 	};
 
 	const handleMouseLeave = () => {
-		setIsMenu(!isMenu);
+		setIsMenu(false);
 	};
 
 	return (
-		<>{!isMobile ? (
-			<>
-				{!isMenu ? (
-					<header
-						className={isChange ? styles.containerFirst : styles.container}
-						onMouseEnter={handleMouseEnter}
-						onMouseLeave={handleMouseLeave}>
-
-						<Link to='/'>
-							<img src={isChange ? logoImageHover : logoImage} alt="jungheung-class-mainLogo-image" />
-						</Link>
-
-						<div className={isChange ? styles.title : styles.scrolledTitle}>
-							 힐스테이트 도안리버파크 3,5단지
-						</div>
-
-						<div className={styles.itemBox}>
-							<a href="https://naver.me/xs350ipu" className={isChange ? styles.linkItem : styles.scrolledLinkItem}>
-								모바일 상담예약
-							</a>
-							{menuArray.map((menu, idx) => (
-								<Link key={idx} to={menu.subMenu[0].subUrl} className={isChange ? styles.item : styles.scrolledItem}>
-									{menu.title}
-								</Link>
-							))}
-						</div>
-
-						<a href="https://naver.me/xs350ipu" className={isChange ? styles.phoneNumber : styles.scrolledPhoneNumber}>
-							<IoCall size={20} /> 1533-8848
-						</a>
-					</header>
-				) : (
-					<header
-						className={styles.secondContainer}
-						onMouseEnter={handleMouseEnter}
-						onMouseLeave={handleMouseLeave}>
-
-						<Link to='/'>
-							<img src={logoImage} alt="jungheung-class-mainLogo-image" />
-						</Link>
-
-						<div className={isChange ? styles.title : styles.scrolledTitle}>
-							힐스테이트 도안리버파크 3,5단지
-						</div>
-
-						<div className={styles.itemBox}>
-							<a href="https://naver.me/xs350ipu" className={styles.linkItem}>
-								모바일 상담예약
-							</a>
-							{menuArray.map((menu, idx) => (
-								<div key={idx} className={styles.detailItemBox}>
-									{/* 첫 번째 메뉴 아이템 */}
-									<Link to={menu.subMenu[0].subUrl} className={styles.item}>
+		<>
+			{!isMobile ? (
+				<>
+					{!isMenu ? (
+						<header
+							className={isChange ? styles.containerFirst : styles.container}
+							onMouseEnter={handleMouseEnter}
+							onMouseLeave={handleMouseLeave}>
+							<Link to='/'>
+								<img src={isChange ? logoImageHover : logoImage} alt="jungheung-class-mainLogo-image" />
+							</Link>
+							<div className={isChange ? styles.title : styles.scrolledTitle}>
+								힐스테이트 도안리버파크 3,5단지
+							</div>
+							<div className={styles.itemBox}>
+								<a href="https://naver.me/xs350ipu" className={isChange ? styles.linkItem : styles.scrolledLinkItem}>
+									모바일 상담예약
+								</a>
+								{menuArray.map((menu, idx) => (
+									<Link key={idx} to={menu.subMenu[0].subUrl} className={isChange ? styles.item : styles.scrolledItem}>
 										{menu.title}
 									</Link>
-
-									{/* 하위 메뉴 아이템 */}
-									<div className={styles.secondItemBox}>
-										{menu.subMenu.map((submenu, subIdx) => (
-											<Link key={subIdx} to={submenu.subUrl} className={styles.subitem}>
-												{submenu.subTitle} {/* title -> subTitle로 변경 */}
-											</Link>
-										))}
+								))}
+							</div>
+							<a href="https://naver.me/xs350ipu" className={isChange ? styles.phoneNumber : styles.scrolledPhoneNumber}>
+								<IoCall size={20} /> 1533-8848
+							</a>
+						</header>
+					) : (
+						<header
+							className={styles.secondContainer}
+							onMouseEnter={handleMouseEnter}
+							onMouseLeave={handleMouseLeave}>
+							<Link to='/'>
+								<img src={logoImage} alt="jungheung-class-mainLogo-image" />
+							</Link>
+							<div className={isChange ? styles.title : styles.scrolledTitle}>
+								힐스테이트 도안리버파크 3,5단지
+							</div>
+							<div className={styles.itemBox}>
+								<a href="https://naver.me/xs350ipu" className={styles.linkItem}>
+									모바일 상담예약
+								</a>
+								{menuArray.map((menu, idx) => (
+									<div key={idx} className={styles.detailItemBox}>
+										<Link to={menu.subMenu[0].subUrl} className={styles.item}>
+											{menu.title}
+										</Link>
+										<div className={styles.secondItemBox}>
+											{menu.subMenu.map((submenu, subIdx) => (
+												<Link key={subIdx} to={submenu.subUrl} className={styles.subitem}>
+													{submenu.subTitle}
+												</Link>
+											))}
+										</div>
 									</div>
-								</div>
-							))}
-
-						</div>
-
-						<a href="https://naver.me/xs350ipuR" className={styles.phoneNumber}>
-							<IoCall size={20} /> 1533-8848
-						</a>
-					</header>
-				)}
-			</>
-		) : (
-			<div className={styles.mobileHeader}>
-
-				<div onClick={() => setIsMobileMenu(!isMobileMenu)}>
-					{!isMobileMenu ?
-						<AiOutlineMenu className={styles.icon} size={20} color="#053b02" />
-						:
-						<IoCloseSharp className={styles.icon} size={20} color="#053b02" />
-					}
+								))}
+							</div>
+							<a href="https://naver.me/xs350ipuR" className={styles.phoneNumber}>
+								<IoCall size={20} /> 1533-8848
+							</a>
+						</header>
+					)}
+				</>
+			) : (
+				<div className={styles.mobileHeader}>
+					<div onClick={() => setIsMobileMenu(!isMobileMenu)}>
+						{!isMobileMenu ? (
+							<AiOutlineMenu className={styles.icon} size={20} color="#053b02" />
+						) : (
+							<IoCloseSharp className={styles.icon} size={20} color="#053b02" />
+						)}
+					</div>
+					{isMobileMenu && <SlideMenu contents={menuArray} />}
+					<Link to='/'>
+						<img src={logoImage} alt="jungheung-class-mainLogo-image" className={styles.logo} />
+					</Link>
+					<a href={'tel:1533-8848'}>
+						<IoCall className={styles.icon} size={20} color="#053b02" />
+					</a>
 				</div>
-				{isMobileMenu && <SlideMenu contents={menuArray} />}
-
-				<Link to='/'>
-					<img src={logoImage} alt="jungheung-class-mainLogo-image" className={styles.logo} />
-				</Link>
-
-				<a href={'tel:1533-8848'}>
-					<IoCall className={styles.icon} size={20} color="#053b02" />
-				</a>
-
-			</div>
-		)}
+			)}
 		</>
-
 	);
 };
 
 export default Header;
-
-// {
-//
-// }

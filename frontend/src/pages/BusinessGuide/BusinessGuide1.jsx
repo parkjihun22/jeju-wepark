@@ -11,36 +11,47 @@ import FixIcon from "../../components/FixIcon/FixIcon";
 import page1 from "../../assets/BusinessGuide/BusinessGuide1/page1.jpg";
 import tableImage from "../../assets/BusinessGuide/BusinessGuide1/tableImage.jpg";
 
-const projectData = [
-	{ label: '사업명', value: '대전 힐스테이트 도안리버파크 3,5단지 ' },
-	{ label: '사업위치', value: '도안지구 2-2지구 SAL1,2BL 공동주택 신축공사' },
-	{ label: '대지면적', value: '3단지: 25,800.00㎡ ｜ 5단지: 90,546.00㎡' },
-	{ label: '건축면적', value: '3단지: 5,185.55㎡ ｜ 5단지: 13,050.99㎡' },
-	{ label: '연면적', value: '3단지: 90,319.78㎡ ｜ 5단지: 312,359.25㎡' },
-	{ label: '3단지규모', value: '3단지: 지하 2층 ~ 지상 최고 35층 6개동 443세대' },
-	{ label: '5단지규모', value: '5단지: 지하 2층 ~ 지상 최고 35층 6개동 1,639세대' },
-	{ label: '주차대수', value: '3단지:834대 (1.88대) ｜ 5단지:4,144대(2.53대)' },
-];
+const projectData = {
+	1: [
+		{ label: '사업명', value: '제주시 오등봉공원 민간공원특례사업 공동주택 1단지 신축공사 ' },
+		{ label: '사업위치', value: '제주시 오라이동 854-1번지일원' },
+		{ label: '대지면적', value: '44,758.0000㎡' },
+		{ label: '건축면적', value: '10,986.2856㎡' },
+		{ label: '건폐율', value: '24.5460%' },
+		{ label: '세대수', value: '지하 3층 ~ 지상 최고 15층 15개동 686세대' },
+		{ label: '주차대수', value: '1,243대(1.8대/세대)' },
+	],
+	2: [
+		{ label: '사업명', value: '제주시 오등봉공원 민간공원특례사업 공동주택 2단지 신축공사 ' },
+		{ label: '사업위치', value: '제주시 오라이동 923번지 일원' },
+		{ label: '대지면적', value: '46,212.0000㎡' },
+		{ label: '건축면적', value: '10,165.1373㎡' },
+		{ label: '건폐율', value: '21.9967%' },
+		{ label: '세대수', value: '지하2층~지상 최고 15층 13개동 715세대' },
+		{ label: '주차대수', value: '1,317대(1.8대/세대)' },
+	],
+};
 
 const BusinessGuide1 = () => {
 	const menuContents = [
 		{ title: "사업안내", url: "/BusinessGuide/intro" },
 		{ title: "분양일정", url: "/BusinessGuide/plan" },
-		{ title: "계약서류안내", url: "/BusinessGuide/documents" }
+		{ title: "입주자모집공고", url: "/BusinessGuide/documents" }
 	];
 	const [isScroll, setIsScroll] = useState(false);
 	const { pathname } = useLocation();
+	const [selectedComplex, setSelectedComplex] = useState(1);
 	const isMobile = useMediaQuery({ query: '(max-width: 900px)' });
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, [pathname]);
 
-	useEffect(() => {
-		const handleScroll = () => {
-			setIsScroll(window.scrollY > 0);
-		};
+	const handleScroll = () => {
+		setIsScroll(window.scrollY > 0);
+	};
 
+	useEffect(() => {
 		window.addEventListener('scroll', handleScroll);
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
@@ -53,17 +64,32 @@ const BusinessGuide1 = () => {
 			<MenuBar contents={menuContents} />
 
 			<div className={styles.textBox}>
-				<div>대전 도안신도시의 중심에서 누리는 특별한 라이프 컬렉션</div>
-				<div>대전 힐스테이트 도안리버파크의 새로운 자부심으로 찾아옵니다.</div>
+				<div>초대형 복합문화 주거도시의 시작</div>
+				<div>한라산 아래 가장 큰 랜드마크 제주 위파크</div>
 			</div>
 			
-			<img className={styles.img1} src={page1} />
+			<img className={styles.img1} src={page1} alt="사업개요 이미지" />
+
+			<div className={styles.complexSelector}>
+				<button 
+					onClick={() => setSelectedComplex(1)}
+					className={`${styles.button} ${selectedComplex === 1 ? styles.active : ''}`}
+				>
+					1단지
+				</button>
+				<button 
+					onClick={() => setSelectedComplex(2)}
+					className={`${styles.button} ${selectedComplex === 2 ? styles.active : ''}`}
+				>
+					2단지
+				</button>
+			</div>
 
 			<div className={styles.tableContainer}>
-				{!isMobile && <img className={styles.tableImg} src={tableImage} />}
+				{!isMobile && <img className={styles.tableImg} src={tableImage} alt="Table Image" />}
 				<table className={styles.projectTable}>
 					<tbody>
-						{projectData.map((item, index) => (
+						{projectData[selectedComplex].map((item, index) => (
 							<tr key={index}>
 								<td className={styles.label}>{item.label}</td>
 								<td className={styles.contents}>{item.value}</td>
@@ -73,13 +99,10 @@ const BusinessGuide1 = () => {
 				</table>
 			</div>
 
-			<div className={styles.commonBox}>
-				{/* 공지사항 내용 */}
-			</div>
-
 			<Footer />
-		</div >
+		</div>
 	);
 };
 
 export default BusinessGuide1;
+	

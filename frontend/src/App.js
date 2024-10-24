@@ -23,6 +23,8 @@ import FloorPlan3 from './pages/FloorPlan/FloorPlan3';
 import FloorPlan4 from './pages/FloorPlan/FloorPlan4';
 import FloorPlan5 from './pages/FloorPlan/FloorPlan5';
 import FloorPlan6 from './pages/FloorPlan/FloorPlan6';
+import FloorPlan7 from './pages/FloorPlan/FloorPlan7';
+import FloorPlan8 from './pages/FloorPlan/FloorPlan8';
 
 import Interior1 from './pages/Interior/Interior1';
 import Interior2 from './pages/Interior/Interior2';
@@ -50,10 +52,12 @@ function App() {
 
           <Route path="/FloorPlan/59A" element={<FloorPlan1 />} />
           <Route path="/FloorPlan/59B" element={<FloorPlan2 />} />
-          <Route path="/FloorPlan/84A" element={<FloorPlan3 />} />
-          <Route path="/FloorPlan/84B" element={<FloorPlan4 />} />
-          <Route path="/FloorPlan/114A" element={<FloorPlan5 />} />
-          <Route path="/FloorPlan/114B" element={<FloorPlan6 />} />
+          <Route path="/FloorPlan/108A" element={<FloorPlan3 />} />
+          <Route path="/FloorPlan/108B" element={<FloorPlan4 />} />
+          <Route path="/FloorPlan/129" element={<FloorPlan5 />} />
+          <Route path="/FloorPlan/166P" element={<FloorPlan6 />} />
+          <Route path="/FloorPlan/183P" element={<FloorPlan7 />} />
+          <Route path="/FloorPlan/197P" element={<FloorPlan8 />} />
           
           <Route path="/Interior/59A" element={<Interior1 />} />
           <Route path="/Interior/84A" element={<Interior2 />} />

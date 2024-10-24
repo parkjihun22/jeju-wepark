@@ -7,16 +7,19 @@ import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
-import Ready from "../../components/Ready/Ready";
+import page1 from "../../assets/FloorPlan/FloorPlan1/page1.jpg";
+import page2 from "../../assets/FloorPlan/FloorPlan1/page2.jpg";
 
 const FloorPlan1 = () => {
 	const menuContents = [
-		{ title: "59A", url: "/FloorPlan/59A" },
-		{ title: "59B", url: "/FloorPlan/59B" },
-		{ title: "84A", url: "/FloorPlan/84A" },
-		{ title: "84B", url: "/FloorPlan/84B" },
-		{ title: "84C", url: "/FloorPlan/114A" },
-		{ title: "84D", url: "/FloorPlan/114B" },
+		{ title: "84A", url: "/FloorPlan/59A" },
+		{ title: "84B", url: "/FloorPlan/59B" },
+		{ title: "108A", url: "/FloorPlan/108A" },
+		{ title: "108B", url: "/FloorPlan/108B" },
+		{ title: "129", url: "/FloorPlan/129" },
+		{ title: "166P", url: "/FloorPlan/166P" },
+		{ title: "183P", url: "/FloorPlan/183P" },
+		{ title: "197P", url: "/FloorPlan/197P" },
 	];
 	const [isScroll, setIsScroll] = useState(false);
 	const { pathname } = useLocation(); // 현재 경로를 가져옴
@@ -52,7 +55,8 @@ const FloorPlan1 = () => {
 
 			<MenuBar contents={menuContents} />
 
-			<Ready />
+			<img src={page1} className={styles.image} alt="FloorPlan-image-1" />
+			<img src={page2} className={styles.image} alt="FloorPlan-image-2" />
 
 			<div className={styles.commonBox}>
 				<div className={styles.notice}>

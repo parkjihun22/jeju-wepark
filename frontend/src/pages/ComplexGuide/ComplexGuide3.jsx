@@ -6,8 +6,11 @@ import Header from "../../components/Header/Header";
 import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
-import Ready from "../../components/Ready/Ready";
 import FixIcon from "../../components/FixIcon/FixIcon";
+
+import page1 from "../../assets/ComplexGuide/ComplexGuide3/page1.jpg";
+import page2 from "../../assets/ComplexGuide/ComplexGuide3/page2.jpg";
+
 
 const ComplexGuide3 = () => {
 	const menuContents = [
@@ -16,40 +19,57 @@ const ComplexGuide3 = () => {
 		{ title: "커뮤니티", url: "/ComplexGuide/community" },
 	];
 	const [isScroll, setIsScroll] = useState(false);
-	const { pathname } = useLocation(); // 현재 경로를 가져옴
+	const [selectedComplex, setSelectedComplex] = useState(1); // 현재 선택된 단지 (1단지 또는 2단지)
+	const { pathname } = useLocation();
 
 	useEffect(() => {
-		window.scrollTo(0, 0); // 페이지가 로드될 때 스크롤을 최상단으로 이동
-	}, [pathname]); // pathname이 변경될 때마다 실행
+		window.scrollTo(0, 0);
+	}, [pathname]);
 
-	// 화면 스크롤이 탑이 아니면 isScroll 값 true로 변환
 	useEffect(() => {
 		const handleScroll = () => {
-			if (window.scrollY > 0) {
-				setIsScroll(true);
-			} else {
-				setIsScroll(false);
-			}
+			setIsScroll(window.scrollY > 0);
 		};
 
 		window.addEventListener('scroll', handleScroll);
-
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
 		};
 	}, []);
 
 	return (
-		<div className={styles.container}>
 
+
+		<div className={styles.container}>
 			<Header isChanged={isScroll} />
 			<FixIcon />
-
 			<Bener title="단지안내" />
-
 			<MenuBar contents={menuContents} />
 
-			<Ready />
+
+			<div className={styles.complexSelector}>
+				<button 
+					onClick={() => setSelectedComplex(1)}
+					className={`${selectedComplex === 1 ? styles.activeButton : styles.inactiveButton}`}
+				>
+					1단지
+				</button>
+				<button 
+					onClick={() => setSelectedComplex(2)}
+					className={`${selectedComplex === 2 ? styles.activeButton : styles.inactiveButton}`}
+				>
+					2단지
+				</button>
+			</div>
+
+				{/* 선택된 단지에 따라 이미지 표시 */}
+			{selectedComplex === 1 && (
+				<img src={page1} className={styles.image} alt="ComplexGuide1-image-1" />
+			)}
+			{selectedComplex === 2 && (
+				<img src={page2} className={styles.image} alt="ComplexGuide2-image-1" />
+			)}
+
 
 			<div className={styles.commonBox}>
 				<div className={styles.notice}>
@@ -74,7 +94,7 @@ const ComplexGuide3 = () => {
 
 			<Footer />
 		</div>
-	)
+	);
 }
 
 export default ComplexGuide3;

@@ -10,6 +10,8 @@ import FixIcon from "../../components/FixIcon/FixIcon";
 import Ready from "../../components/Ready/Ready";
 
 import page1 from "../../assets/LocationEnvironment/LocationEnvironment2/page1.jpg";
+import page2 from "../../assets/LocationEnvironment/LocationEnvironment2/page2.jpg";
+import page3 from "../../assets/LocationEnvironment/LocationEnvironment2/page3.jpg";
 
 const LocationEnvironment1 = () => {
 	const menuContents = [{ title: "입지안내", url: "/LocationEnvironment/intro" }, { title: "프리미엄", url: "/LocationEnvironment/primium" }];
@@ -48,32 +50,27 @@ const LocationEnvironment1 = () => {
 			<MenuBar contents={menuContents} />
 
 			<div className={styles.textBox}>
-           			<div>대전 도안신도시 중심 눈부신 가치 위에</div>
-           		 	<div>힐스테이트의 새로운 자부심으로 찾아옵니다.</div>
+           			<div>제주 오븡동의 중심 눈부신 가치 위에</div>
+           		 	<div>제주위파크의 새로운 자부심으로 찾아옵니다.</div>
          		</div>
 
 			<img src={page1} className={styles.premiumImage} alt="premium-image-1" />
+			<img src={page2} className={styles.premiumImage} alt="premium-image-3" />
+			<img src={page3} className={styles.premiumImage} alt="premium-image-2" />
 
 			<div className={styles.commonBox}>
+			<div className={styles.notice}>
+				※ 상기 CG 이미지, 사진 및 내용은 소비자의 이해를 돕기 위한 것으로 분양대상물을 축소 표현하여 실제 크기 및 거리 등과 차이가 있습니다.
+                </div>
 				<div className={styles.notice}>
-					※ 단지 주변 교통시설, 기타 주변 개발계획 등은 인·허가 및 정부 시책에 따라 변경 및 취소 가능하며 이는 사업주체 및 시공사와 무관합니다.
-				</div>
+				※ 단지를 제외한 기타배경(산, 조명, 외부 식재 등)은 소비자의 이해를 돕기 위한 이미지컷으로 실제와 차이가 있습니다.
+                </div>
 				<div className={styles.notice}>
-					※ 서남부스포츠타운(예정) 관련 내용은 대전광역시 기획조정실 정책기획관 보도자료(2024.04.24)를 참고하였습니다
-
-				</div>
+				※ 건물의 색채, 외관, 조경, 식재 및 보행로는 입주자의 이해를 돕기 위한 것으로 실제와 다소 차이가 있으며, 추후 인허가 과정 및 실제 시공 시 변경될 수 있습니다. 또한 구획선과 시설물의 위치 및 규모 역시 측량결과 및 각종 평가에 따라 시공 시 변경될 수 있습니다.	
+                </div>
 				<div className={styles.notice}>
-					※ 대전국가산업단지(예정) 관련 내용은 대전광역시 전략사업추진실 산업입지과 보도자료(2023.03.15)를 참고하였습니다
-				</div>
-				<div className={styles.notice}>
-					※ 현충원IC(추진 중) 관련 내용은 대전광역시 교통건설국 건설도로과 보도자료(2023.05.10)를 참고하였습니다
-				</div>
-				<div className={styles.notice}>
-					※ 옥상 구조물은 본 공사 시 형태 변경 또는 구조물 지지를 위한 기둥이 추가 시공될 수 있습니다.
-				</div>
-				<div className={styles.notice}>
-					※ 도시철도 2호선 트램(예정) 관련 내용은 "대전광역시 고시 제 2020-42호"를 참고하였습니다
-				</div>
+				※ 본 홈페이지의 제작과정상 오탈자가 있을 수 있으므로 계약 시 반드시 확인하시기 바랍니다.
+                </div>
 			</div>
 
 			<Footer />

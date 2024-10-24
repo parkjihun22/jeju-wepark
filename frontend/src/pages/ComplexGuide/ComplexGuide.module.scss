@@ -1,30 +1,33 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.bener{
+.bener {
     width: 100vw;
     height: auto;
 }
 
 .image {
-    width: 60rem;
+    width: 80%;
     height: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 
     @media (max-width: 900px) {
-        width: 100vw;
+        width: 90%;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
     }
 }
-
 
 .commonBox {
     margin: 2vw 0;
     width: 80%;
     background-color: #f8f4f0;
-    border: 1px solid #e9e2da;
+    border: 3px solid #e9e2da;
 
     @media (max-width: 900px) {
         width: 90%;
@@ -37,7 +40,7 @@
         color: #ada8a2;
 
         @media (max-width: 900px) {
-            padding: 0  3vw;
+            padding: 0 3vw;
             font-size: 2.5vw;
             line-height: 3vw;
             text-indent: -2vw;
@@ -58,5 +61,55 @@
 
     .notice:nth-of-type(6) {
         padding-bottom: 1vw;
+    }
+}
+
+.complexSelector {
+    display: flex;
+    justify-content: center;
+    margin: 1vw 0 0 0;
+    width: 80%;
+    flex-wrap: wrap;
+
+    button {
+        flex: 1;
+        margin: 1vw 0 0 5px;
+        padding: 5px 0;
+        font-size: 2vw;
+        color: #c98f25;
+        cursor: pointer;
+        text-align: center;
+        border: 3px solid #c98f25;
+        border-radius: 1px;
+        background-color: #fefaf3;
+        transition: background-color 0.3s;
+
+        &:hover {
+            color: #ffffff;
+            background-color: #011d40;
+        }
+
+        &.activeButton {
+            background-color: #011d40; /* 선택된 버튼 색상 */
+            color: #ffffff; /* 텍스트 색상 변경 */
+        }
+
+        &.inactiveButton {
+            background-color: #fefaf3; /* 기본 배경색 */
+            color: #c98f25; /* 기본 텍스트 색상 */
+        }
+    }
+    
+    @media (max-width: 900px) {
+        flex-direction: row;
+        margin: 4vw 0 0 0;
+        width: 90%;
+        
+        button {
+            width: calc(50% - 10px);
+            padding: 4px 0;
+            font-size: 2.5vw;
+            margin: 1px;
+        }
     }
 }

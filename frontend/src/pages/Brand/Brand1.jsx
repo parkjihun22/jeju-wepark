@@ -11,6 +11,7 @@ import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
 
 import page1 from "../../assets/Brand/intro/brand1.jpg";
+import page2 from "../../assets/Brand/intro/brand2.jpg";
 
 const Brand1 = () => {
 	const menuContents = [{ title: "브랜드소개", url: "/brand/intro" }, { title: "홍보 영상", url: "/brand/video" }]
@@ -49,11 +50,14 @@ const Brand1 = () => {
 			<MenuBar contents={menuContents} />
 
 			<div className={styles.textBox}>
-				<div>대전 도안신도시 눈부신 가치 위에</div>
-				<div>현대 힐스테이트의 새로운 자부심으로 찾아옵니다.</div>
+				<div>자부심이 되는 이름</div>
+				<div>제주 위파크는 자연친화 공간에 앞선 감각을 더한 <br/>
+			</div>
+				<div>프리미엄 주거 브랜드입니다.</div>
 			</div>
 			
 			<img src={page1} className={styles.page1Image} alt="brand-image-1" />
+			<img src={page2} className={styles.page2Image} alt="brand-image-1" />
 
 			<Footer />
 		</div>
