@@ -44,6 +44,11 @@ const ComplexGuide1 = () => {
 			<Bener title="단지안내"/>
 			<MenuBar contents={menuContents} />
 
+			<div className={styles.textBox}>
+				<div>초대형 복합문화 주거도시의 시작</div>
+				<div>한라산 아래 가장 큰 랜드마크 제주 위파크</div>
+			</div>
+
 			<div className={styles.complexSelector}>
 				<button 
 					onClick={() => setSelectedComplex(1)}

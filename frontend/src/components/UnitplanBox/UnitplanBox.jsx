@@ -1,21 +1,26 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 import styles from "./UnitplanBox.module.scss";
-import room59A from "../../assets/UnitplanBox/59A.png";
-import room59B from "../../assets/UnitplanBox/59B.png";
-import room84A from "../../assets/UnitplanBox/59A.png";
-import room84B from "../../assets/UnitplanBox/59A.png";
-import room114A from "../../assets/UnitplanBox/59A.png";
-import room114B from "../../assets/UnitplanBox/59A.png";
+import room59A from "../../assets/UnitplanBox/84A.jpg";
+import room59B from "../../assets/UnitplanBox/84B.jpg";
+import room84A from "../../assets/UnitplanBox/108A.jpg";
+import room84B from "../../assets/UnitplanBox/108B.jpg";
+import room129 from "../../assets/UnitplanBox/129.jpg";
+import room166P from "../../assets/UnitplanBox/183P.jpg";
+import room183P from "../../assets/UnitplanBox/183P.jpg";
+import room197P from "../../assets/UnitplanBox/197P.jpg";
+
 import { useMediaQuery } from "react-responsive";
 
 const contents = [
-    { type: '59A', src: room59A },
-    { type: '59B', src: room59B },
-    { type: '84A', src: room84A },
-    { type: '84B', src: room84B },
-    { type: '84C', src: room114A },
-    { type: '84D', src: room114B },
+    { type: '84A', src: room59A },
+    { type: '84B', src: room59B },
+    { type: '108A', src: room84A },
+    { type: '108B', src: room84B },
+    { type: '129', src: room129 },
+    { type: '166P', src: room166P },
+    { type: '183P', src: room183P },
+    { type: '197P', src: room197P },
 ]
 
 const UnitplanBox = () => {

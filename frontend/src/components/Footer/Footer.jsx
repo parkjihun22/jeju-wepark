@@ -20,7 +20,7 @@ const Footer = () => {
 							<div className={styles.text1}>※ 본 사이트에 기재된 개발계획과 공통계획에 과한 사항은 관계기관의 보도자료를 참조한 것으로 <br />
 								추후 관계기관의 사정에 따라 변경 및 취소될 수 있으며, 이는 사업주체 및 시공사와 무관합니다.</div>
 
-							<div className={styles.text2}>COPYRIGHTⓒ 대전 힐스테이트 도안리버파크 모델하우스. ALL RIGHTS RESERVED.</div>
+							<div className={styles.text2}>COPYRIGHTⓒ 제주위파크 모델하우스. ALL RIGHTS RESERVED.</div>
 						</div>
 
 						<a href="https://naver.me/G58kVeiB"><IoCall size={25} /> 1533-8848</a>
@@ -38,7 +38,7 @@ const Footer = () => {
 							<div className={styles.text1}>※ 본 사이트에 기재된 개발계획과 공통계획에 과한 사항은 관계기관의 보도자료를 참조한 것으로 <br />
 								추후 관계기관의 사정에 따라 변경 및 취소될 수 있으며, 이는 사업주체 및 시공사와 무관합니다.</div>
 
-							<div className={styles.text2}>COPYRIGHTⓒ 대전 힐스테이트 도안리버파크 모델하우스. ALL RIGHTS RESERVED.</div>
+							<div className={styles.text2}>COPYRIGHTⓒ 제주 위파크 모델하우스. ALL RIGHTS RESERVED.</div>
 						</div>
 					</div>
 				</div>

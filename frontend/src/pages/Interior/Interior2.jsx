@@ -11,9 +11,9 @@ import Ready from "../../components/Ready/Ready";
 
 const Interior2 = () => {
 	const menuContents = [
-		{ title: "59A", url: "/Interior/59A" },
-		{ title: "84A", url: "/Interior/84A" },
-		{ title: "84B", url: "/Interior/84B" },
+		{ title: "84A", url: "/Interior/59A" },
+		{ title: "84B", url: "/Interior/84A" },
+		{ title: "108A", url: "/Interior/84B" },
 
 	];
 	const [isScroll, setIsScroll] = useState(false);

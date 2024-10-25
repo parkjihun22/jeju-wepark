@@ -10,6 +10,8 @@ import FixIcon from "../../components/FixIcon/FixIcon";
 
 import page1 from "../../assets/ComplexGuide/ComplexGuide1/page1.jpg";
 import page2 from "../../assets/ComplexGuide/ComplexGuide1/page2.jpg";
+import page3 from "../../assets/ComplexGuide/ComplexGuide1/page3.jpg";
+import page4 from "../../assets/ComplexGuide/ComplexGuide1/page4.jpg";
 
 const ComplexGuide1 = () => {
 	const menuContents = [
@@ -43,6 +45,11 @@ const ComplexGuide1 = () => {
 			<Bener title="단지안내" />
 			<MenuBar contents={menuContents} />
 
+			<div className={styles.textBox}>
+				<div>초대형 복합문화 주거도시의 시작</div>
+				<div>한라산 아래 가장 큰 랜드마크 제주 위파크</div>
+			</div>
+
 			<div className={styles.complexSelector}>
 				<button 
 					onClick={() => setSelectedComplex(1)}
@@ -58,13 +65,23 @@ const ComplexGuide1 = () => {
 				</button>
 			</div>
 
+			
+
 			{/* 선택된 단지에 따라 이미지 표시 */}
-			{selectedComplex === 1 && (
-				<img src={page1} className={styles.image} alt="ComplexGuide1-image-1" />
-			)}
-			{selectedComplex === 2 && (
-				<img src={page2} className={styles.image} alt="ComplexGuide2-image-1" />
-			)}
+			{/* 선택된 단지에 따라 이미지 표시 */}
+{selectedComplex === 1 && (
+    <>
+        <img src={page1} className={styles.image} alt="ComplexGuide1-image-1" />
+        <img src={page2} className={styles.image} alt="ComplexGuide1-image-2" />
+    </>
+)}
+
+{selectedComplex === 2 && (
+    <>
+        <img src={page3} className={styles.image} alt="ComplexGuide2-image-1" />
+        <img src={page4} className={styles.image} alt="ComplexGuide2-image-2" />
+    </>
+)}
 
 			<div className={styles.commonBox}>
 				{selectedComplex === 1 && (

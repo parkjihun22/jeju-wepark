@@ -10,6 +10,22 @@
     height: auto;
 }
 
+.textBox {
+    margin: 3vw 0 0 0;
+    text-align: center;
+    font-size: 3vw;
+
+    div:nth-of-type(1) {
+        font-weight: 200;
+    }
+
+    div:nth-of-type(2) {
+        margin-top: 0.5vw;
+        font-weight: 800;
+        color: #081b40;
+    }
+}
+
 .image {
     width: 80%;
     height: auto;
@@ -62,6 +78,10 @@
     .notice:nth-of-type(6) {
         padding-bottom: 1vw;
     }
+    .notice:nth-of-type(7) {
+        padding-bottom: 1vw;
+    }
+
 }
 
 .complexSelector {
