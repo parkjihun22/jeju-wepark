@@ -12,8 +12,8 @@ import page1 from "../../assets/Interior/Interior1/page1.jpg";
 const Interior1 = () => {
 	const menuContents = [
 		{ title: "84A", url: "/Interior/59A" },
-		{ title: "84B", url: "/Interior/84A" },
-		{ title: "108A", url: "/Interior/84B" },
+		{ title: "108A", url: "/Interior/108A" },
+		{ title: "129", url: "/Interior/129" },
 
 	];
 	const [isScroll, setIsScroll] = useState(false);

@@ -7,13 +7,13 @@ import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
-import Ready from "../../components/Ready/Ready";
+import page1 from "../../assets/Interior/Interior2/page1.jpg"
 
 const Interior2 = () => {
 	const menuContents = [
 		{ title: "84A", url: "/Interior/59A" },
-		{ title: "84B", url: "/Interior/84A" },
-		{ title: "108A", url: "/Interior/84B" },
+		{ title: "108A", url: "/Interior/108A" },
+		{ title: "129", url: "/Interior/129" },
 
 	];
 	const [isScroll, setIsScroll] = useState(false);
@@ -50,7 +50,7 @@ const Interior2 = () => {
 
 			<MenuBar contents={menuContents} />
 
-			<Ready />
+			<img src={page1} className={styles.image} alt="ComplexGuide1-image-1" />
 
 			<div className={styles.commonBox}>
 				<div className={styles.notice}>

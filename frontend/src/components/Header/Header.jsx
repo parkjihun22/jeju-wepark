@@ -58,8 +58,8 @@ const menuArray = [
 		title: "인테리어",
 		subMenu: [
 			{ subTitle: "84A", subUrl: "/Interior/59A" },
-			{ subTitle: "84B", subUrl: "/Interior/84A" },
 			{ subTitle: "108A", subUrl: "/Interior/108A" },
+			{ subTitle: "129", subUrl: "/Interior/129" },
 		],
 	},
 ];

@@ -60,8 +60,8 @@ function App() {
           <Route path="/FloorPlan/197P" element={<FloorPlan8 />} />
           
           <Route path="/Interior/59A" element={<Interior1 />} />
-          <Route path="/Interior/84A" element={<Interior2 />} />
-          <Route path="/Interior/84B" element={<Interior3 />} />
+          <Route path="/Interior/108A" element={<Interior2 />} />
+          <Route path="/Interior/129" element={<Interior3 />} />
           <Route path="/*" element={<h1>Not Found</h1>} />
         </Routes>
     </BrowserRouter>
