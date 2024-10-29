@@ -23,7 +23,7 @@ const Footer = () => {
 							<div className={styles.text2}>COPYRIGHTⓒ 제주위파크 모델하우스. ALL RIGHTS RESERVED.</div>
 						</div>
 
-						<a href="https://naver.me/G58kVeiB"><IoCall size={25} /> 1533-8848</a>
+						<a href="https://naver.me/IxsZav7h"><IoCall size={25} /> 1533-8848</a>
 					</div>
 				</div>
 			) : (

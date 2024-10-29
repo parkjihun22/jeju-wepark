@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useMediaQuery } from 'react-responsive';
 import { Link } from "react-router-dom";
 import { IoCall, IoCloseSharp } from "react-icons/io5";
+import { PiPhoneCallFill } from "react-icons/pi";
 import { AiOutlineMenu } from "react-icons/ai";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 import styles from "./Header.module.scss";
 import SlideMenu from "../../components/SlideMenu/SlideMenu";
@@ -67,7 +69,7 @@ const menuArray = [
 const Header = ({ isChanged }) => {
 	const [isChange, setIsChange] = useState(isChanged);
 	const [isMenu, setIsMenu] = useState(false);
-	const [isMobileMenu, setIsMobileMenu] = useState(false); // 모바일 메뉴 상태
+	const [isMobileMenu, setIsMobileMenu] = useState(false);
 	const isMobile = useMediaQuery({ query: '(max-width: 900px)' });
 
 	useEffect(() => {
@@ -76,7 +78,7 @@ const Header = ({ isChanged }) => {
 
 	useEffect(() => {
 		console.log(isMenu);
-	}, [isMenu]);
+	}, [isMenu])
 
 	const handleMouseEnter = () => {
 		setIsMenu(true);
@@ -86,89 +88,124 @@ const Header = ({ isChanged }) => {
 		setIsMenu(false);
 	};
 
+	const closeMobileMenu = useCallback(() => {
+		setIsMobileMenu(false);
+	}, []);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			if (isMobileMenu) {
+				closeMobileMenu();
+			}
+		};
+
+		const handleClickOutside = (event) => {
+			if (isMobileMenu && !event.target.closest(`.${styles.mobileHeader}`)) {
+				closeMobileMenu();
+			}
+		};
+
+		window.addEventListener('scroll', handleScroll);
+		document.addEventListener('mousedown', handleClickOutside);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+			document.removeEventListener('mousedown', handleClickOutside);
+		};
+	}, [isMobileMenu, closeMobileMenu]);
+
 	return (
-		<>
-			{!isMobile ? (
-				<>
-					{!isMenu ? (
-						<header
-							className={isChange ? styles.containerFirst : styles.container}
-							onMouseEnter={handleMouseEnter}
-							onMouseLeave={handleMouseLeave}>
-							<Link to='/'>
-								<img src={isChange ? logoImageHover : logoImage} alt="jungheung-class-mainLogo-image" />
-							</Link>
-							<div className={isChange ? styles.title : styles.scrolledTitle}>
-								힐스테이트 도안리버파크 3,5단지
-							</div>
-							<div className={styles.itemBox}>
-								<a href="https://naver.me/xs350ipu" className={isChange ? styles.linkItem : styles.scrolledLinkItem}>
-									모바일 상담예약
-								</a>
-								{menuArray.map((menu, idx) => (
-									<Link key={idx} to={menu.subMenu[0].subUrl} className={isChange ? styles.item : styles.scrolledItem}>
+		<>{!isMobile ? (
+			<>
+				{!isMenu ? (
+					<header
+						className={isChange ? styles.containerFirst : styles.container}
+						onMouseEnter={handleMouseEnter}
+						onMouseLeave={handleMouseLeave}>
+
+						<Link to='/'>
+							<img src={isChange ? logoImageHover : logoImage} alt="jungheung-class-mainLogo-image" />
+						</Link>
+
+						<div className={styles.itemBox}>
+							<a href="https://naver.me/IxsZav7h" className={isChange ? styles.linkItem : styles.scrolledLinkItem}>
+								모바일 상담예약
+							</a>
+							{menuArray.map((menu, idx) => (
+								<Link key={idx} to={menu.subMenu[0].subUrl} className={isChange ? styles.item : styles.scrolledItem}>
+									{menu.title}
+								</Link>
+							))}
+						</div>
+
+						<a href="https://naver.me/IxsZav7h" className={isChange ? styles.phoneNumber : styles.scrolledPhoneNumber}>
+							<IoCall size={30} /> 1533-8848
+						</a>
+					</header>
+				) : (
+					<header
+						className={styles.secondContainer}
+						onMouseEnter={handleMouseEnter}
+						onMouseLeave={handleMouseLeave}>
+
+						<Link to='/'>
+							<img src={logoImage} alt="jungheung-class-mainLogo-image" />
+						</Link>
+
+						<div className={isChange ? styles.title : styles.scrolledTitle}>
+							위파크제주
+						</div>
+
+						<div className={styles.itemBox}>
+							<a href="https://naver.me/IxsZav7h" className={styles.linkItem}>
+								모바일 상담예약
+							</a>
+							{menuArray.map((menu, idx) => (
+								<div key={idx} className={styles.detailItemBox}>
+									<Link to={menu.subMenu[0].subUrl} className={styles.item}>
 										{menu.title}
 									</Link>
-								))}
-							</div>
-							<a href="https://naver.me/xs350ipu" className={isChange ? styles.phoneNumber : styles.scrolledPhoneNumber}>
-								<IoCall size={20} /> 1533-8848
-							</a>
-						</header>
-					) : (
-						<header
-							className={styles.secondContainer}
-							onMouseEnter={handleMouseEnter}
-							onMouseLeave={handleMouseLeave}>
-							<Link to='/'>
-								<img src={logoImage} alt="jungheung-class-mainLogo-image" />
-							</Link>
-							<div className={isChange ? styles.title : styles.scrolledTitle}>
-								힐스테이트 도안리버파크 3,5단지
-							</div>
-							<div className={styles.itemBox}>
-								<a href="https://naver.me/xs350ipu" className={styles.linkItem}>
-									모바일 상담예약
-								</a>
-								{menuArray.map((menu, idx) => (
-									<div key={idx} className={styles.detailItemBox}>
-										<Link to={menu.subMenu[0].subUrl} className={styles.item}>
-											{menu.title}
-										</Link>
-										<div className={styles.secondItemBox}>
-											{menu.subMenu.map((submenu, subIdx) => (
-												<Link key={subIdx} to={submenu.subUrl} className={styles.subitem}>
-													{submenu.subTitle}
-												</Link>
-											))}
-										</div>
+
+									<div className={styles.secondItemBox}>
+										{menu.subMenu.map((submenu, subIdx) => (
+											<Link key={subIdx} to={submenu.subUrl} className={styles.subitem}>
+												{submenu.subTitle}
+											</Link>
+										))}
 									</div>
-								))}
-							</div>
-							<a href="https://naver.me/xs350ipuR" className={styles.phoneNumber}>
-								<IoCall size={20} /> 1533-8848
-							</a>
-						</header>
-					)}
-				</>
-			) : (
-				<div className={styles.mobileHeader}>
-					<div onClick={() => setIsMobileMenu(!isMobileMenu)}>
-						{!isMobileMenu ? (
-							<AiOutlineMenu className={styles.icon} size={20} color="#053b02" />
-						) : (
-							<IoCloseSharp className={styles.icon} size={20} color="#053b02" />
-						)}
-					</div>
-					{isMobileMenu && <SlideMenu contents={menuArray} />}
-					<Link to='/'>
-						<img src={logoImage} alt="jungheung-class-mainLogo-image" className={styles.logo} />
-					</Link>
-					<a href={'tel:1533-8848'}>
-						<IoCall className={styles.icon} size={20} color="#053b02" />
-					</a>
+								</div>
+							))}
+
+						</div>
+
+						<a href="https://naver.me/IxsZav7h" className={styles.phoneNumber}>
+							<IoCall size={25} /> 1533-8848
+						</a>
+					</header>
+				)}
+			</>
+		) : (
+			<div className={styles.mobileHeader}>
+
+				<div onClick={() => setIsMobileMenu(!isMobileMenu)}>
+					{!isMobileMenu ?
+						<AiOutlineMenu className={styles.icon} size={25} color="#011d40" />
+						:
+						<IoCloseSharp className={styles.icon} size={25} color="#011d40" />
+					}
 				</div>
-			)}
+				{isMobileMenu && <SlideMenu contents={menuArray} onClose={closeMobileMenu} />}
+
+				<Link to='/'>
+					<img src={logoImage} alt="jungheung-class-mainLogo-image" className={styles.logo} />
+				</Link>
+
+				<a href={'tel:1533-8848'}>
+					<IoCall className={styles.icon} size={25} color="#011d40" />
+				</a>
+
+			</div>
+		)}
 		</>
 	);
 };

@@ -1,71 +1,81 @@
 .container {
-    display: fixed;
+    font-size: 0.9rem;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 0.5rem 0 0 0;
-    align-items: flex-start; /* 왼쪽 정렬 */
-    width: 60%; /* 화면의 절반 너비로 조정 */
-    height: auto; /* 필요에 따라 높이 조정 */
-    overflow: hidden; /* 넘치는 내용 숨김 */
-    position: fixed; /* 고정 위치로 변경 */
-    top: 12vw; /* 메뉴의 세로 위치를 올림 */
-    animation: slide-in 0.3s ease-out; /* 애니메이션 추가 */
-    padding-left: 0.1rem; /* 왼쪽 여백 추가 */
-    background-color: rgba(255, 255, 255, 1.0); /* 불투명도 70%로 배경색 추가 */
-    border-radius: 5px; /* 모서리 둥글게 처리 (선택 사항) */
-    font-weight: bold; /* 글자 두껍게 */
-    font-size: 1.1rem;
-    margin-top: 1px;
-    color: #010100;
+    width: 60%; // 모바일 화면의 50%를 차지
+    position: fixed;
+    top: 15vw; // 상단 여백 유지
+    left: 0;
+    height: calc(100vh - 12vw); // 화면 높이에서 상단 여백을 뺀 만큼
+    background-color: white;
+    overflow-y: auto; // 내용이 많을 경우 스크롤 가능하게
+    z-index: 1000; // 다른 요소들 위에 표시
 }
 
+.menuItem {
+    border-bottom: 2px solid #cbcbcb;
+}
 
 .menuBtn {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding:  8px; /* 패딩 줄이기 */
-    width: 100%; /* 전체 너비 유지 */
-    background-color: rgba(255, 255, 255, 1.0); /* 불투명도 80%로 메뉴 버튼 배경색 */
-    border-bottom: 3px solid #ad8844;
-    margin-bottom: 1px; /* 아래쪽 여백 제거 */
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.3s ease;
 
-    a {
-        text-decoration: none;
-        color: #95271e; /* 글자 색상 */
-        font-size: 1rem; /* 폰트 크기 조정 */
-        font-weight: bold; /* 글자 두껍게 */
-        padding: 0.5rem 0 0.5rem 0;
-
+    &:hover {
+        background-color: #e0e0e0;
     }
 }
 
+.menuTitle {
+    font-weight: 600;
+}
+
+.linkItem {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+}
+
 .subMenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100%; /* 전체 너비 유지 */
-    opacity: 0; /* 초기 상태에서 투명하게 설정 */
-    transform: translateX(-10px); /* 왼쪽에서 오른쪽으로 나타나게 설정 */
-    transition: opacity 1s ease, transform 1s ease; /* 부드러운 전환 */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #f9f9f9;
 }
 
 .subMenu.show {
-    opacity: 1; /* 완전히 보임 */
-    transform: translateX(0); /* 원래 위치 */
+    max-height: 500px; // 충분히 큰 값으로 설정
 }
 
 .subMenuBtn {
-    padding: 8px 0; /* 패딩 줄이기 */
-    border-top: 1px solid #ad8844;
-    color: #f3efe4; /* 글자 색상 */
+    display: block;
+    padding: 10px 15px;
     text-decoration: none;
-    font-weight: 300; /* 폰트 두께 조정 */
-    font-size: 1rem; /* 폰트 크기 조정 */
-    opacity: 1; /* 초기 상태에서 불투명하게 설정 */
-    transform: translateX(0); /* 변형 초기화 */
-    animation: fade-in 0.5s forwards; /* 애니메이션 적용 */
-    animation-delay: calc(0.1s * var(--index)); /* 인덱스를 이용한 지연 */
+    color: #011d40;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #e0e0e0;
+    }
+}
+
+// 새로 추가된 스타일
+.mobileReservation {
+    background-color: #FFFFFF; // 배경색 변경 (원하는 색상으로 조정)
+    border-bottom: 2px solid #cbcbcb;
+    
+    .linkItem {
+        color: #011d40; // 글자색 변경 (원하는 색상으로 조정)
+        font-weight: bold; // 글자 굵기 변경
+        font-size: 0.9rem; // 글자 크기 조정
+    }
+
+    &:hover {
+        background-color: #e0e0e0; // 호버 시 배경색 변경
+    }
 }
