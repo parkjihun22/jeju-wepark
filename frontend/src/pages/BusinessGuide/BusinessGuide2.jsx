@@ -48,7 +48,7 @@ const BusinessGuide2 = () => {
 				<meta name="description" content="위파크제주의 분양일정과 주요 청약 정보를 확인하세요. 
 				새로운 주거 단지에서 기회를 잡기 위한 모든 필요한 날짜와 절차에 대해 자세히 안내합니다." />
 				<meta name="keywords" content="위파크 제주,위파크 제주 분양가,제주 오등봉공원 위파크,제주 위파크,제주시 오라이동 위파크,제주도 위파크,위파크제주모델하우스,제주위파크모델하우스" />
-				<link rel="canonical" href="https://www.bunyang-114.com/BusinessGuide/plan" />
+				<link rel="canonical" href="http://www.apt-789.com/BusinessGuide/plan" />
 			</Helmet>
 			
 			<Header isChanged={isScroll} />

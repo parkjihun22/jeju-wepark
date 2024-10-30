@@ -37,11 +37,11 @@ const BusinessGuide2 = () => {
     return (
         <div className={styles.container}>
             <Helmet>
-				<title>계약서류안내 - 위파크제주</title>
-				<meta name="description" content="위파크제주 분양일정을 통해 중요한 분양 일정을 확인하세요. 
+				<title>입주자모집공고 - 위파크제주</title>
+				<meta name="description" content="위파크제주 입주자모집공고를 통해 중요한 정보를 확인하세요. 
 				분양 일정과 필요한 모든 정보를 제공하여 성공적인 분양을 지원합니다." />
 				<meta name="keywords" content="위파크 제주,위파크 제주 분양가,제주 오등봉공원 위파크,제주 위파크,제주시 오라이동 위파크,제주도 위파크,위파크제주모델하우스,제주위파크모델하우스" />
-				<link rel="canonical" href="https://www.bunyang-114.com/BusinessGuide/documents" />
+				<link rel="canonical" href="http://www.apt-789.com/BusinessGuide/documents" />
 			</Helmet>
 
             <Header isChanged={isScroll} />

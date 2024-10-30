@@ -47,7 +47,7 @@ const LocationEnvironment1 = () => {
 				<meta name="description" content="고급 마감재와 세련된 디자인이 돋보이는 평택 브레인시티 푸르지오는 프리미엄 주거 공간을 제공합니다. 
 				탁월한 건축 품질과 고급 시설이 조화롭게 어우러져 있습니다." />
 				<meta name="keywords" content="위파크 제주,위파크 제주 분양가,제주 오등봉공원 위파크,제주 위파크,제주시 오라이동 위파크,제주도 위파크,위파크제주모델하우스,제주위파크모델하우스" />
-				<link rel="canonical" href="https://www.bunyang-114.com/LocationEnvironment/primium" />
+				<link rel="canonical" href="http://www.apt-789.com/LocationEnvironment/primium" />
 			</Helmet>
 
 			<Header isChanged={isScroll} />
