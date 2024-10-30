@@ -7,6 +7,7 @@ import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
+import { Helmet } from "react-helmet-async";
 
 import page1 from "../../assets/ComplexGuide/ComplexGuide1/page1.jpg";
 import page2 from "../../assets/ComplexGuide/ComplexGuide1/page2.jpg";
@@ -40,6 +41,15 @@ const ComplexGuide1 = () => {
 
 	return (
 		<div className={styles.container}>
+			<Helmet>
+				<title>단지배치도 - 위파크제주</title>
+				<meta name="description" content="위파크제주의 단지배치도를 통해 단지의 전체 구조와 배치를 확인하세요. 
+				효율적인 공간 활용과 자연 친화적인 설계를 통해 쾌적한 단지 환경을 제공합니다." />
+				<meta name="keywords" content="위파크 제주,위파크 제주 분양가,제주 오등봉공원 위파크,제주 위파크,제주시 오라이동 위파크,제주도 위파크,위파크제주모델하우스,제주위파크모델하우스" />
+				<link rel="canonical" href="https://www.bunyang-114.com/ComplexGuide/intro" />
+			</Helmet>
+
+
 			<Header isChanged={isScroll} />
 			<FixIcon />
 			<Bener title="단지안내" />

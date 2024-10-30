@@ -8,6 +8,8 @@ import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
+import { Helmet } from "react-helmet-async";
+
 import page1 from "../../assets/BusinessGuide/BusinessGuide1/page1.jpg";
 import tableImage from "../../assets/BusinessGuide/BusinessGuide1/tableImage.jpg";
 
@@ -58,6 +60,15 @@ const BusinessGuide1 = () => {
 
 	return (
 		<div className={styles.container}>
+			<Helmet>
+				<title>사업안내 - 위파크제주</title>
+				<meta name="description" content="위파크제주의 사업개요를 통해 프로젝트의 전반적인 개요와 개발 비전을 확인하세요. 
+				최신 건축 기술과 혁신적인 설계를 통해 쾌적한 생활 환경을 제공합니다." />
+				<meta name="keywords" content="위파크 제주,위파크 제주 분양가,제주 오등봉공원 위파크,제주 위파크,제주시 오라이동 위파크,제주도 위파크,위파크제주모델하우스,제주위파크모델하우스" />
+				<link rel="canonical" href="https://www.bunyang-114.com/BusinessGuide/intro" />
+			</Helmet>
+
+
 			<Header isChanged={isScroll} />
 			<FixIcon />
 			<Bener title="사업개요" />

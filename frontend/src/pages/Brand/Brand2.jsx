@@ -10,6 +10,7 @@ import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import Ready from "../../components/Ready/Ready";
 import FixIcon from "../../components/FixIcon/FixIcon";
+import { Helmet } from "react-helmet-async";
 
 const Brand2 = () => {
 	const menuContents = [{ title: "브랜드 소개", url: "/brand/intro" }, { title: "홍보 영상", url: "/brand/video" }]
@@ -41,6 +42,12 @@ const Brand2 = () => {
 
 	return (
 		<div className={styles.container}>
+			<Helmet>
+				<title>홍보 영상 - 위파크 제주</title>
+				<meta name="description" content="위파크제주의 홍보 영상을 확인해보세요" />
+				<meta name="keywords" content="위파크 제주,위파크 제주 분양가,제주 오등봉공원 위파크,제주 위파크,제주시 오라이동 위파크,제주도 위파크,위파크제주모델하우스,제주위파크모델하우스" />
+				<link rel="canonical" href="https://www.bunyang-114.com/brand/video" />
+			</Helmet>
 
 			<Header isChanged={isScroll} />
 			<FixIcon />

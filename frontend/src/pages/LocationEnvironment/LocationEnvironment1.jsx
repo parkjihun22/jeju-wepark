@@ -7,6 +7,8 @@ import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
+import { Helmet } from "react-helmet-async";
+
 import LocationSectionBox from "../../components/LocationSectionBox/LocationSectionBox";
 import section2Image1 from "../../assets/LocationEnvironment/LocationEnvironment1/session2-1.jpg";
 import section2Image2 from "../../assets/LocationEnvironment/LocationEnvironment1/session2-2.jpg";
@@ -62,6 +64,15 @@ const LocationEnvironment1 = () => {
 
     return (
         <div className={styles.container}>
+            <Helmet>
+				<title>입지안내 - 위파크제주</title>
+				<meta name="description" content="제주위파크의 중심에 위치한 푸르지오는 우수한 입지 조건과 탁월한 접근성을 자랑합니다. 
+				주변의 교육, 쇼핑, 엔터테인먼트 시설과의 근접성이 일상의 편리함을 보장합니다" />
+				<meta name="keywords" content="위파크 제주,위파크 제주 분양가,제주 오등봉공원 위파크,제주 위파크,제주시 오라이동 위파크,제주도 위파크,위파크제주모델하우스,제주위파크모델하우스" />
+				<link rel="canonical" href="https://www.bunyang-114.com/LocationEnvironment/intro" />
+			</Helmet>
+
+
             <Header isChanged={isScroll} />
             <FixIcon />
             <Bener title="입지환경" />
