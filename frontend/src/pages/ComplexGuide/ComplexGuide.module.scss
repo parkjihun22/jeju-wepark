@@ -85,51 +85,59 @@
 }
 
 .complexSelector {
-    display: flex;
-    justify-content: center;
-    margin: 1vw 0 0 0;
-    width: 80%;
-    flex-wrap: wrap;
+    display: flex; /* Flexbox 레이아웃 사용 */
+    justify-content: center; /* 중앙 정렬 */
+    margin: 1vw; /* 마진 설정 */
+    width: 80%; /* 전체 너비 설정 */
+    border-radius: 1px; /* 모서리 둥글게 설정 */
+    border: 1px solid #e0e0e0; /* 경계 설정 */
+    background-color: #f5f5f5; /* 밝은 회색 배경 */
 
     button {
-        flex: 1;
-        margin: 1vw 0 0 5px;
-        padding: 5px 0;
-        font-size: 2vw;
-        color: #c98f25;
-        cursor: pointer;
-        text-align: center;
-        border: 3px solid #c98f25;
-        border-radius: 1px;
-        background-color: #fefaf3;
-        transition: background-color 0.3s;
+        flex: 1; /* 버튼이 공간을 균등하게 차지함 */
+        padding: 13px 0; /* 위아래 패딩 설정 */
+        font-family: 'SUIT-Regular';
+        font-size: 1.3vw; /* 글자 크기 설정 */
+        color: #011d40; /* 남색 글자색 설정 */
+        cursor: pointer; /* 커서 포인터로 변경 */
+        text-align: center; /* 텍스트 중앙 정렬 */
+        border: none; /* 경계 없음 */
+        background-color: transparent; /* 배경 투명 */
+        transition: background-color 0.3s, color 0.3s; /* 호버 시 효과 추가 */
+        position: relative; /* 자식 요소 절대 위치 설정을 위한 상대 위치 */
+
+        &:first-child::after {
+            content: ''; /* 구분선 의사 요소 생성 */
+            position: absolute; /* 절대 위치 설정 */
+            right: 0; /* 오른쪽 정렬 */
+            top: 15%; /* 상단 위치 */
+            height: 70%; /* 높이 설정 */
+            width: 1px; /* 너비 설정 */
+            background-color: #e0e0e0; /* 구분선 색상 설정 */
+        }
 
         &:hover {
-            color: #ffffff;
-            background-color: #011d40;
+            background-color: #e0e0e0; /* 호버 시 배경색 변경 */
         }
 
-        &.activeButton {
-            background-color: #011d40; /* 선택된 버튼 색상 */
-            color: #ffffff; /* 텍스트 색상 변경 */
+        &.active-1 { /* 1단지 선택 시 */
+            background-color: #011d40; /* 남색 배경 */
+            color: #ffffff; /* 흰색 글자 */
         }
 
-        &.inactiveButton {
-            background-color: #fefaf3; /* 기본 배경색 */
-            color: #c98f25; /* 기본 텍스트 색상 */
+        &.active-2 { /* 2단지 선택 시 */
+            background-color: #c5b6a1; /* 금색 배경 */
+            color: #ffffff; /* 흰색 글자 */
         }
     }
-    
+
     @media (max-width: 900px) {
-        flex-direction: row;
-        margin: 4vw 0 0 0;
-        width: 90%;
-        
+        width: 90%; /* 모바일에서 너비 조정 */
+
         button {
-            width: calc(50% - 10px);
-            padding: 4px 0;
-            font-size: 2.5vw;
-            margin: 1px;
+            font-family: 'SUIT-Regular';
+            font-size: 2.5vw; /* 모바일에서 글자 크기 조정 */
+            padding: 5px 0; /* 위아래 패딩 조정 */
         }
     }
 }

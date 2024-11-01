@@ -80,21 +80,22 @@ const BusinessGuide1 = () => {
 			</div>
 			
 			<img className={styles.img1} src={page1} alt="사업개요 이미지" />
-
+			
 			<div className={styles.complexSelector}>
-				<button 
-					onClick={() => setSelectedComplex(1)}
-					className={`${styles.button} ${selectedComplex === 1 ? styles.active : ''}`}
-				>
-					1단지
-				</button>
-				<button 
-					onClick={() => setSelectedComplex(2)}
-					className={`${styles.button} ${selectedComplex === 2 ? styles.active : ''}`}
-				>
-					2단지
-				</button>
+    			<button 
+        			onClick={() => setSelectedComplex(1)}
+        			className={`${styles.button} ${selectedComplex === 1 ? styles['active-1'] : ''}`}
+    				>
+        		1단지
+    			</button>
+   				<button 
+        			onClick={() => setSelectedComplex(2)}
+        			className={`${styles.button} ${selectedComplex === 2 ? styles['active-2'] : ''}`}
+    >
+        		2단지
+    			</button>
 			</div>
+
 
 			<div className={styles.tableContainer}>
 				{!isMobile && <img className={styles.tableImg} src={tableImage} alt="Table Image" />}

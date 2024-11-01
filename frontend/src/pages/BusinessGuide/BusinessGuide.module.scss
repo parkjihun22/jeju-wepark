@@ -1,219 +1,243 @@
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Flexbox 레이아웃 사용 */
+    flex-direction: column; /* 세로 방향 정렬 */
+    justify-content: center; /* 세로 중앙 정렬 */
+    align-items: center; /* 가로 중앙 정렬 */
 }
 
 .bener {
-    width: 100vw;
-    height: auto;
+    width: 100vw; /* 전체 너비 설정 */
+    height: auto; /* 자동 높이 설정 */
 }
 
 .textBox {
-    margin: 3vw 0 0 0;
-    text-align: center;
-    font-size: 3vw;
+    margin: 3vw 0 0 0; /* 위쪽 마진 설정 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    font-size: 3vw; /* 글자 크기 설정 */
 
     div:nth-of-type(1) {
-        font-weight: 200;
+        font-weight: 200; /* 첫 번째 div의 글꼴 두께 설정 */
     }
 
     div:nth-of-type(2) {
-        margin-top: 0.5vw;
-        font-weight: 800;
-        color: #081b40;
+        margin-top: 0.5vw; /* 위쪽 마진 설정 */
+        font-weight: 800; /* 두 번째 div의 글꼴 두께 설정 */
+        color: #081b40; /* 글자 색상 설정 */
     }
 }
 
 .img1,
 .img2 {
-    margin: 3vw 0 1vw 0; // 이미지 간격 설정
-    width: 80%;
+    margin: 3vw 0 1vw 0; /* 이미지 간격 설정 */
+    width: 80%; /* 이미지 너비 설정 */
 
     @media (max-width: 900px) {
-        width: 90%;
+        width: 90%; /* 모바일에서 너비 90% */
     }
 }
 
 .imageContainer {
-    display: flex;                /* Flexbox 사용 */
-    justify-content: space-around; /* 이미지 사이의 간격 조정 */
-    align-items: flex-start;     /* 위쪽 정렬 */
-    flex-wrap: wrap;             /* 이미지가 넘칠 경우 줄바꿈 허용 */
-    margin: 3vw 0;               /* 전체 마진 */
-    padding: 1px; /* 전체 패딩 조정 */
+    display: flex; /* Flexbox 레이아웃 사용 */
+    justify-content: space-around; /* 이미지 간격 조정 */
+    align-items: flex-start; /* 위쪽 정렬 */
+    flex-wrap: wrap; /* 넘칠 경우 줄바꿈 허용 */
+    margin: 3vw 0; /* 전체 마진 설정 */
+    padding: 1px; /* 전체 패딩 설정 */
 }
 
 .imageBox {
     width: 45%; /* 각 이미지 박스의 너비 설정 */
-    overflow: hidden; 
-    position: relative; 
-    
+    overflow: hidden; /* 넘치는 내용 숨김 */
+    position: relative; /* 자식 요소 절대 위치 설정을 위한 상대 위치 */
+
     @media (max-width: 900px) {
         width: 100%; /* 모바일에서는 너비 100% */
     }
 }
 
 .imageBox img {
-    width: 100%;                /* 이미지가 박스 너비에 맞게 확장 */
-    height: auto;               /* 비율에 맞게 높이 자동 조정 */
+    width: 100%; /* 이미지가 박스 너비에 맞게 확장 */
+    height: auto; /* 비율에 맞게 높이 자동 조정 */
 }
 
 .imageBox:before,
 .imageBox:after {
-    content: "";                /* 의사 요소 생성 */
-    position: absolute;         /* 절대 위치 설정 */
-    top: 0;
-    bottom: 0;
-    width: 50%;                 /* 각각의 이미지 영역을 반으로 나눔 */
+    content: ""; /* 의사 요소 생성 */
+    position: absolute; /* 절대 위치 설정 */
+    top: 0; /* 상단 정렬 */
+    bottom: 0; /* 하단 정렬 */
+    width: 50%; /* 각각의 이미지 영역을 반으로 나눔 */
 }
 
 .imageBox:before {
-    left: 0;                    /* 왼쪽 절반 */
+    left: 0; /* 왼쪽 절반 */
 }
 
 .imageBox:after {
-    right: 0;                   /* 오른쪽 절반 */
+    right: 0; /* 오른쪽 절반 */
 }
 
 .tableContainer {
-    display: flex;
-    flex-direction: row;
-    margin: 0.5vw 0;
-    width: 80%;
+    display: flex; /* Flexbox 레이아웃 사용 */
+    flex-direction: row; /* 가로 방향 정렬 */
+    margin: 0.5vw 0; /* 상하 마진 설정 */
+    width: 80%; /* 전체 너비 설정 */
 
     @media (max-width: 900px) {
-        margin: 2vw 0 4vw 0; // 왼쪽에 약간의 여백 추가
-        width: 90%;
+        margin: 2vw 0 4vw 0; /* 모바일에서 마진 조정 */
+        width: 90%; /* 모바일에서 너비 90% */
     }
 
     .tableImg {
         @media (max-width: 900px) {
-            width: 15vw;
+            width: 15vw; /* 모바일에서 이미지 너비 설정 */
         }
     }
 
     .projectTable {
-        width: 100%;
-        border-collapse: collapse;
+        width: 100%; /* 테이블 너비 100% */
+        border-collapse: collapse; /* 테이블 경계 합치기 */
 
         .label {
-            width: 8vw;
-            background-color: #fffbf4;
-            text-align: center;
-            font-size: 1.1vw;
-            color: #ad8844;
+
+            width: 8vw; /* 라벨 너비 설정 */
+            background-color: #fffbf4; /* 배경색 설정 */
+            text-align: center; /* 텍스트 중앙 정렬 */
+            font-size: 1.1vw; /* 글자 크기 설정 */
+            color: #ad8844; /* 글자 색상 설정 */
 
             @media (max-width: 900px) {
-                width: 15vw;
-                padding: 1.5vw 0;
-                font-size: 2.5vw;
+                width: 15vw; /* 모바일에서 너비 조정 */
+                padding: 1.5vw 0; /* 패딩 설정 */
+                font-family: 'SUIT-Regular';
+                font-size: 2vw; /* 모바일에서 글자 크기 조정 */
             }
         }
 
         td {
-            border: 1px solid #d3c7bb;
-            font-size: 1vw;
+            border: 1px solid #d3c7bb; /* 테이블 셀 경계 설정 */
+            font-family: 'SUIT-Regular';
+            font-size: 1vw; /* 글자 크기 설정 */
 
             @media (max-width: 900px) {
-                font-size: 2vw;
-                line-height: 6vw;
+                font-size: 2vw; /* 모바일에서 글자 크기 조정 */
+                line-height: 6vw; /* 줄 높이 설정 */
             }
         }
 
         .contents {
-            padding: 0 2vw 0 1vw;
+            padding: 0 2vw 0 1vw; /* 패딩 설정 */
 
             @media (max-width: 900px) {
-                padding: 0 2vw 0 2vw;
+                padding: 0 2vw 0 2vw; /* 모바일에서 패딩 조정 */
             }
         }
     }
 }
 
 .commonBox {
-    margin: 0 0 0 0;
-    width: 80%;
-    background-color: #f8f4f0;
-    border: 1px solid #e9e2da;
+    margin: 0; /* 마진 설정 */
+    width: 80%; /* 전체 너비 설정 */
+    background-color: #f8f4f0; /* 배경색 설정 */
+    border: 1px solid #e9e2da; /* 경계 설정 */
 
     @media (max-width: 900px) {
-        width: 90%;
+        width: 90%; /* 모바일에서 너비 조정 */
     }
 
     .notice {
-        padding: 0 1vw;
-        line-height: 1.1vw;
-        font-size: 1vw;
-        color: #ada8a2;
+        padding: 0 1vw; /* 패딩 설정 */
+        line-height: 1.1vw; /* 줄 높이 설정 */
+        font-family: 'Pretendard-Regular', sans-serif;
+        font-size: 1vw; /* 글자 크기 설정 */
+        color: #ada8a2; /* 글자 색상 설정 */
 
         @media (max-width: 900px) {
-            padding: 0 3vw;
-            font-size: 2.5vw;
-            line-height: 3vw;
-            text-indent: -2vw;
+            padding: 0 3vw; /* 모바일에서 패딩 조정 */
+            font-size: 2.5vw; /* 모바일에서 글자 크기 조정 */
+            line-height: 3vw; /* 줄 높이 설정 */
+            text-indent: -2vw; /* 텍스트 들여쓰기 설정 */
         }
     }
 
     .notice:nth-of-type(1) {
-        padding-top: 1vw;
-        padding-bottom: 1vw;
+        padding-top: 1vw; /* 첫 번째 노티스 위쪽 패딩 설정 */
+        padding-bottom: 1vw; /* 첫 번째 노티스 아래쪽 패딩 설정 */
     }
 
     .notice:nth-of-type(2),
     .notice:nth-of-type(3),
     .notice:nth-of-type(4),
     .notice:nth-of-type(5) {
-        padding-bottom: 1vw;
+        padding-bottom: 1vw; /* 나머지 노티스 아래쪽 패딩 설정 */
     }
 
     .notice:nth-of-type(6) {
-        padding-bottom: 1vw;
+        padding-bottom: 1vw; /* 마지막 노티스 아래쪽 패딩 설정 */
     }
 }
 
 .complexSelector {
-    display: flex;
+    display: flex; /* Flexbox 레이아웃 사용 */
     justify-content: center; /* 중앙 정렬 */
-    margin: 1vw 0;
-    width: 80%; /* 버튼 영역의 너비 설정 */
-    flex-wrap: wrap; /* 버튼이 줄바꿈 가능하도록 설정 */
+    margin: 1vw; /* 마진 설정 */
+    width: 80%; /* 전체 너비 설정 */
+    border-radius: 1px; /* 모서리 둥글게 설정 */
+    border: 1px solid #e0e0e0; /* 경계 설정 */
+    background-color: #f5f5f5; /* 밝은 회색 배경 */
 
     button {
-        flex: 1; /* 버튼을 동일한 비율로 늘립니다 */
-        margin: 0 5px; /* 버튼 사이 여백 */
-        padding: 5px 0; /* 버튼 상하 여백 */
-        font-size: 2vw; /* 폰트 크기 */
-        color: #c98f25;
-        cursor: pointer;
-        text-align: center; /* 텍스트 가운데 정렬 */
-        border: 3px solid #c98f25; /* 테두리 추가 */
-        border-radius: 1px; /* 모서리 둥글게 */
-        background-color: #fefaf3; /* 기본 배경색 */
-        transition: background-color 0.3s; /* 배경색 전환 효과 */
+        flex: 1; /* 버튼이 공간을 균등하게 차지함 */
+        padding: 13px 0; /* 위아래 패딩 설정 */
+        font-family: 'SUIT-Regular';
+        font-size: 1.3vw; /* 글자 크기 설정 */
+        color: #011d40; /* 남색 글자색 설정 */
+        cursor: pointer; /* 커서 포인터로 변경 */
+        text-align: center; /* 텍스트 중앙 정렬 */
+        border: none; /* 경계 없음 */
+        background-color: transparent; /* 배경 투명 */
+        transition: background-color 0.3s, color 0.3s; /* 호버 시 효과 추가 */
+        position: relative; /* 자식 요소 절대 위치 설정을 위한 상대 위치 */
+
+        &:first-child::after {
+            content: ''; /* 구분선 의사 요소 생성 */
+            position: absolute; /* 절대 위치 설정 */
+            right: 0; /* 오른쪽 정렬 */
+            top: 15%; /* 상단 위치 */
+            height: 70%; /* 높이 설정 */
+            width: 1px; /* 너비 설정 */
+            background-color: #e0e0e0; /* 구분선 색상 설정 */
+        }
 
         &:hover {
-            color: #ffffff;
-            background-color: #011d40; /* 호버 시 배경 색상 변경 */
+            background-color: #e0e0e0; /* 호버 시 배경색 변경 */
         }
 
-        &.active {
-            background-color: #011d40; /* 선택된 버튼 색상 */
-            color: #ffffff; /* 텍스트 색상 변경 */
+        &.active-1 { /* 1단지 선택 시 */
+            background-color: #011d40; /* 남색 배경 */
+            color: #ffffff; /* 흰색 글자 */
+        }
+
+        &.active-2 { /* 2단지 선택 시 */
+            background-color: #c5b6a1; /* 금색 배경 */
+            color: #ffffff; /* 흰색 글자 */
         }
     }
-    
+
     @media (max-width: 900px) {
-        flex-direction: row; /* 모바일에서도 가로 정렬 유지 */
-        margin: 0 0 0 0;
-        width: 90%; /* 버튼 영역의 너비를 100%로 설정 */
-        
+        width: 90%; /* 모바일에서 너비 조정 */
+
         button {
-            width: calc(50% - 10px); /* 버튼의 가로 크기를 50%로 설정하고 여백 조정 */
-            padding: 4px 0; /* 모바일에서 버튼 상하 여백 조정 */
-            font-size: 2.5vw; /* 모바일에서 폰트 크기 조정 */
-            margin: 1px; /* 버튼 사이 여백 조정 */
+            font-family: 'SUIT-Regular';
+            font-size: 2.5vw; /* 모바일에서 글자 크기 조정 */
+            padding: 5px 0; /* 위아래 패딩 조정 */
         }
     }
 }

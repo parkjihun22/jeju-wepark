@@ -59,20 +59,20 @@ const ComplexGuide1 = () => {
 				<div>초대형 복합문화 주거도시의 시작</div>
 				<div>한라산 아래 가장 큰 랜드마크 제주 위파크</div>
 			</div>
-
+			
 			<div className={styles.complexSelector}>
-				<button 
-					onClick={() => setSelectedComplex(1)}
-					className={selectedComplex === 1 ? styles.activeButton : styles.inactiveButton}
-				>
-					1단지
-				</button>
-				<button 
-					onClick={() => setSelectedComplex(2)}
-					className={selectedComplex === 2 ? styles.activeButton : styles.inactiveButton}
-				>
-					2단지
-				</button>
+    			<button 
+        			onClick={() => setSelectedComplex(1)}
+        			className={`${styles.button} ${selectedComplex === 1 ? styles['active-1'] : ''}`}
+    				>
+        		1단지
+    			</button>
+   				<button 
+        			onClick={() => setSelectedComplex(2)}
+        			className={`${styles.button} ${selectedComplex === 2 ? styles['active-2'] : ''}`}
+    >
+        		2단지
+    			</button>
 			</div>
 
 			
