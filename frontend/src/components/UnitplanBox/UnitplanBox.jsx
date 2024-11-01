@@ -19,8 +19,6 @@ const contents = [
     { type: '108B', src: room84B },
     { type: '129', src: room129 },
     { type: '166P', src: room166P },
-    { type: '183P', src: room183P },
-    { type: '197P', src: room197P },
 ]
 
 const UnitplanBox = () => {
