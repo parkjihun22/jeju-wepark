@@ -60,7 +60,7 @@ const ComplexGuide1 = () => {
 				<div>한라산 아래 가장 큰 랜드마크 제주 위파크</div>
 			</div>
 			
-			<div className={styles.complexSelector}>
+			<div className={styles.complexSelector2}>
     			<button 
         			onClick={() => setSelectedComplex(1)}
         			className={`${styles.button} ${selectedComplex === 1 ? styles['active-1'] : ''}`}
