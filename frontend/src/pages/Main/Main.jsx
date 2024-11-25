@@ -16,7 +16,7 @@ import section3_Image1 from "../../assets/Main/section3-img1.png";
 import section4_Image1 from "../../assets/Main/section4-img1.png";
 import section4_Image2 from "../../assets/Main/section4-img2.png";
 import section4_Image3 from "../../assets/Main/section4-img3.png";
-import section4_Image4 from "../../assets/Main/section4-img2.png";
+import section4_Image4 from "../../assets/Main/section4-img4.png";
 import section5_Image1 from "../../assets/Main/section5-img1.jpg";
 // import section4_Image2 from "../../assets/Main/section4-img2.jpg";
 // import section4_Image3 from "../../assets/Main/section4-img3.jpg";
