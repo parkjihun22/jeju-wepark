@@ -42,12 +42,7 @@ const Brand2 = () => {
 
 	return (
 		<div className={styles.container}>
-			<Helmet>
-				<title>홍보 영상 - 위파크 제주</title>
-				<meta name="description" content="위파크제주의 홍보 영상을 확인해보세요" />
-				<meta name="keywords" content="제주 위파크" />
-				<link rel="canonical" href="http://www.apt-789.com/Brand/video" />
-			</Helmet>
+			
 
 			<Header isChanged={isScroll} />
 			<FixIcon />

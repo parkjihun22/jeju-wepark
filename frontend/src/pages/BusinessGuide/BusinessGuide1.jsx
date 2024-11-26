@@ -60,13 +60,7 @@ const BusinessGuide1 = () => {
 
 	return (
 		<div className={styles.container}>
-			<Helmet>
-				<title>사업안내 - 위파크제주</title>
-				<meta name="description" content="위파크제주의 사업개요를 통해 프로젝트의 전반적인 개요와 개발 비전을 확인하세요. 
-				최신 건축 기술과 혁신적인 설계를 통해 쾌적한 생활 환경을 제공합니다." />
-				<meta name="keywords" content="제주 위파크" />
-				<link rel="canonical" href="http://www.apt-789.com/BusinessGuide/intro" />
-			</Helmet>
+			
 
 
 			<Header isChanged={isScroll} />

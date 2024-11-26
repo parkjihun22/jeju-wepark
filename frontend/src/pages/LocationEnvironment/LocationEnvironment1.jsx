@@ -64,14 +64,7 @@ const LocationEnvironment1 = () => {
 
     return (
         <div className={styles.container}>
-            <Helmet>
-				<title>입지안내 - 위파크제주</title>
-				<meta name="description" content="제주위파크의 중심에 위치한 푸르지오는 우수한 입지 조건과 탁월한 접근성을 자랑합니다. 
-				주변의 교육, 쇼핑, 엔터테인먼트 시설과의 근접성이 일상의 편리함을 보장합니다" />
-				<meta name="keywords" content="제주 위파크" />
-				<link rel="canonical" href="http://www.apt-789.com/LocationEnvironment/intro" />
-			</Helmet>
-
+            
 
             <Header isChanged={isScroll} />
             <FixIcon />

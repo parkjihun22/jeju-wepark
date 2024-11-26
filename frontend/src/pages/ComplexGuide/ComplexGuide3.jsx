@@ -42,13 +42,7 @@ const ComplexGuide3 = () => {
 
 
 		<div className={styles.container}>
-			<Helmet>
-				<title>커뮤니티 - 위파크제주</title>
-				<meta name="description" content="제주위파크의 커뮤니티센터에서 다양한 생활 편의 시설을 이용해보세요. 
-					헬스장, 독서실, 카페 등 다양한 시설이 마련되어 있어 주민들의 편리한 생활을 돕습니다" />
-				<meta name="keywords" content="제주 위파크" />
-				<link rel="canonical" href="http://www.apt-789.com/ComplexGuide/community" />
-			</Helmet>
+			
 			
 			<Header isChanged={isScroll} />
 			<FixIcon />

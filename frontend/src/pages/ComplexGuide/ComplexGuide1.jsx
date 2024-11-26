@@ -41,13 +41,7 @@ const ComplexGuide1 = () => {
 
 	return (
 		<div className={styles.container}>
-			<Helmet>
-				<title>단지배치도 - 위파크제주</title>
-				<meta name="description" content="위파크제주의 단지배치도를 통해 단지의 전체 구조와 배치를 확인하세요. 
-				효율적인 공간 활용과 자연 친화적인 설계를 통해 쾌적한 단지 환경을 제공합니다." />
-				<meta name="keywords" content="제주 위파크" />
-				<link rel="canonical" href="http://www.apt-789.com/ComplexGuide/intro" />
-			</Helmet>
+			
 
 
 			<Header isChanged={isScroll} />
