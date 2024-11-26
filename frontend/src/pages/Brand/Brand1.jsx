@@ -45,7 +45,7 @@ const Brand1 = () => {
 			<Helmet>
 				<title>브랜드 소개 - 제주위파크</title>
 				<meta name="description" content="위파크제주는 품질과 혁신을 바탕으로 고객에게 최상의 주거 경험을 제공하는 브랜드입니다. 세심한 주거 설계와 고객 중심의 서비스를 통해 제주도의 새로운 주거 문화를 선도합니다." />
-				<meta name="keywords" content="위파크 제주,위파크 제주 분양가,제주 오등봉공원 위파크,제주 위파크,제주시 오라이동 위파크,제주도 위파크,위파크제주모델하우스,제주위파크모델하우스" />
+				<meta name="keywords" content="제주 위파크" />
 				<link rel="canonical" href="http://www.apt-789.com/Brand/intro" />
 			</Helmet>
 			

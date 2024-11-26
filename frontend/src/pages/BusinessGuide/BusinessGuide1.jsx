@@ -64,7 +64,7 @@ const BusinessGuide1 = () => {
 				<title>사업안내 - 위파크제주</title>
 				<meta name="description" content="위파크제주의 사업개요를 통해 프로젝트의 전반적인 개요와 개발 비전을 확인하세요. 
 				최신 건축 기술과 혁신적인 설계를 통해 쾌적한 생활 환경을 제공합니다." />
-				<meta name="keywords" content="위파크 제주,위파크 제주 분양가,제주 오등봉공원 위파크,제주 위파크,제주시 오라이동 위파크,제주도 위파크,위파크제주모델하우스,제주위파크모델하우스" />
+				<meta name="keywords" content="제주 위파크" />
 				<link rel="canonical" href="http://www.apt-789.com/BusinessGuide/intro" />
 			</Helmet>
 

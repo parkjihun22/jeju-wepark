@@ -44,7 +44,7 @@ const ComplexGuide1 = () => {
 				<title>호수배치도 - 위파크제주</title>
 				<meta name="description" content="제주위파크의 세심하게 계획된 동호수배치도를 통해 각 유닛의 위치와 조망권을 확인하세요. 
 				효율적인 동선과 최적의 개인 공간을 제공합니다." />
-				<meta name="keywords" content="위파크 제주,위파크 제주 분양가,제주 오등봉공원 위파크,제주 위파크,제주시 오라이동 위파크,제주도 위파크,위파크제주모델하우스,제주위파크모델하우스" />
+				<meta name="keywords" content="제주 위파크" />
 				<link rel="canonical" href="http://www.apt-789.com/ComplexGuide/detailintro" />
 			</Helmet>
 
