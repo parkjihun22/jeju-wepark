@@ -156,8 +156,12 @@ const Main = () => {
 					{!isOpenPopup2 && isOpenPopup3 && <Popup onClosed={() => setIsOpenPopup3(false)} popupImage={isMobile ? mobilePopupPage3 : popupPage3} numbering={3} />}
 
 					<div className={styles.imageContainer}>
+<<<<<<< HEAD:src/pages/Main/Main.jsx
 						<img src={mainImage} className={styles.mainImage} />
 						<div className={styles.overlay}></div>
+=======
+						<img src={mainImage} className={styles.mainImage} alt="main image10" />
+>>>>>>> d1436f089e3c7a656d158ccbca33e52a230fe88f:frontend/src/pages/Main/Main.jsx
 						<div className={styles.mainImageTextBox}>
 							<div className={styles.mainImageTextSub}>브레인시티가 기다린 단 하나의 푸르지오</div>
 							<div className={styles.mainImageTitleBox}>
@@ -232,7 +236,24 @@ const Main = () => {
 
 					<div className={styles.section}>
 						<div className={styles.section3}>
+<<<<<<< HEAD:src/pages/Main/Main.jsx
 							{section3Contents.map((section, index) => (
+=======
+							<div className={styles.textBox}>
+								<div className={`${styles.text1} fadeUpRepeat`}>완벽한 생활에서 준비된 미래까지</div>
+								<div className={`${styles.text2} fadeUpRepeat`}>기대한 모든 프리미엄이<br />제주 위파크에서 펼쳐집니다</div>
+								<div className={`${styles.text3} fadeUpRepeat`}>SPECIAL PLAN</div>
+								<div className={`${styles.text4} fadeUpRepeat`}>살수록 자부심이 차원이 다른 <br />프리미엄 주거라이프를 실현합니다</div>
+								<div className={`${styles.text5} fadeUpRepeat`}>주거의 품격과 가치를 높이는 <span>특화설계</span> <br />안전한 이동을 위한 세심한 <span>단지설계</span> <br />편리한 생활을 위한 최적의 <span>공간설계</span></div>
+							</div>
+							<img src={section3_Image1} alt="main image9" />
+						</div>
+					</div>
+
+					<div className={styles.section}>
+						<div className={styles.section4}>
+							{section4Contents.map((section, index) => (
+>>>>>>> d1436f089e3c7a656d158ccbca33e52a230fe88f:frontend/src/pages/Main/Main.jsx
 								<div key={index} className={styles.box}>
 									<img src={section.imgSrc} alt={section.title} />
 									<div className={styles.boxTitle}>{section.title}</div>
@@ -249,7 +270,11 @@ const Main = () => {
 					<div className={styles.section}>
 						<div className={styles.section4}>
 							<div className={styles.imageBox}>
+<<<<<<< HEAD:src/pages/Main/Main.jsx
 								<img src={section4_Image1} />
+=======
+								<img src={section5_Image1} alt="main image8" />
+>>>>>>> d1436f089e3c7a656d158ccbca33e52a230fe88f:frontend/src/pages/Main/Main.jsx
 
 								<div className={styles.text1}>브레인시티 푸르지오</div>
 								<div className={styles.text2}>THE NATURAL NOBILITY</div>
@@ -342,6 +367,11 @@ const Main = () => {
 								브레인시티 푸르지오가 함께합니다
 								</div>
 							</div>
+<<<<<<< HEAD:src/pages/Main/Main.jsx
+=======
+
+							<img src={section2_Image1} alt="main image2" />
+>>>>>>> d1436f089e3c7a656d158ccbca33e52a230fe88f:frontend/src/pages/Main/Main.jsx
 						</div>
 
 						<img src={section8Img3} alt="Section 8 Image" />
@@ -356,7 +386,11 @@ const Main = () => {
 							<div className={`${styles.text5} fadeUpRepeat`}>주거의 품격과 가치를 높이는 <span>특화설계</span> <br />안전한 이동을 위한 세심한 <span>단지설계</span> <br />편리한 생활을 위한 최적의 <span>공간설계</span></div>
 						</div>
 
+<<<<<<< HEAD:src/pages/Main/Main.jsx
 						<img src={section2_Image1} />
+=======
+						<img src={section3_Image1} alt="main image3" />
+>>>>>>> d1436f089e3c7a656d158ccbca33e52a230fe88f:frontend/src/pages/Main/Main.jsx
 					</div>
 
 					<div className={styles.container4}>
@@ -367,8 +401,13 @@ const Main = () => {
 						</Link>
 					</div>
 
+<<<<<<< HEAD:src/pages/Main/Main.jsx
 					<div className={styles.container6}>
 						{section3Contents.map((section, idx) => (
+=======
+					<div className={styles.container6}> 
+						{section4Contents.map((section, idx) => (
+>>>>>>> d1436f089e3c7a656d158ccbca33e52a230fe88f:frontend/src/pages/Main/Main.jsx
 							<MobileSectionBox
 								key={idx}
 								type={idx % 2 === 0 ? 'left' : 'right'}
@@ -381,7 +420,11 @@ const Main = () => {
 					</div>
 
 					<div className={styles.container5}>
+<<<<<<< HEAD:src/pages/Main/Main.jsx
 						<img src={section4_Image1} />
+=======
+						<img src={section5_Image1} alt="main image5" />
+>>>>>>> d1436f089e3c7a656d158ccbca33e52a230fe88f:frontend/src/pages/Main/Main.jsx
 
 						<div className={styles.text1}>브레인시티 푸르지오</div>
 						<div className={styles.text2}>THE NATURAL NOBILITY</div>
@@ -390,8 +433,13 @@ const Main = () => {
 
 					<div className={styles.container2}>
 						<div>
+<<<<<<< HEAD:src/pages/Main/Main.jsx
 							<img src={section1_Image1} />
 							<Link to="/Brand/intro" className={styles.btn}> 브랜드 소개 {'>'} </Link>
+=======
+							<img src={section1_Image1} alt="main image6" />
+							<Link to="brand/intro" className={styles.btn}> 브랜드 소개 {'>'}</Link>
+>>>>>>> d1436f089e3c7a656d158ccbca33e52a230fe88f:frontend/src/pages/Main/Main.jsx
 						</div>
 					</div>
 					<div className={styles.section}>
