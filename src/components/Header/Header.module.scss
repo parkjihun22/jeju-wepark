@@ -31,7 +31,7 @@
         top: 25%;
         left: 2%;
         transform: translateY(-50%, -50%);
-        width: 15vw;
+        width: 8vw;
         height: auto;
 
         @media (max-width: 900px) {
@@ -124,7 +124,7 @@
     }
 
     .scrolledPhoneNumber {
-        color: #053b02;
+        color: #095052;
         font-weight: bold;
     }
 }
@@ -149,13 +149,13 @@
 
     img {
         position: absolute;
-        top: 10%;
+        top: 8%;
         left: 2%;
-        width: 15vw;
+        width: 8vw;
         height: auto;
 
         @media (max-width: 900px) {
-            width: 8rem;
+            width: 3rem;
         }
     }
 
@@ -271,7 +271,7 @@
     text-decoration: none;
 
     .logo {
-        width: 35vw;
+        width: 23vw;
     }
 
     .icon {
