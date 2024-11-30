@@ -9,12 +9,12 @@ const Popup = ({ onClosed, popupImage, numbering }) => {
     const isPopupShown = cookies[`Popup_Cookie${numbering}`];  // 쿠키 확인
     const isMobile = useMediaQuery({ query: '(max-width: 900px)' });
 
-    // 쿠키의 유효기한을 지정하는 함수 (2시간)
-    const getExpiredDate = (hours) => {
-        const date = new Date();  // 현재 시간을 받아온다
-        date.setHours(date.getHours() + hours);  // 현재 시간에 hours만큼 더함
-        return date;
-    };
+    // 쿠키의 유효기한을 지정하는 함수 (당일 안보이게 하기)
+const getExpiredDate = () => {
+    const date = new Date(); // 현재 날짜와 시간을 가져옵니다.
+    date.setHours(23, 59, 59, 999); // 오늘의 마지막 시간(23:59:59.999)으로 설정합니다.
+    return date;
+};
 
     // 팝업을 닫는 함수
     const closePopup = (type) => {
