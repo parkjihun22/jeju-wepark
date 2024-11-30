@@ -40,10 +40,6 @@ const BusinessGuide2 = () => {
 
 	return (
 		<div className={styles.container}>
-<<<<<<< HEAD:src/pages/BusinessGuide/BusinessGuide2.jsx
-=======
-			
->>>>>>> d1436f089e3c7a656d158ccbca33e52a230fe88f:frontend/src/pages/BusinessGuide/BusinessGuide2.jsx
 			
 
 			<Header isChanged={isScroll} />
