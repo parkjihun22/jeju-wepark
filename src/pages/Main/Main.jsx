@@ -161,7 +161,7 @@ const Main = () => {
 						<div className={styles.mainImageTextBox}>
 							<div className={styles.mainImageTextSub}>브레인시티가 기다린 단 하나의 푸르지오</div> 
 							<div className={styles.mainImageTitleBox}>
-								<div className={styles.mainImageText}>평택 브레인시티 푸르지오</div>
+								<div className={styles.mainImageText}>브레인시티 푸르지오</div>
 								<div className={styles.mainImageLine}></div>
 								<div className={styles.mainImageText}>12월 13일 GRAND OPEN</div>
 							</div>
@@ -267,14 +267,14 @@ const Main = () => {
 						<div className={styles.section9}>
 						<div className={styles.textBox}>
 								<div className={styles.title}>
-									브레인시티 푸르지오<br />
-									<span>견본주택 오시는길</span>
+									브레인시티푸르지오 모델하우스 <br />
+									<span> 오시는길</span>
 								</div>
 								<div className={styles.subTitle}>
 									<div className={styles.textLine}></div>
 									<div className={styles.subText}>
 										찬란한 비전에 완벽한 주거가치까지 더해<br />
-										평택 브레인시티 푸르지오가 함께합니다  
+										브레인시티 푸르지오가 함께합니다  
 									</div>
 								</div>
 							</div>
@@ -307,7 +307,7 @@ const Main = () => {
 								브레인시티가 기다린<br />
 								단 하나의 푸르지오
 								</div>
-							<div className={styles.mainImageText}>평택 브레인시티 푸르지오</div>
+							<div className={styles.mainImageText}>브레인시티 푸르지오</div>
 						</div>
 					</div>
 
@@ -351,7 +351,7 @@ const Main = () => {
 							<div className={`${styles.text1} fadeUpRepeat`}>완벽한 생활에서 준비된 미래까지</div>
 							<div className={`${styles.text2} fadeUpRepeat`}>기대한 모든 프리미엄이<br />평택 브레인시티 푸르지오에서 펼쳐집니다</div>
 							<div className={`${styles.text3} fadeUpRepeat`}>SPECIAL PLAN</div>
-							<div className={`${styles.text4} fadeUpRepeat`}>살수록 자부심이 차원이 다른 <br />프리미엄 주거라이프를 실현합니다</div>
+							<div className={`${styles.text4} fadeUpRepeat`}>살수록 자부심이 차원이 다른 <br />프리미엄 주거라이프를 브레인시티 푸르지오 모델하우스에서 확인하세요</div>
 							<div className={`${styles.text5} fadeUpRepeat`}>주거의 품격과 가치를 높이는 <span>특화설계</span> <br />안전한 이동을 위한 세심한 <span>단지설계</span> <br />편리한 생활을 위한 최적의 <span>공간설계</span></div>
 						</div>
 
