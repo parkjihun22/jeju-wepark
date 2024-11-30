@@ -11,7 +11,7 @@ import UnitplanBox from "../../components/UnitplanBox/UnitplanBox";
 import Popup from "../../components/MobilePopup/Popup";
 import MobileSectionBox from "../../components/MobileSectionBox/MobileSectionBox";
 
-import mainImage from "../../assets/Main/Main1.jpg";
+import mainImage from "../../assets/Main/Main1.jpg"; 
 import section1_Image1 from "../../assets/Main/section1-img1.jpg";
 import section2_Image1 from "../../assets/Main/section2-img1.jpg";
 import section3_Image1 from "../../assets/Main/section3-img1.png";
