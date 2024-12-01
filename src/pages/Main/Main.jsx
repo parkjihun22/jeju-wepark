@@ -267,8 +267,8 @@ const Main = () => {
 						<div className={styles.section9}>
 						<div className={styles.textBox}>
 								<div className={styles.title}>
-									브레인시티푸르지오 모델하우스 <br />
-									<span> 오시는길</span>
+									브레인시티푸르지오
+									<span>모델하우스 오시는길</span>
 								</div>
 								<div className={styles.subTitle}>
 									<div className={styles.textLine}></div>
