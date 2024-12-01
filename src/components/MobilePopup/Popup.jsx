@@ -40,7 +40,7 @@ const Popup = ({ onClosed, popupImage, numbering }) => {
                 {/* 각 이미지에 맞는 usemap 설정 */}
                 <img
                     className={styles.popupImg}
-                    style={!isMobile && numbering === 1 ? { width: '40vw'} : {}}
+                    style={!isMobile && numbering === 1 ? { width: '25vw'} : {}}
                     src={popupImage}
                     alt={`hansinduhyue-popup-image${numbering}`}
                     useMap={`#image-map${numbering}`}  // 각 이미지마다 다른 맵을 사용
