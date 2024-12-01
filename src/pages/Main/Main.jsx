@@ -267,14 +267,14 @@ const Main = () => {
 						<div className={styles.section9}>
 						<div className={styles.textBox}>
 								<div className={styles.title}>
-									브레인시티푸르지오
-									<span>모델하우스 오시는길</span>
+									브레인시티 푸르지오<br />
+									<span>견본주택 오시는길</span>
 								</div>
 								<div className={styles.subTitle}>
 									<div className={styles.textLine}></div>
 									<div className={styles.subText}>
 										찬란한 비전에 완벽한 주거가치까지 더해<br />
-										브레인시티 푸르지오가 함께합니다  
+										평택 브레인시티 푸르지오가 함께합니다  
 									</div>
 								</div>
 							</div>
