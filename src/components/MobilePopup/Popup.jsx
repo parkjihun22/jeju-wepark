@@ -9,23 +9,29 @@ const Popup = ({ onClosed, popupImage, numbering }) => {
     const isPopupShown = cookies[`Popup_Cookie${numbering}`];  // 쿠키 확인
     const isMobile = useMediaQuery({ query: '(max-width: 900px)' });
 
-    // 쿠키의 유효기한을 지정하는 함수 (당일 안보이게 하기)
-const getExpiredDate = () => {
-    const date = new Date(); // 현재 날짜와 시간을 가져옵니다.
-    date.setHours(23, 59, 59, 999); // 오늘의 마지막 시간(23:59:59.999)으로 설정합니다.
-    return date;
-};
-
-    // 팝업을 닫는 함수
-    const closePopup = (type) => {
-        if (type === 1) {
-            // "오늘 하루 보지 않기" 버튼 클릭 시
-            const expires = getExpiredDate(2);  // 2시간 동안 쿠키 유지
-            setCookie(`Popup_Cookie${numbering}`, true, { path: '/', expires });
-        }
-        // 팝업을 닫기 (쿠키 설정 후 또는 닫기 버튼 클릭 시)
-        setTimeout(() => onClosed(false), 100);  // 0.1초 후 팝업 닫기
-    };
+    // 쿠키의 유효기한을 지정하는 함수 (2시간)
+        // 쿠키의 유효기한을 지정하는 함수
+        const getExpiredDate = (days) => {
+            const date = new Date(); // 현재 시간을 받아온다
+            date.setDate(date.getDate() + days);
+            // 현재 시간의 날짜에 days 만큼 더하여 유효기간을 지정
+            return date;
+        };
+    
+        // 닫기 버튼을 누를 때마다 실행될 코드.
+        useEffect(() => {
+            if (type === 1) {
+                // 쿠키를 저장하는 핵심 코드
+                const expires = getExpiredDate(1);
+                setCookie(`Popup_Cookie${numbering}`, true, { path: '/', expires });
+                onClosed(false);
+            } else if (type === 2) {
+                onClosed(false);
+            } else if (isPopupShown) {
+                onClosed(false);
+            }
+        }, [type, cookies]);
+    
 
 
     return (
@@ -97,12 +103,8 @@ const getExpiredDate = () => {
                 )}
 
                 <div className={styles.btnContainer}>
-                    <div className={styles.todayNotOpenBtn} onClick={() => { setType(1); closePopup(1); }}>
-                        오늘 하루 보지 않기
-                    </div>
-                    <div className={styles.closeBtn} onClick={() => { setType(2); closePopup(2); }}>
-                        닫기
-                    </div>
+                <div className={styles.todayNotOpenBtn} onClick={() => setType(1)}>오늘 하루 보지 않기</div>
+                <div className={styles.closeBtn} onClick={() => setType(2)}>닫기</div>
                 </div>
             </div>
         </div>
