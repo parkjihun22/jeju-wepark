@@ -473,9 +473,9 @@
             margin: 1vw 0; /* 타이틀 위아래 여백 */
             letter-spacing: 0.1rem; /* 글자 간격 */
             text-transform: uppercase; /* 대문자로 변환 */
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 텍스트 그림자 효과 */
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* 텍스트 그림자 효과 */
             opacity: 0;
-            animation: fadeIn 1s ease forwards, slideIn 1s ease forwards;
+            animation: fadeIn 1s ease forwards, slideIn 1s ease forwards, glowText 2s ease-in-out infinite alternate;
             animation-delay: 0.3s;
         }
         
@@ -485,21 +485,21 @@
             font-size: 5.8vw; /* 부제 크기 */
             margin-bottom: 1vw; /* 부제와 제목 간 여백 */
             letter-spacing: 0.1vw;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
             opacity: 0.9;
-            animation: fadeIn 1s ease forwards, slideIn 1s ease forwards;
+            animation: fadeIn 1s ease forwards, slideIn 1s ease forwards, bounceIn 1.5s ease forwards;
             animation-delay: 0.6s;
         }
         
         .mainImageText {
             font-family: 'Bebas Neue', sans-serif;
             font-weight: 700;
-            font-size: 40px;
+            font-size: 10vw; /* 모바일에 맞게 크기 크게 설정 */
             letter-spacing: 0.1vw;
             text-transform: uppercase;
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
             opacity: 0;
-            animation: fadeIn 1s ease forwards, slideIn 1s ease forwards;
+            animation: fadeIn 1s ease forwards, slideIn 1s ease forwards, zoomIn 1.5s ease forwards;
             animation-delay: 0.9s;
         }
         
@@ -514,13 +514,6 @@
         }
         
         /* 애니메이션 정의 */
-        @keyframes fadeUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -539,15 +532,58 @@
             }
         }
         
-        @keyframes lineGlow {
+        @keyframes glowText {
             0% {
-                opacity: 0.7;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 10px #ffe2b0;
+            }
+            50% {
+                text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), 0 0 20px #ffe2b0;
             }
             100% {
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 10px #ffe2b0;
+            }
+        }
+        
+        @keyframes bounceIn {
+            0% {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            60% {
+                transform: translateY(-10px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.7);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
                 opacity: 1;
             }
         }
-    }        
+        
+        @keyframes lineGlow {
+            0% {
+                opacity: 0.7;
+                transform: scaleX(1);
+            }
+            50% {
+                opacity: 1;
+                transform: scaleX(1.1);
+            }
+            100% {
+                opacity: 0.7;
+                transform: scaleX(1);
+            }
+        }
+    }          
 
 
 
