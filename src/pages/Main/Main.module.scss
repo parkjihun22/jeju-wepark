@@ -465,36 +465,44 @@
             text-align: center;
             font-family: 'Roboto', sans-serif;
         }
-
+        
         .mainImageTitle {
             font-family: 'Bebas Neue', sans-serif; /* 고급스러운 느낌의 서체 */
-            font-weight: 700;
-            font-size: 3vw; /* 폰트 크기 */
+            font-weight: 500;
+            font-size: 4.5vw; /* 폰트 크기 */
             margin: 1vw 0; /* 타이틀 위아래 여백 */
-            letter-spacing: 0.1em; /* 글자 간격 */
+            letter-spacing: 0.1rem; /* 글자 간격 */
             text-transform: uppercase; /* 대문자로 변환 */
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 텍스트 그림자 효과 */
+            opacity: 0;
+            animation: fadeIn 1s ease forwards, slideIn 1s ease forwards;
+            animation-delay: 0.3s;
         }
-
+        
         .mainImageTextSub {
             font-family: 'Roboto', sans-serif;
             font-weight: 700;
-            font-size: 4vw; /* 부제 크기 */
+            font-size: 5.8vw; /* 부제 크기 */
             margin-bottom: 1vw; /* 부제와 제목 간 여백 */
             letter-spacing: 0.1vw;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
             opacity: 0.9;
+            animation: fadeIn 1s ease forwards, slideIn 1s ease forwards;
+            animation-delay: 0.6s;
         }
-
+        
         .mainImageText {
             font-family: 'Bebas Neue', sans-serif;
             font-weight: 700;
-            font-size: 4vw;
+            font-size: 70px;
             letter-spacing: 0.1vw;
             text-transform: uppercase;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            animation: fadeIn 1s ease forwards, slideIn 1s ease forwards;
+            animation-delay: 0.9s;
         }
-
+        
         .mainImageLine {
             margin: 2vw 0;
             width: 80%;
@@ -502,34 +510,44 @@
             background-color: #ffe2b0;
             opacity: 0.7;
             box-shadow: 0 0 10px rgba(255, 226, 176, 0.5); /* 라인에 부드러운 그림자 효과 */
+            animation: lineGlow 2s ease-in-out infinite alternate;
         }
-
-        .mainImageTextBox div {
-            display: block; /* 각 텍스트는 블록 레벨로 나열 */
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeUp 1.5s ease forwards;
-        }
-
-        .mainImageTextBox div:nth-child(1) {
-            animation-delay: 0.3s;
-        }
-
-        .mainImageTextBox div:nth-child(2) {
-            animation-delay: 0.6s;
-        }
-
-        .mainImageTextBox div:nth-child(3) {
-            animation-delay: 0.9s;
-        }
-
-        @keyframes fadeUp { 
+        
+        /* 애니메이션 정의 */
+        @keyframes fadeUp {
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-    }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideIn {
+            0% {
+                transform: translateY(30px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes lineGlow {
+            0% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }        
 
 
 
