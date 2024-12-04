@@ -144,11 +144,11 @@
     background-color: #f8f9fa; /* 더 밝고 현대적인 배경색 */
     padding: 1vw;
     border-radius: 1px; /* 더 부드러운 모서리 */
-    width: 50%;
+    width: 70%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
     
     .button {
-      padding: 10px 20px;
+      padding: 10px 24px;
       font-size: 1vw;
       font-weight: 600;
       color: #095052;
@@ -181,7 +181,7 @@
     }
   
     @media (max-width: 900px) {
-      width: 100%;
+      width: 90%;
       padding: 3vw;
       
       .button {
