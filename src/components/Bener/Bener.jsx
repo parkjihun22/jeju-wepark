@@ -40,7 +40,7 @@ const Bener = ({ title }) => {
 export default Bener;
 
 const contents = (text, isLoaded) => {
-    if (text === '푸르지오' || text === '홍보영상' || text === '체크포인트') {
+    if (text === '푸르지오' || text === '홍보영상' || text === '체크포인트'| text === '당첨자서류안내') {
         return (
             <>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>

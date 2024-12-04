@@ -11,14 +11,15 @@
 }
 
 .img1 {
-    margin-top: 4vw;
-    width: 80%;
+    margin-top: 1vw;
+    margin-bottom: 4vw;
+    width: 100%;
     @media (max-width: 900px) {
         width: 90%;
     }
 }
 
-.textBox{
+.textBox {
     margin: 3vw 0 0 0;
     text-align: center;
     font-size: 2.5vw;
@@ -26,6 +27,7 @@
     div:nth-of-type(1) {
         font-weight: 200;
     }
+
     div:nth-of-type(2) {
         margin-top: 0.5vw;
         font-weight: 800;
@@ -36,7 +38,6 @@
 .tableContainer {
     display: flex;
     flex-direction: row;
-
     margin-top: 1vw;
     width: 80%;
     
@@ -44,15 +45,12 @@
         width: 90%;
     }
 
-
-
     .tableImg {
         margin-right: 1vw; /* 표와의 간격을 위해 오른쪽 여백 추가 */
         
         @media (max-width: 900px) {
             margin-right: 1vw;
             width: 90%;
-    
         }
     }
 
@@ -67,7 +65,7 @@
             text-align: center;
             font-size: 1.1vw;
             color: #ad8844;
-            
+
             @media (max-width: 900px) {
                 width: 15vw;
                 padding: 1.5vw 0;
@@ -135,3 +133,62 @@
         padding-bottom: 1vw;
     }
 }
+
+.optionSelector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* 작은 화면에서 버튼이 여러 줄로 나뉘도록 */
+    gap: 1vw;
+    margin: 2vw auto;
+    background-color: #f8f9fa; /* 더 밝고 현대적인 배경색 */
+    padding: 1vw;
+    border-radius: 1px; /* 더 부드러운 모서리 */
+    width: 60%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+    
+    .button {
+      padding: 10px 50px;
+      font-size: 1vw;
+      font-weight: 600;
+      color: #095052;
+      background-color: #ffffff;
+      border: 2px solid #095052;
+      border-radius: 1px; /* 더 둥근 버튼 */
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-align: center;
+      letter-spacing: 0.5px; /* 글자 간격 조정 */
+    
+      &:hover {
+        background-color: #095052;
+        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(9, 80, 82, 0.2); /* 호버 시 그림자 효과 */
+      }
+    
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(9, 80, 82, 0.3); /* 포커스 시 아웃라인 대신 그림자 */
+      }
+    
+      &.active {
+        background-color: #095052;
+        color: #fff;
+        border-color: #095052;
+      }
+    }
+  
+    @media (max-width: 900px) {
+      width: 90%;
+      padding: 3vw;
+      
+      .button {
+        font-size: 3vw;
+        padding: 10px 18px;
+        margin-bottom: 1vw; /* 버튼 사이 세로 간격 추가 */
+      }
+    }
+  }
+  
