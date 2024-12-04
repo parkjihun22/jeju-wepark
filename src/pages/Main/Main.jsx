@@ -46,7 +46,7 @@ const section3Contents = [
 		imgSrc: section3_Image2,
 		title: "PREMIUM 02",
 		text1: `여유로운 직주근접 단지`,
-		text2: `세계최대규모 삼성전자 평택캠퍼스<br />
+		text2: `세계최대규모 160삼성전자 평택캠퍼스<br />
 			  송탄·칠괴 산단,KG모빌리티 등`,
 		link: "/LocationEnvironment/intro",
 		linkText: "더 알아보기 >"
@@ -55,7 +55,7 @@ const section3Contents = [
 		imgSrc: section3_Image3,
 		title: "PREMIUM 03",
 		text1: `다 갖춘 고품격 커뮤니티`,
-		text2: `브레인시티 내 최초 실내 수영장 및<br />
+		text2: `브레인시티 최초로 들어오는 실내 수영장 및<br />
 			  독서실 골프클럽 등 대규모 커뮤니티`,
 		link: "/LocationEnvironment/intro",
 		linkText: "더 알아보기 >"
@@ -65,7 +65,7 @@ const section3Contents = [
 		title: "PREMIUM 04",
 		text1: `합리적 분양가 상한제`,
 		text2: `입주자의 경제적 부담을 낮춘<br />
-			  내 집 마련의 기회`,
+			  합리적인 분양가`,
 		link: "/LocationEnvironment/primium",
 		linkText: "더 알아보기 >"
 	}
@@ -175,10 +175,10 @@ const Main = () => {
 
 							<div className={styles.textBox}>
 								<div className={styles.text1}>Location</div>
-								<div className={styles.text2}>" 방문 예약 고객 전원 신세계 상품권 100% 증정 "</div>
-								<div className={styles.text3}>- 브레인시티 중심상업지구 도보 3분 <br />
+								<div className={styles.text2}>" 방문 예약 고객 전원 스타벅스 기프티콘 100% 증정 "</div>
+								<div className={styles.text3}>- 브레인시티 중심상업지구 매우인접 <br />
 									- 첨단 아주대학교 종합병원 도보 5분 <br />
-									- 평택 지제역 KTX, GTX-A · C 확정 삼성전자 평택캠퍼스, 초등학교, 수변공원 <br />
+									- 평택 지제역 1호선, STR, KTX, GTX-A · C 확정으로 펜타역세권 <br />
 									- 모두를 누리는 브레인시티푸르지오
 								</div>
 
@@ -200,8 +200,8 @@ const Main = () => {
 
 						<div className={styles.textBox}>
 								<div className={styles.title}>
-									브레인시티 중심에사는<br />
-									<span>소수만 누릴 수 있는 1군 브랜드 프리미엄</span>
+									소수만 누릴 수 있는<br />
+									<span>1군 브랜드 브레인시티 푸르지오</span>
 								</div>
 								<div className={styles.subTitle}>
 									<div className={styles.textLine}></div>
