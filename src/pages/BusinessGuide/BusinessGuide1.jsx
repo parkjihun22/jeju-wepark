@@ -68,7 +68,7 @@ const BusinessGuide1 = () => {
 				<div>평택 브레인시티 푸르지오의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
-			<img className={styles.img1} src={page1} />
+			<img className={styles.img3} src={page1} />
 
 			<div className={styles.tableContainer}>
 				{!isMobile && <img className={styles.tableImg} src={tableImage} />}
