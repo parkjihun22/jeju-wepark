@@ -28,7 +28,7 @@
 }
 
 .textBox {
-    margin: 3vw 0 0 0;
+    margin: 4vw 0 0 0;
     text-align: center;
     font-size: 2.5vw;
 
@@ -47,7 +47,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 1vw;
-    width: 80%;
+    width: 81%;
     
     @media (max-width: 900px) {
         width: 90%;
@@ -63,7 +63,7 @@
     }
 
     .projectTable {
-        margin-right: 1vw;
+        margin-right: 0.5vw;
         width: 100%;
         border-collapse: collapse;
 
@@ -71,7 +71,7 @@
             width: 8vw;
             background-color: #fffbf4;
             text-align: center;
-            font-size: 1.1vw;
+            font-size: 0.9vw;
             color: #ad8844;
 
             @media (max-width: 900px) {
@@ -83,7 +83,7 @@
 
         td {
             border: 1px solid #d3c7bb;
-            font-size: 1vw;
+            font-size: 0.8vw;
 
             @media (max-width: 900px) {
                 font-size: 2.5vw;
