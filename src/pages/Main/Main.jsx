@@ -37,8 +37,8 @@ const section3Contents = [
 		imgSrc: section3_Image1,
 		title: "PREMIUM 01",
 		text1: `1990세대 랜드마크 푸르지오`,
-		text2: `브레인시티를 대표할<br />
-			  대단지 브랜드 프리미엄`,
+		text2: `브레인시티에 중심이 될<br />
+			  대단지 프리미엄`,
 		link: "/BusinessGuide/intro",
 		linkText: "더 알아보기 >"
 	},
@@ -46,17 +46,17 @@ const section3Contents = [
 		imgSrc: section3_Image2,
 		title: "PREMIUM 02",
 		text1: `여유로운 직주근접 단지`,
-		text2: `세계최대규모 160삼성전자 평택캠퍼스<br />
+		text2: `세계최대규모 160만평 규모의 삼성전자 평택캠퍼스<br />
 			  송탄·칠괴 산단,KG모빌리티 등`,
-		link: "/LocationEnvironment/intro",
+		link: "/LocationEnvironment/intro", 
 		linkText: "더 알아보기 >"
 	},
 	{
 		imgSrc: section3_Image3,
 		title: "PREMIUM 03",
 		text1: `다 갖춘 고품격 커뮤니티`,
-		text2: `브레인시티 최초로 들어오는 실내 수영장 및<br />
-			  독서실 골프클럽 등 대규모 커뮤니티`,
+		text2: `평택 브레인시티 최초의 실내 수영장 및<br />
+				대규모 커뮤니티`,
 		link: "/LocationEnvironment/intro",
 		linkText: "더 알아보기 >"
 	},
@@ -159,9 +159,9 @@ const Main = () => {
 						<img src={mainImage} className={styles.mainImage} />
 						<div className={styles.overlay}></div>
 						<div className={styles.mainImageTextBox}>
-							<div className={styles.mainImageTextSub}>브레인시티가 기다린 단 하나의 푸르지오</div> 
+							<div className={styles.mainImageTextSub}>평택브레인시티 푸르지오</div> 
 							<div className={styles.mainImageTitleBox}>
-								<div className={styles.mainImageText}>브레인시티 푸르지오</div>
+								<div className={styles.mainImageText}>브레인시티가 기다린 단 하나의 푸르지오</div>
 								<div className={styles.mainImageLine}></div>
 								<div className={styles.mainImageText}>12월 13일 GRAND OPEN</div>
 							</div>
@@ -314,9 +314,9 @@ const Main = () => {
 					<div className={styles.container1}>
 
 						<div className={styles.text1}>Location</div>
-						<div className={styles.text2}>" 방문 예약 고객 전원 신세계 상품권 100% 증정 "</div>
-						<div className={styles.text3}>- 브레인시티 중심상업지구 도보 3분 <br />
-							- 첨단 아주대학교 종합병원 도보 5분 <br />
+						<div className={styles.text2}>"방문예약을 하시면 신세계 상품권 100% 증정 "</div>
+						<div className={styles.text3}>- 브레인시티 중심상업지구 가장인접한 입지 <br />
+							- 첨단 아주대학교 AI종합병원, 의료R＆D센터 도보 5분 <br />
 							- 평택 지제역 KTX, GTX-A · C 확정 삼성전자 평택캠퍼스, 초등학교, 수변공원 <br />
 							- 모두를 누리는 반도체밸리 주거 타운의 완성
 						</div>
@@ -337,7 +337,7 @@ const Main = () => {
 							<div className={styles.subTitle}>
 								<div className={styles.textLine}></div>
 								<div className={styles.subText}>
-								찬란한 비전에 완벽한 주거가치까지 더해<br />
+								완벽한 비전중심에서 완벽한 주거가치까지 더해<br />
 								브레인시티 푸르지오가 함께합니다
 								</div>
 							</div>
@@ -352,7 +352,6 @@ const Main = () => {
 							<div className={`${styles.text2} fadeUpRepeat`}>기대한 모든 프리미엄이<br />평택 브레인시티 푸르지오에서 펼쳐집니다</div>
 							<div className={`${styles.text3} fadeUpRepeat`}>SPECIAL PLAN</div>
 							<div className={`${styles.text4} fadeUpRepeat`}>살수록 자부심이 차원이 다른 <br />프리미엄 주거라이프를 브레인시티 푸르지오 모델하우스에서 확인하세요</div>
-							<div className={`${styles.text5} fadeUpRepeat`}>주거의 품격과 가치를 높이는 <span>특화설계</span> <br />안전한 이동을 위한 세심한 <span>단지설계</span> <br />편리한 생활을 위한 최적의 <span>공간설계</span></div>
 						</div>
 
 						<img src={section2_Image1} />
