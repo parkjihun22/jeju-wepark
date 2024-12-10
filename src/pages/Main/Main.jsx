@@ -36,16 +36,15 @@ const section3Contents = [
 	{
 		imgSrc: section3_Image1,
 		title: "PREMIUM 01",
-		text1: `1990세대 랜드마크 푸르지오`,
-		text2: `브레인시티에 중심이 될<br />
-			  대단지 프리미엄`,
+		text1: `브레인시티 의세권의중심`,
+		text2: `브레인시티 수자인`,
 		link: "/BusinessGuide/intro",
 		linkText: "더 알아보기 >"
 	},
 	{
 		imgSrc: section3_Image2,
 		title: "PREMIUM 02",
-		text1: `여유로운 직주근접 단지`,
+		text1: `앞선 직주근접 라이프`,
 		text2: `세계최대규모 160만평 규모의 삼성전자 평택캠퍼스<br />
 			  송탄·칠괴 산단,KG모빌리티 등`,
 		link: "/LocationEnvironment/intro", 
@@ -54,18 +53,18 @@ const section3Contents = [
 	{
 		imgSrc: section3_Image3,
 		title: "PREMIUM 03",
-		text1: `다 갖춘 고품격 커뮤니티`,
-		text2: `평택 브레인시티 최초의 실내 수영장 및<br />
-				대규모 커뮤니티`,
+		text1: `평택 개발호재의 핵심입지`,
+		text2: `카이스트 평택캠퍼스(예정)<br />
+				아주대 평택병원(예정)`,
 		link: "/LocationEnvironment/intro",
 		linkText: "더 알아보기 >"
 	},
 	{
 		imgSrc: section3_Image4,
 		title: "PREMIUM 04",
-		text1: `합리적 분양가 상한제`,
-		text2: `입주자의 경제적 부담을 낮춘<br />
-			  합리적인 분양가`,
+		text1: `원스톱으로 누리는 인프라`,
+		text2: `평택지제역 KTX, GTX A·C(예정)<br />
+			  단지앞 초등학교(예정),대형마트`,
 		link: "/LocationEnvironment/primium",
 		linkText: "더 알아보기 >"
 	}
@@ -159,9 +158,9 @@ const Main = () => {
 						<img src={mainImage} className={styles.mainImage} />
 						<div className={styles.overlay}></div>
 						<div className={styles.mainImageTextBox}>
-							<div className={styles.mainImageTextSub}>평택브레인시티 푸르지오</div> 
+							<div className={styles.mainImageTextSub}>평택브레인시티 수자인</div> 
 							<div className={styles.mainImageTitleBox}>
-								<div className={styles.mainImageText}>브레인시티가 기다린 단 하나의 푸르지오</div>
+								<div className={styles.mainImageText}>평택이 기다린 단 하나의 착한아파트</div>
 								<div className={styles.mainImageLine}></div>
 								<div className={styles.mainImageText}>12월 13일 GRAND OPEN</div>
 							</div>
@@ -179,7 +178,7 @@ const Main = () => {
 								<div className={styles.text3}>- 브레인시티 중심상업지구 매우인접 <br />
 									- 첨단 아주대학교 종합병원 도보 5분 <br />
 									- 평택 지제역 1호선, STR, KTX, GTX-A · C 확정으로 펜타역세권 <br />
-									- 모두를 누리는 브레인시티푸르지오
+									- 모두를 누리는 평택 브레인시티 수자인
 								</div>
 
 								<div className={styles.text4}>
@@ -201,13 +200,13 @@ const Main = () => {
 						<div className={styles.textBox}>
 								<div className={styles.title}>
 									소수만 누릴 수 있는<br />
-									<span>1군 브랜드 브레인시티 푸르지오</span>
+									<span>착한가격의 아파트 브레인시티 수자인</span>
 								</div>
 								<div className={styles.subTitle}>
 									<div className={styles.textLine}></div>
 									<div className={styles.subText}>
 										찬란한 비전에 완벽한 주거가치까지 더해<br />
-										브레인시티푸르지오가 함께합니다  
+										브레인시티 수자인이 함께합니다  
 									</div>
 								</div>
 							</div>
@@ -221,7 +220,7 @@ const Main = () => {
 						<div className={styles.section2}>
 							<div className={styles.textBox}>
 								<div className={`${styles.text1} fadeUpRepeat`}>완벽한 생활에서 준비된 미래까지</div>
-								<div className={`${styles.text2} fadeUpRepeat`}>기대한 모든 프리미엄이<br />평택 브레인시티 푸르지오에서 펼쳐집니다</div>
+								<div className={`${styles.text2} fadeUpRepeat`}>기대한 모든 프리미엄이<br />평택 브레인시티 수자인에서 펼쳐집니다</div>
 								<div className={`${styles.text3} fadeUpRepeat`}>SPECIAL PLAN</div>
 								<div className={`${styles.text4} fadeUpRepeat`}>살수록 자부심이 차원이 다른 <br />프리미엄 주거라이프를 실현합니다</div>
 								<div className={`${styles.text5} fadeUpRepeat`}>주거의 품격과 가치를 높이는 <span>특화설계</span> <br />안전한 이동을 위한 세심한 <span>단지설계</span> <br />편리한 생활을 위한 최적의 <span>공간설계</span></div>
@@ -251,7 +250,7 @@ const Main = () => {
 							<div className={styles.imageBox}>
 								<img src={section4_Image1} />
 
-								<div className={styles.text1}>브레인시티 푸르지오</div>
+								<div className={styles.text1}>평택 브레인시티 수자인</div>
 								<div className={styles.text2}>THE NATURAL NOBILITY</div>
 								<div className={styles.text3}>당신의 삶, 그 고귀함이 계속되길</div>
 							</div>
@@ -267,14 +266,14 @@ const Main = () => {
 						<div className={styles.section9}>
 						<div className={styles.textBox}>
 								<div className={styles.title}>
-									브레인시티 푸르지오<br />
+									평택 브레인시티 수자인<br />
 									<span>견본주택 오시는길</span>
 								</div>
 								<div className={styles.subTitle}>
 									<div className={styles.textLine}></div>
 									<div className={styles.subText}>
 										찬란한 비전에 완벽한 주거가치까지 더해<br />
-										평택 브레인시티 푸르지오가 함께합니다  
+										평택 브레인시티 수자인이 함께합니다  
 									</div>
 								</div>
 							</div>
@@ -302,12 +301,12 @@ const Main = () => {
 						<img src={mobileImageMain} className={styles.mainImage} />
 						<div className={styles.overlay}></div>
 						<div className={styles.mainImageTextBox2}>
-							<div className={styles.mainImageTextSub}>마지막 1군 브랜드</div>
+							<div className={styles.mainImageTextSub}>브레인시티 의세권의 중심</div>
 							<div className={styles.mainImageTitle}>
-								브레인시티가 기다린<br />
-								단 하나의 푸르지오
+								브레인시티가 기다린
+
 								</div>
-							<div className={styles.mainImageText}>브레인시티 푸르지오</div>
+							<div className={styles.mainImageText}>브레인시티 수자인</div>
 						</div>
 					</div>
 
@@ -332,13 +331,13 @@ const Main = () => {
 						<div className={styles.textBox}>
 							<div className={styles.title}>
 								평택 브레인시티의 중심으로 사는<br />
-								<span>소수만 누릴 수 있는 1군 브랜드 프리미엄</span>
+								<span>착한 가격의 분상제 아파트</span>
 							</div>
 							<div className={styles.subTitle}>
 								<div className={styles.textLine}></div>
 								<div className={styles.subText}>
 								완벽한 비전중심에서 완벽한 주거가치까지 더해<br />
-								브레인시티 푸르지오가 함께합니다
+								브레인시티 수자인이 함께합니다
 								</div>
 							</div>
 						</div>
@@ -349,9 +348,9 @@ const Main = () => {
 					<div className={styles.container3}>
 						<div className={styles.textbox}>
 							<div className={`${styles.text1} fadeUpRepeat`}>완벽한 생활에서 준비된 미래까지</div>
-							<div className={`${styles.text2} fadeUpRepeat`}>기대한 모든 프리미엄이<br />평택 브레인시티 푸르지오에서 펼쳐집니다</div>
+							<div className={`${styles.text2} fadeUpRepeat`}>기대한 모든 프리미엄이<br />평택 브레인시티 수자인에서 펼쳐집니다</div>
 							<div className={`${styles.text3} fadeUpRepeat`}>SPECIAL PLAN</div>
-							<div className={`${styles.text4} fadeUpRepeat`}>살수록 자부심이 차원이 다른 <br />프리미엄 주거라이프를 브레인시티 푸르지오 모델하우스에서 확인하세요</div>
+							<div className={`${styles.text4} fadeUpRepeat`}>살수록 자부심이 차원이 다른 <br />프리미엄 주거라이프를 브레인시티 수자인 모델하우스에서 확인하세요</div>
 						</div>
 
 						<img src={section2_Image1} />
@@ -381,7 +380,7 @@ const Main = () => {
 					<div className={styles.container5}>
 						<img src={section4_Image1} />
 
-						<div className={styles.text1}>브레인시티 푸르지오</div>
+						<div className={styles.text1}>브레인시티 수자인</div>
 						<div className={styles.text2}>THE NATURAL NOBILITY</div>
 						<div className={styles.text3}>당신의 삶, 그 고귀함이 계속되길</div>
 					</div>
