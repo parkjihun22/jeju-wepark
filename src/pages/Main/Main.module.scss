@@ -949,7 +949,7 @@
     flex-direction: row;
     justify-content: center; /* 이미지를 가로 방향으로 중앙 배치 */
     align-items: flex-start; /* 이미지의 세로 정렬 (flex-start는 상단 정렬) */
-    width: 100vw;
+    width: 100%;
     height: auto;
     background-color: #fff6ea;
 
@@ -1005,7 +1005,7 @@
 
     img {
         margin: 2vw 0 1vw 0; /* 기본 마진 설정 */
-        width: 100%; /* 이미지를 부모 요소의 가로 너비에 맞게 조정 */
+        width: 50; /* 이미지를 부모 요소의 가로 너비에 맞게 조정 */
         height: auto; /* 세로 비율에 맞춰 자동으로 크기 조정 */
         object-fit: cover; /* 이미지를 자르지 않고 비율을 맞추기 위해서 사용 */
     }
