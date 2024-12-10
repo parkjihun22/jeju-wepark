@@ -52,7 +52,7 @@ const LocationEnvironment1 = () => {
 
 			<div className={styles.textBox}>
 				<div>브레인시티의 눈부신 가치 위에</div>
-				<div>평택 브레인시티 푸르지오의 새로운 자부심으로 찾아옵니다.</div>
+				<div>평택 브레인시티 수자인의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
 			<img src={page1} className={styles.image3} alt="lacation-image-2" />

@@ -65,7 +65,7 @@ const BusinessGuide1 = () => {
 
 			<div className={styles.textBox}>
 				<div>평택 제2의 고덕신도시를 꿈꾸는 브레인시티를 누리는 특별한 라이프 컬렉션</div>
-				<div>평택 브레인시티 푸르지오의 새로운 자부심으로 찾아옵니다.</div>
+				<div>평택 브레인시티 수자인의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
 			<img className={styles.img3} src={page1} />

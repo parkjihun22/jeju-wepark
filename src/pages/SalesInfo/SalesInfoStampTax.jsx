@@ -54,7 +54,7 @@ const ComplexGuide3 = () => {
 
 			<div className={styles.textBox}>
 				<div>브레인시티 푸르지오의 눈부신 가치 위에</div>
-				<div>푸르지오의 새로운 자부심으로 찾아옵니다.</div>
+				<div>수자인의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
 			<Ready />

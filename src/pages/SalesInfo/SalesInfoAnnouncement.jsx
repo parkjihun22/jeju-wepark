@@ -75,7 +75,7 @@ const ComplexGuide1 = () => {
 
             <div className={styles.textBox}>
                 <div>입주자 모집공고안내를 확인하세요</div>
-                <div>브레인시티 푸르지오</div>
+                <div>브레인시티 수자인</div>
             </div>
 
             <img

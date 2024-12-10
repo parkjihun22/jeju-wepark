@@ -49,7 +49,7 @@ const Brand2 = () => {
 			<MenuBar contents={menuContents} />
 
 			<div className={`${styles.textBox} ${isTextVisible ? styles.active : ''}`}>
-                <div>브레인시티 푸르지오가 눈부신 가치 위에</div>
+                <div>브레인시티 수자인이 눈부신 가치 위에</div>
                 <div>새로운 자부심으로 찾아옵니다.</div>
             </div>
 

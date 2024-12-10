@@ -59,7 +59,7 @@ const ComplexGuide1 = () => {
 
       <div className={styles.textBox}>
         <div>인터넷 청약하는 방법을 확인하세요</div>
-        <div>소수만 누리는 프리미엄 브레인시티 푸르지오</div>
+        <div>소수만 누리는 프리미엄 브레인시티 수자인</div>
       </div>
 
       {/* 이미지에 애니메이션 효과 추가 */}
