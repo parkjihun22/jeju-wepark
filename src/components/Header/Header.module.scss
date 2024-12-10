@@ -28,10 +28,10 @@
 
     img {
         position: absolute;
-        top: 25%;
+        top: 38%;
         left: 2%;
         transform: translateY(-50%, -50%);
-        width: 8vw;
+        width: 13vw;
         height: auto;
 
         @media (max-width: 900px) {
@@ -66,11 +66,11 @@
             font-size: 1vw;
             border-bottom: 3px solid rgba(0, 0, 0, 0); // 초기 border-bottom 투명
             text-decoration: none; // 기본 밑줄 취소
-            color: #095052; // 기본 글자색 설정 
+            color: #07456E; // 기본 글자색 설정 
 
             &:hover {
-                border-bottom: px solid #095052; // hover 시 하단 border만 나타남
-                color: #095052; // hover 시 글자색 변경
+                border-bottom: px solid #07456E; // hover 시 하단 border만 나타남
+                color: #07456E; // hover 시 글자색 변경
                 font-size: 1vw; // 크기 유지
                 font-weight: normal; // 두께를 일반으로 유지
             }
@@ -81,7 +81,7 @@
         }
 
         .scrolledLinkItem {
-            color: #095052; // 기본 글자색 흰색
+            color: #07456E; // 기본 글자색 흰색
             font-weight: bold;
         }
 
@@ -93,7 +93,7 @@
             text-decoration: none;
 
             &:hover {
-                border-bottom: 5px solid #095052;
+                border-bottom: 5px solid #07456E;
             }
         }
 
@@ -124,7 +124,7 @@
     }
 
     .scrolledPhoneNumber {
-        color: #095052;
+        color: #07456E;
         font-weight: bold;
     }
 }
@@ -149,9 +149,9 @@
 
     img {
         position: absolute;
-        top: 8%;
+        top: 13%;
         left: 2%;
-        width: 8vw;
+        width: 13vw;
         height: auto;
 
         @media (max-width: 900px) {
@@ -189,7 +189,7 @@
             font-size: 1vw;
             border-bottom: 10px solid rgba(0, 0, 0, 0); // 초기 border-bottom 투명
             text-decoration: none; // 기본 밑줄 취소
-            color: #095052; // 기본 글자색 설정
+            color: #07456E; // 기본 글자색 설정
             font-weight: 500;
 
         }
@@ -246,7 +246,7 @@
         font-size: 1.2vw;
         font-weight: bold;
         text-decoration: none;
-        color: #095052;
+        color: #07456E;
     }
 }
 
@@ -265,16 +265,16 @@
     width: 100%;
     height: 6vw;
     background-color: #FFFFFF;
-    border-bottom: 1px solid #095052;
+    border-bottom: 1px solid #07456E;
     z-index: 100;
 
     text-decoration: none;
 
     .logo {
-        width: 23vw;
+        width: 25vw;
     }
 
     .icon {
-        margin: 10vw 3.5vw;
+        margin: 20vw 3.5vw;
     }
 }
