@@ -191,9 +191,9 @@ const Header = ({ isChanged }) => {
 				<div className={styles.mobileHeader}>
 					<div onClick={() => setIsMobileMenu(!isMobileMenu)}>
 						{!isMobileMenu ?
-							<AiOutlineMenu className={styles.icon} size={25} color="#053b02" />
+							<AiOutlineMenu className={styles.icon} size={25} color="#07456E" />
 							:
-							<IoCloseSharp className={styles.icon} size={25} color="#053b02" />
+							<IoCloseSharp className={styles.icon} size={25} color="#07456E" />
 						}
 					</div>
 					{isMobileMenu && <SlideMenu contents={menuArray} onClose={closeMobileMenu} />}
@@ -203,7 +203,7 @@ const Header = ({ isChanged }) => {
 					</Link>
 
 					<a href={'tel:1533-8848'}>
-						<IoCall className={styles.icon} size={25} color="#053b02" />
+						<IoCall className={styles.icon} size={25} color="#07456E" />
 					</a>
 				</div>
 			)}
