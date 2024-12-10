@@ -5,9 +5,10 @@ import Header from "../../components/Header/Header";
 import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
-import Ready from "../../components/Ready/Ready";
 import FixIcon from "../../components/FixIcon/FixIcon";
 import { Helmet } from "react-helmet-async";
+
+import page1 from "../../assets/BusinessGuide/BusinessGuide2/page1.jpg";
 
 const BusinessGuide2 = () => {
 	const menuContents = [
@@ -16,6 +17,7 @@ const BusinessGuide2 = () => {
 		{ title: "당첨자서류안내", url: "/BusinessGuide/documents" }
 	];
 	const [isScroll, setIsScroll] = useState(false);
+	const [isImageVisible, setIsImageVisible] = useState(false); // isImageVisible 상태 추가
 	const { pathname } = useLocation(); // 현재 경로를 가져옴
 
 	useEffect(() => {
@@ -29,6 +31,13 @@ const BusinessGuide2 = () => {
 			} else {
 				setIsScroll(false);
 			}
+
+			// 이미지가 화면에 보이는지 체크 (예시)
+			if (window.scrollY > 200) { // 예시: 스크롤이 200px 이상 내려가면 이미지 보이기
+				setIsImageVisible(true);
+			} else {
+				setIsImageVisible(false);
+			}
 		};
 
 		window.addEventListener('scroll', handleScroll);
@@ -40,8 +49,6 @@ const BusinessGuide2 = () => {
 
 	return (
 		<div className={styles.container}>
-			
-
 			<Header isChanged={isScroll} />
 			<FixIcon />
 
@@ -54,7 +61,8 @@ const BusinessGuide2 = () => {
 				<div>브레인시티 수자인의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
-			<Ready />
+			{/* 이미지에 isImageVisible 상태 적용 */}
+			<img className={`${styles.image4} ${isImageVisible ? styles.visible : ''}`} src={page1} alt="Brand Image" />
 
 			<Footer />
 		</div>
