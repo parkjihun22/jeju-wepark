@@ -158,11 +158,11 @@ const Main = () => {
 						<img src={mainImage} className={styles.mainImage} />
 						<div className={styles.overlay}></div>
 						<div className={styles.mainImageTextBox}>
-							<div className={styles.mainImageTextSub}>평택브레인시티 수자인</div> 
+							<div className={styles.mainImageTextSub}>12월 13일 GRAND OPEN</div> 
 							<div className={styles.mainImageTitleBox}>
 								<div className={styles.mainImageText}>평택이 기다린 단 하나의 착한아파트</div>
 								<div className={styles.mainImageLine}></div>
-								<div className={styles.mainImageText}>12월 13일 GRAND OPEN</div>
+								<div className={styles.mainImageText}>평택 브레인시티 수자인</div>
 							</div>
 						</div>
 
