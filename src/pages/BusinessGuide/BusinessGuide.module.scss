@@ -159,9 +159,9 @@
       padding: 10px 24px;
       font-size: 1vw;
       font-weight: 600;
-      color: #095052;
+      color: #07456E;
       background-color: #ffffff;
-      border: 2px solid #095052;
+      border: 2px solid #07456E;
       border-radius: 1px; /* 더 둥근 버튼 */
       text-transform: uppercase;
       transition: all 0.3s ease;
@@ -170,7 +170,7 @@
       letter-spacing: 0.5px; /* 글자 간격 조정 */
     
       &:hover {
-        background-color: #095052;
+        background-color: #07456E;
         color: #fff;
         transform: translateY(-2px);
         box-shadow: 0 4px 8px rgba(9, 80, 82, 0.2); /* 호버 시 그림자 효과 */
@@ -182,9 +182,9 @@
       }
     
       &.active {
-        background-color: #095052;
+        background-color: #07456E;
         color: #fff;
-        border-color: #095052;
+        border-color: #07456E;
       }
     }
   
