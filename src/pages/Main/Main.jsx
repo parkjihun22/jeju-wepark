@@ -301,7 +301,7 @@ const Main = () => {
 						<img src={mobileImageMain} className={styles.mainImage} />
 						<div className={styles.overlay}></div>
 						<div className={styles.mainImageTextBox2}>
-							<div className={styles.mainImageTextSub}>브레인시티 의세권의 중심</div>
+							<div className={styles.mainImageTextSub}>평택 브레인시티<br/> 의세권의 중심</div>
 							<div className={styles.mainImageTitle}>
 								브레인시티가 기다린
 
