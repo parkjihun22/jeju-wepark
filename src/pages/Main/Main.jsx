@@ -290,9 +290,9 @@ const Main = () => {
 				</>
 			) : (
 				<div className={styles.mobileMain}>
-					{isOpenPopup1 && <Popup onClosed={() => setIsOpenPopup1(!isOpenPopup1)} popupImage={mobilePopupPage1} numbering={1} />}
-					{isOpenPopup2 && <Popup onClosed={() => setIsOpenPopup2(!isOpenPopup1)} popupImage={mobilePopupPage2} numbering={2} />}
-					{isOpenPopup3 && <Popup onClosed={() => setIsOpenPopup3(!isOpenPopup1)} popupImage={mobilePopupPage3} numbering={3} />}
+					{isOpenPopup1 && <obilePopup onClosed={() => setIsOpenPopup1(!isOpenPopup1)} popupImage={mobilePopupPage1} numbering={1} />}
+					{isOpenPopup2 && <obilePopup onClosed={() => setIsOpenPopup2(!isOpenPopup1)} popupImage={mobilePopupPage2} numbering={2} />}
+					{isOpenPopup3 && <obilePopup onClosed={() => setIsOpenPopup3(!isOpenPopup1)} popupImage={mobilePopupPage3} numbering={3} />}
 					
 					<Header isChanged={isScroll} />
 
