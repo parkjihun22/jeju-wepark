@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useCookies } from 'react-cookie';
 import { useMediaQuery } from "react-responsive";
-import styles from "./Popup.module.scss";
+import styles from "./MobilePopup.module.scss";
 
-const Popup = ({ onClosed, popupImage, numbering }) => {
+const MobilePopup = ({ onClosed, popupImage, numbering }) => {
     const [type, setType] = useState(0);  // 팝업 상태 (0: 열림, 1: 하루 보지 않기 클릭, 2: 닫기 클릭)
     const [cookies, setCookie] = useCookies();
     const isPopupShown = cookies[`Popup_Cookie${numbering}`];  // 쿠키 확인
@@ -40,7 +40,7 @@ const Popup = ({ onClosed, popupImage, numbering }) => {
                 {/* 각 이미지에 맞는 usemap 설정 */}
                 <img
                     className={styles.popupImg}
-                    style={!isMobile && numbering === 1 ? { width: '18vw'} : {}}
+                    style={!isMobile && numbering === 1 ? { width: '25vw'} : {}}
                     src={popupImage}
                     alt={`hansinduhyue-popup-image${numbering}`}
                     useMap={`#image-map${numbering}`}  // 각 이미지마다 다른 맵을 사용
@@ -111,4 +111,4 @@ const Popup = ({ onClosed, popupImage, numbering }) => {
     );
 }
 
-export default Popup;
+export default MobilePopup;
