@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useMediaQuery } from 'react-responsive';
-import { useCookies } from "react-cookie";
 import { Link } from "react-router-dom";
 
 import styles from "./Main.module.scss";
@@ -8,7 +7,8 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import FixIcon from "../../components/FixIcon/FixIcon";
 import UnitplanBox from "../../components/UnitplanBox/UnitplanBox";
-import Popup from "../../components/MobilePopup/Popup";
+import MobilePopup from "../../components/MobilePopup/MobilePopup";
+import Popup from "../../components/Popup/Popup";
 import MobileSectionBox from "../../components/MobileSectionBox/MobileSectionBox";
 
 import mainImage from "../../assets/Main/Main1.jpg"; 
@@ -290,9 +290,9 @@ const Main = () => {
 				</>
 			) : (
 				<div className={styles.mobileMain}>
-					{isOpenPopup1 && <Popup onClosed={() => setIsOpenPopup1(!isOpenPopup1)} popupImage={mobilePopupPage1} numbering={1} />}
-					{isOpenPopup2 && <Popup onClosed={() => setIsOpenPopup2(!isOpenPopup1)} popupImage={mobilePopupPage2} numbering={2} />}
-					{isOpenPopup3 && <Popup onClosed={() => setIsOpenPopup3(!isOpenPopup1)} popupImage={mobilePopupPage3} numbering={3} />}
+					{isOpenPopup1 && <MobilePopup onClosed={() => setIsOpenPopup1(!isOpenPopup1)} popupImage={mobilePopupPage1} numbering={1} />}
+					{isOpenPopup2 && <MobilePopup onClosed={() => setIsOpenPopup2(!isOpenPopup1)} popupImage={mobilePopupPage2} numbering={2} />}
+					{isOpenPopup3 && <MobilePopup onClosed={() => setIsOpenPopup3(!isOpenPopup1)} popupImage={mobilePopupPage3} numbering={3} />}
 					
 					<Header isChanged={isScroll} />
 
