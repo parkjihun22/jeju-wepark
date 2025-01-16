@@ -21,7 +21,7 @@ const FixIcon = ({ type }) => {
             );
         } else {
             return (
-                <a href="https://naver.me/G58kVeiB" target="_blank" rel="noopener noreferrer" className={`${styles.container} ${type === "absolute" ? styles.absolute : styles.fixed}`}>
+                <a href="https://naver.me/55rUFpYq" target="_blank" rel="noopener noreferrer" className={`${styles.container} ${type === "absolute" ? styles.absolute : styles.fixed}`}>
                     <div className={styles.circlebox}>관심고객<br />등록</div>
                     <img src={movingCircle} alt="circle animation" />
                 </a>
@@ -40,7 +40,7 @@ const FixIcon = ({ type }) => {
             ) : (
                 <div>
                     <div className={styles.buttomBtnContainer}>
-                        <a className={styles.btn1} href="https://naver.me/G58kVeiB">
+                        <a className={styles.btn1} href="https://naver.me/55rUFpYq">
                             <IoIosCheckboxOutline size={20} />
                             <div>방문예약</div>
                         </a>

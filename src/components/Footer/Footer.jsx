@@ -23,7 +23,7 @@ const Footer = () => {
 							<div className={styles.text2}>COPYRIGHTⓒ 평택 브레인시티 수자인 ALL RIGHTS RESERVED.</div>
 						</div>
 
-						<a href="https://naver.me/G58kVeiB"><IoCall size={25} /> 1533-8848</a>
+						<a href="https://naver.me/55rUFpYq"><IoCall size={25} /> 1533-8848</a>
 					</div>
 				</div>
 			) : (
