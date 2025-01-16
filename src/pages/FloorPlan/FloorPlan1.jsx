@@ -61,7 +61,7 @@ const FloorPlan1 = () => {
 
 			<div className={styles.textBox}>
 				<div>평택 브레인시티의 눈부신 가치 위에</div>
-				<div>푸르지오의 새로운 자부심으로 찾아옵니다.</div>
+				<div>수자인의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
 			{/* 이미지에 애니메이션 효과 추가 */}
