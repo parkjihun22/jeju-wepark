@@ -54,7 +54,7 @@ const section3Contents = [
 	{
 		imgSrc: section3_Image3,
 		title: "PREMIUM 03",
-		text1: `경기도권내 펜타역역세권 광역교통망`,
+		text1: `경기도권내 펜타역세권 광역교통망`,
 		text2: `평택지제역 1호선,SRT·KTX·GTX A,C라인<br />
 				송탄IC,동부화고속도로(예정) 등`,
 		link: "/LocationEnvironment/intro",
