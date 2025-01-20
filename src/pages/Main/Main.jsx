@@ -36,35 +36,36 @@ const section3Contents = [
 	{
 		imgSrc: section3_Image1,
 		title: "PREMIUM 01",
-		text1: `브레인시티 의세권의중심`,
-		text2: `브레인시티 수자인`,
+		text1: `앞선 직주근접 라이프`,
+		text2: `세계최대규모 규모의 삼성전자 평택캠퍼스<br />
+				송탄·칠괴 산단,KG모빌리티 등 <br /> 직주근접 프리미엄`,
 		link: "/BusinessGuide/intro",
 		linkText: "더 알아보기 >"
 	},
 	{
 		imgSrc: section3_Image2,
 		title: "PREMIUM 02",
-		text1: `앞선 직주근접 라이프`,
-		text2: `세계최대규모 160만평 규모의 삼성전자 평택캠퍼스<br />
-			  송탄·칠괴 산단,KG모빌리티 등`,
+		text1: `안심학세권 프리미엄`,
+		text2: `브레인시티 내 초·중·고 모두 개교예정,<br />
+			  	카이스트평택캠퍼스 2027년 개교예정`,
 		link: "/LocationEnvironment/intro", 
 		linkText: "더 알아보기 >"
 	},
 	{
 		imgSrc: section3_Image3,
 		title: "PREMIUM 03",
-		text1: `평택 개발호재의 핵심입지`,
-		text2: `카이스트 평택캠퍼스(예정)<br />
-				아주대 평택병원(예정)`,
+		text1: `경기도권내 펜타역역세권 광역교통망`,
+		text2: `평택지제역 1호선,SRT·KTX·GTX A,C라인<br />
+				송탄IC,동부화고속도로(예정) 등`,
 		link: "/LocationEnvironment/intro",
 		linkText: "더 알아보기 >"
 	},
 	{
 		imgSrc: section3_Image4,
 		title: "PREMIUM 04",
-		text1: `원스톱으로 누리는 인프라`,
-		text2: `평택지제역 KTX, GTX A·C(예정)<br />
-			  단지앞 초등학교(예정),대형마트`,
+		text1: `합리적인 분양가 상한제`,
+		text2: `입주자의 경제적 부담을 낮춘<br />
+			  내집마련의 기회`,
 		link: "/LocationEnvironment/primium",
 		linkText: "더 알아보기 >"
 	}
