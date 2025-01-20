@@ -49,6 +49,19 @@ const ComplexGuide1 = () => {
 
   return (
     <div className={styles.container}>
+
+          <Helmet>
+          <title>평택브레인시티수자인 - 체크포인트</title>
+          <meta name="description" content="평택브레인시티수자인 분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다." />
+          <meta property="og:title" content="평택브레인시티수자인 - 체크포인트" />
+          <meta property="og:description" content="평택브레인시티수자인 분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다." />
+          <meta property="og:image" content="https://www.vaaclubs.com/Main1.png" />
+          <meta property="og:url" content="https://www.vaaclubs.com/SalesInfo/SubscriptionGuide" />
+          <meta name="twitter:title" content="평택브레인시티수자인 - 체크포인트" />
+          <meta name="twitter:description" content="평택브레인시티수자인 분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다." />
+          <meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
+          <meta name="twitter:url" content="https://www.vaaclubs.com/SalesInfo/SubscriptionGuide" />
+          </Helmet> 
       
 
       <Header isChanged={isScroll} />
@@ -57,6 +70,10 @@ const ComplexGuide1 = () => {
       <Bener title="체크포인트" />
 
       <MenuBar contents={menuContents} />
+      {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+      <h1 className={styles.screenReaderOnly}>평택브레인시티수자인 - 체크포인트</h1>
+			<p className={styles.screenReaderOnly}>평택브레인시티수자인 분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다.
+      </p>
 
       <div className={styles.textBox}>
         <div>브레인시티 수자인이 눈부신 가치 위에</div>
@@ -67,7 +84,7 @@ const ComplexGuide1 = () => {
       <img
         className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
         src={page1}
-        alt="청약 체크포인트"
+        alt="브레인시티수자인청약체크포인트-image1"
         onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
       />
 

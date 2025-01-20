@@ -47,12 +47,33 @@ const ComplexGuide1 = () => {
 
 	return (
 		<div className={styles.container}>
+
+					<Helmet>
+					<title>평택브레인시티수자인 - 단지배치도</title>
+					<meta name="description" content="단지 배치도 페이지는 평택브레인시티수자인의 전체 단지 구성도를 제공합니다. 아파트 단지 내 세대 배치, 공용 시설, 주차 공간 등을 시각적으로 보여주어 입주자들이 공간 배치에 대해 명확하게 이해할 수 있도록 돕습니다. 이 배치도를 통해 단지 내 생활을 더 쉽게 계획할 수 있습니다." />
+					<meta property="og:title" content="평택브레인시티수자인 - 단지배치도" />
+					<meta property="og:description" content="단지 배치도 페이지는 평택브레인시티수자인의 전체 단지 구성도를 제공합니다. 아파트 단지 내 세대 배치, 공용 시설, 주차 공간 등을 시각적으로 보여주어 입주자들이 공간 배치에 대해 명확하게 이해할 수 있도록 돕습니다. 이 배치도를 통해 단지 내 생활을 더 쉽게 계획할 수 있습니다." />
+					<meta property="og:image" content="https://www.vaaclubs.com/Main1.png" />
+					<meta property="og:url" content="https://www.vaaclubs.com/ComplexGuide/intro" />
+					<meta name="twitter:title" content="평택브레인시티수자인 - 단지배치도" />
+					<meta name="twitter:description" content="단지 배치도 페이지는 평택브레인시티수자인의 전체 단지 구성도를 제공합니다. 아파트 단지 내 세대 배치, 공용 시설, 주차 공간 등을 시각적으로 보여주어 입주자들이 공간 배치에 대해 명확하게 이해할 수 있도록 돕습니다. 이 배치도를 통해 단지 내 생활을 더 쉽게 계획할 수 있습니다." />
+					<meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
+					<meta name="twitter:url" content="https://www.vaaclubs.com/ComplexGuide/intro" />
+					</Helmet>  
+
 			<Header isChanged={isScroll} />
 			<FixIcon />
 			<Bener title="단지안내" />
 			<MenuBar contents={menuContents} />
+			{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+            <h1 className={styles.screenReaderOnly}>평택브레인시티수자인 - 단지배치도</h1>
+			<p className={styles.screenReaderOnly}>단지 배치도 페이지는 평택브레인시티수자인의 전체 단지 구성도를 제공합니다. 아파트 단지 내 세대 배치, 공용 시설, 주차 공간 등을 시각적으로 보여주어 입주자들이 공간 배치에 대해 명확하게 이해할 수 있도록 돕습니다. 이 배치도를 통해 단지 내 생활을 더 쉽게 계획할 수 있습니다.
+			</p>
+
+
+
 			<div className={styles.textBox}>
-				<div>브레인시티 수자인이이 눈부신 가치 위에</div>
+				<div>브레인시티 수자인이 눈부신 가치 위에</div>
 				<div>새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
@@ -60,7 +81,7 @@ const ComplexGuide1 = () => {
 			<img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
-				alt="단지배치도"
+				alt="브레인시티수자인단지배치도-image1"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
 			/>
 

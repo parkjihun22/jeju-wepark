@@ -40,6 +40,19 @@ const LocationEnvironment1 = () => {
 
 	return (
 		<div className={styles.container}>
+
+					<Helmet>
+					<title>평택브레인시티수자인 - 프리미엄</title>
+					<meta name="description" content="평택브레인시티수자인의 프리미엄 페이지에서는 이 아파트가 제공하는 다양한 고급 특화 시설과 혜택을 소개합니다. 특화 설계, 고급 자재, 입주자 전용 서비스를 통해 더 나은 생활을 제공합니다. 프리미엄 세부 사항을 확인하고 이 아파트에서 제공하는 차별화된 가치를 경험하세요." />
+					<meta property="og:title" content="평택브레인시티수자인 - 프리미엄" />
+					<meta property="og:description" content="평택브레인시티수자인의 프리미엄 페이지에서는 이 아파트가 제공하는 다양한 고급 특화 시설과 혜택을 소개합니다. 특화 설계, 고급 자재, 입주자 전용 서비스를 통해 더 나은 생활을 제공합니다. 프리미엄 세부 사항을 확인하고 이 아파트에서 제공하는 차별화된 가치를 경험하세요." />
+					<meta property="og:image" content="https://www.vaaclubs.com/Main1.png" />
+					<meta property="og:url" content="https://www.vaaclubs.com/LocationEnvironment/primium" />
+					<meta name="twitter:title" content="평택브레인시티수자인 - 프리미엄" />
+					<meta name="twitter:description" content="평택브레인시티수자인의 프리미엄 페이지에서는 이 아파트가 제공하는 다양한 고급 특화 시설과 혜택을 소개합니다. 특화 설계, 고급 자재, 입주자 전용 서비스를 통해 더 나은 생활을 제공합니다. 프리미엄 세부 사항을 확인하고 이 아파트에서 제공하는 차별화된 가치를 경험하세요." />
+					<meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
+					<meta name="twitter:url" content="https://www.vaaclubs.com/LocationEnvironment/primium" />
+					</Helmet> 	
 			
 			
 
@@ -49,13 +62,19 @@ const LocationEnvironment1 = () => {
 			<Bener title="입지환경" />
 
 			<MenuBar contents={menuContents} />
+			{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+            <h1 className={styles.screenReaderOnly}>평택브레인시티수자인 - 프리미엄</h1>
+			<p className={styles.screenReaderOnly}>평택브레인시티수자인의 프리미엄 페이지에서는 이 아파트가 제공하는 다양한 고급 특화 시설과 혜택을 소개합니다. 특화 설계, 고급 자재, 입주자 전용 서비스를 통해 더 나은 생활을 제공합니다. 프리미엄 세부 사항을 확인하고 이 아파트에서 제공하는 차별화된 가치를 경험하세요.
+
+			</p>
+
 
 			<div className={styles.textBox}>
 				<div>브레인시티의 눈부신 가치 위에</div>
 				<div>평택 브레인시티 수자인의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
-			<img src={page1} className={styles.image3} alt="lacation-image-2" />
+			<img src={page1} className={styles.image3} alt="평택브레인시티수자인프리미엄안내-image1" />
 
 			<Footer />
 		</div>

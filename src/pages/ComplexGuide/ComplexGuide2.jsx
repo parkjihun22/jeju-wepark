@@ -48,12 +48,31 @@ const ComplexGuide1 = () => {
 
 	return (
 		<div className={styles.container}>
+
+					<Helmet>
+					<title>평택브레인시티수자인 - 호수배치도</title>
+					<meta name="description" content="호수 배치도 페이지는 각 세대의 위치와 평면도를 제공합니다. 고객들이 원하는 호수를 찾고 세부적인 배치 정보를 통해 자신의 집을 상상할 수 있게 돕습니다. 각 호수의 특징과 장점을 살펴보며 선택의 폭을 넓힐 수 있습니다." />
+					<meta property="og:title" content="평택브레인시티수자인 - 호수배치도" />
+					<meta property="og:description" content="호수 배치도 페이지는 각 세대의 위치와 평면도를 제공합니다. 고객들이 원하는 호수를 찾고 세부적인 배치 정보를 통해 자신의 집을 상상할 수 있게 돕습니다. 각 호수의 특징과 장점을 살펴보며 선택의 폭을 넓힐 수 있습니다." />
+					<meta property="og:image" content="https://www.vaaclubs.com/Main1.png" />
+					<meta property="og:url" content="https://www.vaaclubs.com/ComplexGuide/detailintro" />
+					<meta name="twitter:title" content="평택브레인시티수자인 - 호수배치도" />
+					<meta name="twitter:description" content="호수 배치도 페이지는 각 세대의 위치와 평면도를 제공합니다. 고객들이 원하는 호수를 찾고 세부적인 배치 정보를 통해 자신의 집을 상상할 수 있게 돕습니다. 각 호수의 특징과 장점을 살펴보며 선택의 폭을 넓힐 수 있습니다." />
+					<meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
+					<meta name="twitter:url" content="https://www.vaaclubs.com/ComplexGuide/detailintro" />
+					</Helmet>  
+
 			<Header isChanged={isScroll} />
 			<FixIcon />
 			<Bener title="단지안내" />
 			<MenuBar contents={menuContents} />
+			{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+            <h1 className={styles.screenReaderOnly}>평택브레인시티수자인 - 호수배치도</h1>
+			<p className={styles.screenReaderOnly}>호수 배치도 페이지는 각 세대의 위치와 평면도를 제공합니다. 고객들이 원하는 호수를 찾고 세부적인 배치 정보를 통해 자신의 집을 상상할 수 있게 돕습니다. 각 호수의 특징과 장점을 살펴보며 선택의 폭을 넓힐 수 있습니다.
+			</p>
+
 			<div className={styles.textBox}>
-				<div>브레인시티 푸르지오가 눈부신 가치 위에</div>
+				<div>브레인시티 수지인이 눈부신 가치 위에</div>
 				<div>새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
@@ -61,7 +80,7 @@ const ComplexGuide1 = () => {
 			<img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
-				alt="동호수배치도"
+				alt="브레인시티수자인호수배치도-image1"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
 			/>
 

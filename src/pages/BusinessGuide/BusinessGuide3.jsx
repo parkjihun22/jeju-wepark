@@ -47,11 +47,28 @@ const BusinessGuide2 = () => {
 
 	return (
 		<div className={styles.container}>
+
+					<Helmet>
+					<title>평택브레인시티수자인 - 당첨자서류안내</title>
+					<meta name="description" content="당첨자 구비 서류 페이지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다." />
+					<meta property="og:title" content="평택브레인시티수자인 - 당첨자서류안내" />
+					<meta property="og:description" content="당첨자 구비 서류 페이지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다." />
+					<meta property="og:image" content="https://www.vaaclubs.com/Main1.png" />
+					<meta property="og:url" content="https://www.vaaclubs.com/BusinessGuide/documents" />
+					<meta name="twitter:title" content="평택브레인시티수자인 - 당첨자서류안내" />
+					<meta name="twitter:description" content="당첨자 구비 서류 페이지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다." />
+					<meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
+					<meta name="twitter:url" content="https://www.vaaclubs.com/BusinessGuide/documents" />
+					</Helmet>  
 			
 			<Header isChanged={isScroll} />
 			<FixIcon />
 			<Bener title="사업개요" />
 			<MenuBar contents={menuContents} />
+			{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+            <h1 className={styles.screenReaderOnly}>평택브레인시티수자인 - 당첨자서류안내</h1>
+			<p className={styles.screenReaderOnly}>당첨자 구비 서류 페이지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다.
+			</p>
 
 			<div className={styles.textBox}>
 				<div>평택 브레인시티의 눈부신 가치 위에</div>
@@ -100,12 +117,12 @@ const BusinessGuide2 = () => {
 
 			{/* 선택된 옵션에 따라 이미지 표시 */}
 			<div className={styles.imageContainer}>
-				{selectedOption === 1 && <img src={page1} className={styles.img1} alt="일반공급" />}
-				{selectedOption === 2 && <img src={page2} className={styles.img1} alt="기관추천" />}
-				{selectedOption === 3 && <img src={page3} className={styles.img1} alt="다자녀가구" />}
-				{selectedOption === 4 && <img src={page4} className={styles.img1} alt="신혼부부" />}
-				{selectedOption === 5 && <img src={page5} className={styles.img1} alt="노부모부양" />}
-				{selectedOption === 6 && <img src={page6} className={styles.img1} alt="생애최초" />}
+				{selectedOption === 1 && <img src={page1} className={styles.img1} alt="브레인시티수자인일반공급안내-image1" />}
+				{selectedOption === 2 && <img src={page2} className={styles.img1} alt="브레인시티수자인기관추천안내-image2" />}
+				{selectedOption === 3 && <img src={page3} className={styles.img1} alt="브레인시티수자인다자녀가구안내-image3" />}
+				{selectedOption === 4 && <img src={page4} className={styles.img1} alt="브레인시티수자인신혼부부안내-image4" />}
+				{selectedOption === 5 && <img src={page5} className={styles.img1} alt="브레인시티수자인노부모부양안내-image5" />}
+				{selectedOption === 6 && <img src={page6} className={styles.img1} alt="브레인시티수자인생애최초안내-image6" />}
 			</div>
 
 

@@ -58,6 +58,20 @@ const LocationEnvironment1 = () => {
 	return (
 		<div className={styles.container}>
 
+					<Helmet>
+					<title>평택브레인시티수자인 - 입지안내</title>
+					<meta name="description" content="평택브레인시티수자인의 입지 안내 페이지는 이 단지의 위치와 주변 인프라에 대한 상세 정보를 제공합니다. 교통, 교육, 상업시설 등 다양한 생활 편의 시설을 고려하여 이 아파트가 제공하는 생활 환경을 종합적으로 살펴볼 수 있습니다. 입지 조건을 바탕으로 더 나은 선택을 할 수 있도록 돕습니다." />
+					<meta property="og:title" content="평택브레인시티수자인 - 입지안내" />
+					<meta property="og:description" content="평택브레인시티수자인의 입지 안내 페이지는 이 단지의 위치와 주변 인프라에 대한 상세 정보를 제공합니다. 교통, 교육, 상업시설 등 다양한 생활 편의 시설을 고려하여 이 아파트가 제공하는 생활 환경을 종합적으로 살펴볼 수 있습니다. 입지 조건을 바탕으로 더 나은 선택을 할 수 있도록 돕습니다." />
+					<meta property="og:image" content="https://www.vaaclubs.com/Main1.png" />
+					<meta property="og:url" content="https://www.vaaclubs.com/LocationEnvironment/intro" />
+					<meta name="twitter:title" content="평택브레인시티수자인 - 입지안내" />
+					<meta name="twitter:description" content="평택브레인시티수자인의 입지 안내 페이지는 이 단지의 위치와 주변 인프라에 대한 상세 정보를 제공합니다. 교통, 교육, 상업시설 등 다양한 생활 편의 시설을 고려하여 이 아파트가 제공하는 생활 환경을 종합적으로 살펴볼 수 있습니다. 입지 조건을 바탕으로 더 나은 선택을 할 수 있도록 돕습니다." />
+					<meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
+					<meta name="twitter:url" content="https://www.vaaclubs.com/LocationEnvironment/intro" />
+					</Helmet> 	
+
+
 			
 
 			<Header isChanged={isScroll} />
@@ -66,6 +80,10 @@ const LocationEnvironment1 = () => {
 			<Bener title="입지환경" />
 
 			<MenuBar contents={menuContents} />
+			{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+            <h1 className={styles.screenReaderOnly}>평택브레인시티수자인 - 입지안내</h1>
+			<p className={styles.screenReaderOnly}>평택브레인시티수자인의 입지 안내 페이지는 이 단지의 위치와 주변 인프라에 대한 상세 정보를 제공합니다. 교통, 교육, 상업시설 등 다양한 생활 편의 시설을 고려하여 이 아파트가 제공하는 생활 환경을 종합적으로 살펴볼 수 있습니다. 입지 조건을 바탕으로 더 나은 선택을 할 수 있도록 돕습니다.
+			</p>
 
 			<div className={styles.textBox}>
 				<div>갈수록 완벽해질 브레인시티</div>
@@ -73,7 +91,7 @@ const LocationEnvironment1 = () => {
 				<div>도시를 압도할 자부심 브레인시티 수자인</div>
 			</div>
 
-			<img src={page1} className={styles.image2} alt="lacation-image-1" />
+			<img src={page1} className={styles.image2} alt="브레인시티수자인입지안내-image1" />
 
 			<div className={styles.section2}>
 				{LocationSection.map((value, idx) => (

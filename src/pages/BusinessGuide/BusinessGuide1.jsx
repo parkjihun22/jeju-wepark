@@ -54,6 +54,19 @@ const BusinessGuide1 = () => {
 
 	return (
 		<div className={styles.container}>
+
+					<Helmet>
+					<title>평택브레인시티수자인 - 사업안내</title>
+					<meta name="description" content="평택브레인시티수자인은 혁신적인 주거 환경을 제공하는 새로운 아파트 단지입니다. 이 페이지에서는 프로젝트의 전체적인 개요와 개발 계획을 상세히 소개합니다. 사업의 목적, 주요 설계 및 특징, 그리고 주변 환경을 포함한 다양한 정보를 통해 입주자들에게 더 나은 선택을 할 수 있도록 돕습니다." />
+					<meta property="og:title" content="평택브레인시티수자인 - 사업안내" />
+					<meta property="og:description" content="평택브레인시티수자인은 혁신적인 주거 환경을 제공하는 새로운 아파트 단지입니다. 이 페이지에서는 프로젝트의 전체적인 개요와 개발 계획을 상세히 소개합니다. 사업의 목적, 주요 설계 및 특징, 그리고 주변 환경을 포함한 다양한 정보를 통해 입주자들에게 더 나은 선택을 할 수 있도록 돕습니다." />
+					<meta property="og:image" content="https://www.vaaclubs.com/Main1.png" />
+					<meta property="og:url" content="https://www.vaaclubs.com/BusinessGuide/intro" />
+					<meta name="twitter:title" content="평택브레인시티수자인 - 사업안내" />
+					<meta name="twitter:description" content="평택브레인시티수자인은 혁신적인 주거 환경을 제공하는 새로운 아파트 단지입니다. 이 페이지에서는 프로젝트의 전체적인 개요와 개발 계획을 상세히 소개합니다. 사업의 목적, 주요 설계 및 특징, 그리고 주변 환경을 포함한 다양한 정보를 통해 입주자들에게 더 나은 선택을 할 수 있도록 돕습니다." />
+					<meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
+					<meta name="twitter:url" content="https://www.vaaclubs.com/BusinessGuide/intro" />
+					</Helmet>  
 			
 
 			<Header isChanged={isScroll} />
@@ -62,13 +75,17 @@ const BusinessGuide1 = () => {
 			<Bener title="사업개요" />
 
 			<MenuBar contents={menuContents} />
+			{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+            <h1 className={styles.screenReaderOnly}>평택브레인시티수자인 - 사업안내</h1>
+			<p className={styles.screenReaderOnly}>평택브레인시티수자인은 혁신적인 주거 환경을 제공하는 새로운 아파트 단지입니다. 이 페이지에서는 프로젝트의 전체적인 개요와 개발 계획을 상세히 소개합니다. 사업의 목적, 주요 설계 및 특징, 그리고 주변 환경을 포함한 다양한 정보를 통해 입주자들에게 더 나은 선택을 할 수 있도록 돕습니다.
+			</p>
 
 			<div className={styles.textBox}>
 				<div>평택 제2의 고덕신도시를 꿈꾸는 브레인시티를 누리는 특별한 라이프 컬렉션</div>
 				<div>평택 브레인시티 수자인의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
-			<img className={styles.img3} src={page1} />
+			<img className={styles.img3} src={page1} alt="브레인시티수자인조감도-image1"/>
 
 			<div className={styles.tableContainer}>
 				{!isMobile && <img className={styles.tableImg} src={tableImage} />}

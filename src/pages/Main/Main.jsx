@@ -155,7 +155,7 @@ const Main = () => {
 					{!isOpenPopup2 && isOpenPopup3 && <Popup onClosed={() => setIsOpenPopup3(false)} popupImage={isMobile ? mobilePopupPage3 : popupPage3} numbering={3} />}
 
 					<div className={styles.imageContainer}>
-						<img src={mainImage} className={styles.mainImage} />
+						<img src={mainImage} className={styles.mainImage} alt="브레인시티수자인-mainimage1"/>
 						<div className={styles.overlay}></div>
 						<div className={styles.mainImageTextBox}>
 							<div className={styles.mainImageTextSub}>12월 13일 GRAND OPEN</div> 
@@ -187,7 +187,7 @@ const Main = () => {
 							</div>
 
 							<div className={styles.menuBox}>
-								<img src={section1_Image1} />
+								<img src={section1_Image1} alt="브레인시티수자인브랜드소개-image2" />
 								<Link to="/Brand/video" className={styles.btn}> 브랜드 소개 {'>'} </Link>
 							</div>
 						</div>
@@ -211,7 +211,7 @@ const Main = () => {
 								</div>
 							</div>
 
-							<img src={section8Img3} alt="Section 8 Image" />
+							<img src={section8Img3} alt="브레인시티수자인입지환경소개-image2" />
 						</div>
 					</div>
 					
@@ -225,7 +225,7 @@ const Main = () => {
 								<div className={`${styles.text4} fadeUpRepeat`}>살수록 자부심이 차원이 다른 <br />프리미엄 주거라이프를 실현합니다</div>
 								<div className={`${styles.text5} fadeUpRepeat`}>주거의 품격과 가치를 높이는 <span>특화설계</span> <br />안전한 이동을 위한 세심한 <span>단지설계</span> <br />편리한 생활을 위한 최적의 <span>공간설계</span></div>
 							</div>
-							<img src={section2_Image1} />
+							<img src={section2_Image1}alt="브레인시티수자인아파트 조감도-image3" />
 						</div>
 					</div>
 
@@ -248,7 +248,7 @@ const Main = () => {
 					<div className={styles.section}>
 						<div className={styles.section4}>
 							<div className={styles.imageBox}>
-								<img src={section4_Image1} />
+								<img src={section4_Image1} alt="브레인시티수자인브랜드소개-image4" />
 
 								<div className={styles.text1}>평택 브레인시티 수자인</div>
 								<div className={styles.text2}>THE NATURAL NOBILITY</div>
@@ -277,7 +277,7 @@ const Main = () => {
 									</div>
 								</div>
 							</div>
-						<img src={map1} alt="map img1" />
+						<img src={map1} alt="브레인시티수자인오시는길안내-image1" />
 						</div>
 
 						</div>
@@ -298,7 +298,7 @@ const Main = () => {
 
 					<div className={styles.imageContainer}>
 						
-						<img src={mobileImageMain} className={styles.mainImage} />
+						<img src={mobileImageMain} className={styles.mainImage} alt="브레인시티수자인mobilemain-image1" />
 						<div className={styles.overlay}></div>
 						<div className={styles.mainImageTextBox2}>
 							<div className={styles.mainImageTextSub}>평택 브레인시티<br/> 의세권의 중심</div>
@@ -342,7 +342,7 @@ const Main = () => {
 							</div>
 						</div>
 
-						<img src={section8Img3} alt="Section 8 Image" />
+						<img src={section8Img3} alt="브레인시티수자인mobile입지안내-image1" />
 					</div>
 
 					<div className={styles.container3}>
@@ -353,7 +353,7 @@ const Main = () => {
 							<div className={`${styles.text4} fadeUpRepeat`}>살수록 자부심이 차원이 다른 <br />프리미엄 주거라이프를 브레인시티 수자인 모델하우스에서 확인하세요</div>
 						</div>
 
-						<img src={section2_Image1} />
+						<img src={section2_Image1} alt="브레인시티수자인mobile조감도-image1" />
 					</div>
 
 					<div className={styles.container4}>
@@ -378,7 +378,7 @@ const Main = () => {
 					</div>
 
 					<div className={styles.container5}>
-						<img src={section4_Image1} />
+						<img src={section4_Image1} alt="브레인시티수자인브랜드소개 moblie-image4" />
 
 						<div className={styles.text1}>브레인시티 수자인</div>
 						<div className={styles.text2}>THE NATURAL NOBILITY</div>
@@ -387,13 +387,13 @@ const Main = () => {
 
 					<div className={styles.container2}>
 						<div>
-							<img src={section1_Image1} />
+							<img src={section1_Image1} alt="브레인시티수자인브랜드소개 mobile-image5" />
 							<Link to="/Brand/intro" className={styles.btn}> 브랜드 소개 {'>'} </Link>
 						</div>
 					</div>
 					<div className={styles.section}>
 						<div className={styles.section9}>
-						<img src={mobilemap1} alt="map img1" />
+						<img src={mobilemap1} alt="브레인시티수자인오시는길안내-mobileimage2" />
 						</div>
 					</div>
 

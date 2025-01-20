@@ -66,12 +66,30 @@ const ComplexGuide1 = () => {
 
     return (
         <div className={styles.container}>
+
+        <Helmet>
+          <title>평택브레인시티수자인 - 모집공고안내</title>
+          <meta name="description" content="평택브레인시티수자인의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요." />
+          <meta property="og:title" content="평택브레인시티수자인 - 인터넷청약" />
+          <meta property="og:description" content="평택브레인시티수자인의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요." />
+          <meta property="og:image" content="https://www.vaaclubs.com/Main1.png" />
+          <meta property="og:url" content="https://www.vaaclubs.com/SalesInfo/announcement" />
+          <meta name="twitter:title" content="평택브레인시티수자인 - 인터넷청약" />
+          <meta name="twitter:description" content="평택브레인시티수자인의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요." />
+          <meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
+          <meta name="twitter:url" content="https://www.vaaclubs.com/SalesInfo/announcement" />
+          </Helmet>
+
             <Header isChanged={isScroll} />
             <FixIcon />
 
             <Bener title="모집공고안내" />
 
             <MenuBar contents={menuContents} />
+            {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
+            <h1 className={styles.screenReaderOnly}>평택브레인시티수자인 - 모집공고안내</h1>
+			<p className={styles.screenReaderOnly}>평택브레인시티수자인의 모집 공고는 분양 전 단계에서 중요한 안내문입니다. 이 페이지에서는 모집 공고에 포함된 중요한 날짜, 자격 조건, 필요한 서류 등을 명확하게 안내하여 예비 청약자들이 혼동 없이 청약을 준비할 수 있도록 지원합니다. 모집 공고를 통해 필수 정보들을 빠짐없이 체크하세요.
+            </p>
 
             <div className={styles.textBox}>
                 <div>입주자 모집공고안내를 확인하세요</div>
@@ -81,7 +99,7 @@ const ComplexGuide1 = () => {
             <img
         className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
         src={page1}
-        alt="입주자모집공고 안내사진"
+        alt="브레인시티수자인모집공고안내-image1"
         onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
          />
 
