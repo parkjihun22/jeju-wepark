@@ -182,7 +182,7 @@ const Main = () => {
 								</div>
 
 								<div className={styles.text4}>
-									<a href="https://naver.me/G58kVeiB" target="_black"> 관심고객 등록하기 {'>'} </a>
+									<a href="https://naver.me/55rUFpYq" target="_black"> 관심고객 등록하기 {'>'} </a>
 								</div>
 							</div>
 
@@ -321,7 +321,7 @@ const Main = () => {
 						</div>
 
 						<div className={styles.text4}>
-							<a href="https://naver.me/G58kVeiB" target="_black"> 관심고객 등록하기 {'>'} </a>
+							<a href="https://naver.me/55rUFpYq" target="_black"> 관심고객 등록하기 {'>'} </a>
 						</div>
 
 					</div>

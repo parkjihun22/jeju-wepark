@@ -15,9 +15,8 @@ import page1 from "../../assets/Interior/Interior2/page1.jpg";
 
 const Interior2 = () => {
 	const menuContents = [
-		{ title: "84A", url: "/Interior/59A" },
-		{ title: "119A", url: "/Interior/84A" },
-		{ title: "119B", url: "/Interior/84B" },
+		{ title: "59㎡", url: "/Interior/59A" },
+		{ title: "84㎡", url: "/Interior/84A" },
 	];
 
 	const [isScroll, setIsScroll] = useState(false);
@@ -78,7 +77,7 @@ const Interior2 = () => {
 			</p>
 
 			<div className={styles.textBox}>
-				<div>브레인시티 푸르지오가 눈부신 가치 위에</div>
+				<div>한양 수자인, 브레인시티 눈부신 가치 위에</div>
 				<div>새로운 자부심으로 찾아옵니다.</div>
 			</div>
 

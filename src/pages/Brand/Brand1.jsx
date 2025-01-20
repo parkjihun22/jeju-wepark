@@ -74,9 +74,9 @@ const Brand1 = () => {
 			</p>	
 
             <div className={`${styles.textBox} ${isTextVisible ? styles.active : ''}`}>
-                <div>평택 브레인시티의 눈부신 가치 위에</div>
-                <div>수자인의 새로운 자부심으로 찾아옵니다.</div>
-            </div>
+                <div>생활의 모든 것을 한걸음에</div>
+                <div>수자인, 브레인시티의 중심에 서다</div>
+</div>
 
             <img className={`${styles.image} ${isImageVisible ? styles.visible : ''}`} src={page1} alt="평택브레인시티수자인brand-Image1" />
 

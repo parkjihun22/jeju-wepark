@@ -18,7 +18,7 @@ const Interior3 = () => {
 		{ title: "84A", url: "/Interior/59A" },
 		{ title: "119A", url: "/Interior/84A" },
 		{ title: "119B", url: "/Interior/84B" },
-	];
+	];	
 
 	const [isScroll, setIsScroll] = useState(false);
 	const [isImage2Loaded, setIsImage2Loaded] = useState(false); // 이미지 로딩 상태 추가
@@ -60,7 +60,7 @@ const Interior3 = () => {
 			<MenuBar contents={menuContents} />
 
 			<div className={styles.textBox}>
-				<div>브레인시티 푸르지오가 눈부신 가치 위에</div>
+				<div>브레인시티 수자인이 평택의의 눈부신 가치 위에</div>
 				<div>새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
