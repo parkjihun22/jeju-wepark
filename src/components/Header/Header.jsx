@@ -56,6 +56,7 @@ const menuArray = [
 		subMenu: [
 			{ subTitle: "59㎡", subUrl: "/FloorPlan/59A" },
 			{ subTitle: "84㎡", subUrl: "/FloorPlan/59B" },
+			{ subTitle: "세대안내영상", subUrl: "/FloorPlan/videos" },
 		],
 	},
 	{
