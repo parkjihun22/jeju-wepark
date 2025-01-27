@@ -1,7 +1,7 @@
 /* Header 전체 스타일 */
 .containerFirst,
 .container {
-    font-family: 'Gyeonggi_Title_Medium';
+    font-family: 'NanumHumanTTFBold';
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -42,7 +42,7 @@
 
     .title,
     .scrolledTitle {
-        font-family: 'Gyeonggi_Title_Medium';
+        font-family: 'NanumHumanTTFBold';
         position: absolute;
         top: 0;
         left: 0;
@@ -112,7 +112,7 @@
 
     .phoneNumber,
     .scrolledPhoneNumber {
-        font-family: 'Gyeonggi_Title_Medium';
+        font-family: 'NanumHumanTTFBold';
         position: absolute;
         top: 50%;
         right: 3%;
@@ -134,7 +134,7 @@
 
 /* 하위메뉴 스타일 */
 .secondContainer {
-    font-family: 'Gyeonggi_Title_Medium';
+    font-family: 'NanumHumanTTFBold';
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -242,7 +242,7 @@
     }
 
     .phoneNumber {
-        font-family: 'Gyeonggi_Title_Medium';
+        font-family: 'NanumHumanTTFBold';
         position: absolute;
         top: 12%;
         right: 3%;
