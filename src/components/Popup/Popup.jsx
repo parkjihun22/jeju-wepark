@@ -22,7 +22,7 @@ const Popup = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsClick(true); // 2초 후에 팝업 자동 열기
-    }, 2000); // 2초 후에 실행
+    }, 3000); // 2초 후에 실행
 
     // 클린업 함수 (컴포넌트가 언마운트될 때 타이머를 정리)
     return () => clearTimeout(timer);

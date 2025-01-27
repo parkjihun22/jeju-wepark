@@ -35,6 +35,8 @@ import mobilePopupPage4 from "../../assets/Popup/mobilepage3.jpg";
 import map1 from "../../assets/Main/map1.jpg";
 import mobilemap1 from "../../assets/Main/mobilemap1.jpg";
 
+import subpinkimg from "../../assets/Main/subpinkimg.jpg"
+
 const section3Contents = [
 	{
 		imgSrc: section3_Image1,
@@ -160,16 +162,22 @@ const Main = () => {
 					{!isOpenPopup2 && isOpenPopup3 && <Popup onClosed={() => setIsOpenPopup3(false)} popupImage={isMobile ? mobilePopupPage3 : popupPage3} numbering={3} />}
 
 					<div className={styles.imageContainer}>
-						<img src={mainImage} className={styles.mainImage} alt="브레인시티수자인-mainimage1"/>
-						<div className={styles.overlay}></div>
-						<div className={styles.mainImageTextBox}>
-							<div className={styles.mainImageTextSub}>GRAND OPENING</div> 
-							<div className={styles.mainImageTitleBox}>
-								<div className={styles.mainImageText}>평택이 기다린 단 하나의 착한아파트</div>
-								<div className={styles.mainImageLine}></div>
-								<div className={styles.mainImageText}>평택 브레인시티 수자인</div>
-							</div>
-						</div>
+    						<img src={mainImage} className={styles.mainImage} alt="브레인시티수자인-mainimage1" />
+   							<div className={styles.overlay}></div>
+    				<div className={styles.mainImageTextBox}>
+        				<div className={styles.mainImageTextSub}>분양가 상한제 적용 <span className={styles.greyText}>착한분양가</span> | 부담을 덜어주는 <span className={styles.greyText}>착한 옵션</span> | 계약금 5%로 내집마련기회 <span className={styles.greyText}>착한조건</span></div> 
+        				<div className={styles.mainImageTitleBox}>
+            			<div className={styles.mainImageText}>평택이 기다린 가장 착한 아파트</div>
+            			<div className={styles.mainImageLine}></div>
+            			<div className={styles.mainImageText}>평택 브레인시티 수자인</div>
+        			</div>
+
+					{/* 추가된 subpinkimg 이미지 클릭 시 새창 열기 */}
+    				<a href="https://naver.me/55rUFpYq" target="_blank" rel="noopener noreferrer">
+        			<img src={subpinkimg} className={styles.subPinkImg} alt="브레인시티수자인관심고객등록subpink-img" />
+    </a>
+    			</div>
+
 
 						<FixIcon type="absolute" />
 					</div>
@@ -303,18 +311,20 @@ const Main = () => {
 					<Header isChanged={isScroll} />
 
 					<div className={styles.imageContainer}>
-						
-						<img src={mobileImageMain} className={styles.mainImage} alt="브레인시티수자인mobilemain-image1" />
-						<div className={styles.overlay}></div>
-						<div className={styles.mainImageTextBox2}>
-							<div className={styles.mainImageTextSub}>평택 브레인시티<br/> 의세권의 중심</div>
-							<div className={styles.mainImageTitle}>
-								브레인시티가 기다린
-
-								</div>
-							<div className={styles.mainImageText}>브레인시티 수자인</div>
-						</div>
-					</div>
+    <img src={mobileImageMain} className={styles.mainImage} alt="브레인시티수자인mobilemain-image1" />
+    <div className={styles.overlay}></div>
+    <div className={styles.mainImageTextBox1}>
+        <div className={styles.mainImageTextSub1}>분양가 상한제 적용<br />  
+			<span className={styles.greyText}>착한분양가</span><br />
+			부담을 덜어주는<br /> <span className={styles.greyText}>착한 옵션</span><br /> 
+			계약금 5%로 내집마련기회<br /> 
+				<span className={styles.greyText}>착한조건</span></div>
+        <div className={styles.mainImageTitleBox1}>
+            <div className={styles.mainImageText1}>평택이 기다린 가장 착한 아파트</div>
+            <div className={styles.mainImageText1}>브레인시티 수자인</div>
+        </div>
+    </div>
+</div>
 
 					<div className={styles.container1}>
 

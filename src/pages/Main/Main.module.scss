@@ -13,6 +13,15 @@
     animation: fadeInScale 1.5s ease-out forwards; /* 가운데에서 퍼지는 페이드 애니메이션 */
 }
 
+.subPinkImg {
+    position: absolute;
+    left: 135%; /* 화면 오른쪽 끝으로 배치 */
+    top: 0.5vw; /* 세로 중앙 배치 (필요에 따라 수정 가능) */
+    width: 8vw; /* 크기 조정 (필요에 따라 변경) */
+    z-index: 1; /* 텍스트와 겹치지 않도록 설정 */
+    animation: subPinkImgFadeIn 1.5s ease-out forwards 1.5s; /* 서서히 나타나게 */
+}
+
 @keyframes fadeInScale {
     0% {
         transform: scale(0.9); /* 처음에는 이미지 크기가 작고 */
@@ -30,27 +39,39 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* 배경을 어둡게 */
-    animation: fadeIn 1.5s ease-in-out forwards; /* 오버레이도 가운데에서 퍼지F며 나타남 */
+    background-color: rgba(0, 0, 0, 0); /* 배경을 어둡게 */
+    animation: fadeIn 1.5s ease-in-out forwards; /* 오버레이도 가운데에서 퍼지며 나타남 */
 }
 
 .mainImageTextBox {
+    font-weight: 900;
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FFFFFF;
     text-align: center;
     opacity: 0;
     animation: textFadeIn 2s forwards 0.5s; /* 텍스트가 서서히 나타나게 */
+    padding: 0 15px; /* PC에서 여백 추가 */
 }
 
 .mainImageTextSub {
-    font-size: 18px;
-    color: #FFFFFF;
+    font-size: 20px; /* 텍스트2와 크기 동일 */
+    color: #4d4a4a;
     font-weight: normal;
     margin-bottom: 10px;
     animation: textSlideIn 1s ease-in-out forwards; /* 텍스트 슬라이드 애니메이션 */
+}
+
+.greyText {
+    font-family: 'GongGothicMedium';
+    color: #07456E; /* 회색 텍스트 */
+}
+
+.blueText {
+    font-family: 'GongGothicMedium';
+    color: #07456E; /* 파랑 텍스트 */
 }
 
 .mainImageTitleBox {
@@ -62,27 +83,14 @@
 }
 
 .mainImageText {
-    font-size: 30px;
-    font-weight: bold;
-    margin: 2px 0;
-}
-
-.mainImageLine {
-    width: 50px;
-    height: 2px;
-    background-color: white;
+    font-family: 'GongGothicMedium';
+    font-weight: 400;
+    font-size: 48px; /* 텍스트2 가장 큰 크기 */
     margin: 1vw 0;
+    color: #07456E; /* 파랑 색상 */
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
+/* 텍스트 애니메이션 */
 @keyframes textFadeIn {
     0% {
         opacity: 0;
@@ -114,13 +122,85 @@
     }
 }
 
-/* Fade up 애니메이션 정의 */
-@keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+
+/* 모바일 화면을 위한 CSS */
+@media (max-width: 900px) {
+    .mainImageTextBox1 {
+        position: absolute;
+        top: 23%; /* 모바일에서 더 상단에 위치 */
+        left: 50%;
+        transform: translateX(-50%); /* 중앙 정렬 */
+        color: #FFFFFF;
+        text-align: center;
+        opacity: 0;
+        animation: textFadeIn 2s forwards 0.5s;
+        padding: 0 10px; /* 화면 크기에 맞게 여백 추가 */
+    }
+
+    .mainImageTextSub1 {
+        color: #ffffff; /* 회색 */
+        font-size: 2.5vw; /* 모바일에서 글자 크기 줄임 */
+        line-height: 1.4;
+        margin-bottom: 8px; /* 모바일에서 여백 조금 줄임 */
+        animation: slideUp 1s ease-out forwards; /* 텍스트 슬라이드 애니메이션 */
+    }
+
+    .mainImageText1 {
+        font-family: 'GongGothicMedium';
+        font-size: 3vw; /* 모바일에서 더 작은 글자 크기 */
+        font-weight: bold;
+        line-height: 1.4; /* 텍스트 간격 조정 */
+        margin: 5px 0;
+        color: #07456E; /* 파랑 색상 */
+        animation: fadeInUp 1.5s ease-out forwards 0.5s; /* 점차적으로 나타나며 올라오는 효과 */
+    }
+
+    .mainImageTitleBox1 {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        color: #07456E; /* 파랑 색상 */
     }
 }
+
+/* 텍스트 페이드 인 애니메이션 */
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 슬라이드 업 애니메이션 */
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px); /* 텍스트가 아래에서 시작 */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* 자연스럽게 위로 올라옴 */
+        opacity: 1;
+    }
+}
+
+/* 점차적으로 나타나며 올라오는 애니메이션 */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(50px); /* 텍스트가 아래에서 시작 */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* 자연스럽게 위로 올라옴 */
+        opacity: 1;
+    }
+}
+
+
 
 
 
