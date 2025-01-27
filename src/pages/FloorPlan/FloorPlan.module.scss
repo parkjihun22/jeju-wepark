@@ -178,14 +178,15 @@
 /* 모바일 화면에서 가로 배열 유지 */
 @media (max-width: 768px) {
     .tabMenu {
+        width: 85%;
         flex-wrap: wrap; /* 버튼이 화면에 맞게 줄 바꿈되도록 설정 */
         justify-content: space-between; /* 버튼 간격을 균등하게 배분 */
     }
 
     .tabMenu button {
-        font-size: 0.95rem; /* 글자 크기 약간 축소 */
-        padding: 8px 15px; /* 패딩 줄이기 */
-        margin-right: 15px; /* 버튼 간 간격 줄이기 */
+        font-size: 1.1rem; /* 글자 크기 약간 축소 */
+        padding: 5px 5px; /* 패딩 줄이기 */
+        margin-right: 1px; /* 버튼 간 간격 줄이기 */
         flex: 1 1 30%; /* 버튼이 화면을 꽉 차게 하고, 3개 정도 한 줄에 배치되도록 설정 */
         text-align: center; /* 텍스트 중앙 정렬 */
         white-space: nowrap; /* 글자가 잘리지 않게 설정 */
@@ -200,7 +201,7 @@
 @media (max-width: 480px) {
     .tabMenu button {
         font-size: 0.9rem; /* 글자 크기 더 축소 */
-        padding: 8px 12px; /* 패딩 더 줄이기 */
+        padding: 8px 10px; /* 패딩 더 줄이기 */
     }
 }
 
