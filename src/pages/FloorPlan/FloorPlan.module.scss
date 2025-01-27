@@ -113,12 +113,21 @@
     display: flex;
     justify-content: center; /* 중앙 정렬 */
     align-items: center; /* 수직 중앙 정렬 */
-    width: 98%;
+    width: 95%;
     background-color: #FFFFFF; /* 흰색 배경 */
     padding: 10px 0;
     border-radius: 5px; /* 탭 모서리 둥글게 */
     border: 3px solid #cdc9c9; /* 연한 회색 경계선 */
     margin-top: 30px; /* 메뉴바와 탭 메뉴 사이에 간격을 30px 추가 */
+
+    @media (max-width: 900px) {
+        .tabMenu {
+          width: 80%; /* 모바일에서 가로 크기를 100%로 설정 */
+          padding: 5px 0; /* 패딩 크기 조정 */
+          margin-top: 20px; /* 탭 메뉴 상단 간격 줄이기 */
+        
+}
+    }
 }
 
 /* 탭 버튼 스타일 */
