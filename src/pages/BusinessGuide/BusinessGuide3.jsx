@@ -62,13 +62,13 @@ const BusinessGuide2 = () => {
 		<div className={styles.container}>
 			<Helmet>
 				<title>평택브레인시티수자인 - 계약서류안내</title>
-				<meta name="description" content="계약서류안내 페이지지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다." />
+				<meta name="description" content="계약서류안내 페이지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다." />
 				<meta property="og:title" content="평택브레인시티수자인 - 계약서류안내" />
-				<meta property="og:description" content="계약서류안내 페이지지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다." />
+				<meta property="og:description" content="계약서류안내 페이지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다." />
 				<meta property="og:image" content="https://www.vaaclubs.com/Main1.png" />
 				<meta property="og:url" content="https://www.vaaclubs.com/BusinessGuide/documents" />
 				<meta name="twitter:title" content="평택브레인시티수자인 - 계약서류안내" />
-				<meta name="twitter:description" content="계약서류안내 페이지지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다." />
+				<meta name="twitter:description" content="계약서류안내 페이지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다." />
 				<meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
 				<meta name="twitter:url" content="https://www.vaaclubs.com/BusinessGuide/documents" />
 			</Helmet>  
@@ -89,7 +89,7 @@ const BusinessGuide2 = () => {
 			{/* 이미지에 isImageVisible 상태 적용 */}
 			<img className={`${styles.image4} ${isImageVisible ? styles.visible : ''}`} src={page1} alt="브레인시티수자인계약서류안내-image1" />
 
-			<Footer />
+			<Footer /> 
 		</div>
 	);
 };
