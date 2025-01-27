@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 import styles from './FloorPlan.module.scss';
@@ -15,6 +15,7 @@ import { Helmet } from "react-helmet-async";
 
 const FloorPlanVideos= () => {
   const [activeTab, setActiveTab] = useState(1); // 기본적으로 첫 번째 탭 활성화
+  const [isScroll, setIsScroll] = useState(false);
 
   // 동영상 파일 경로들 (Vimeo 비디오 URL)
   const videoFiles = [
@@ -34,7 +35,23 @@ const FloorPlanVideos= () => {
   ];
 
   const { pathname } = useLocation();
-
+  // 화면 스크롤이 탑이 아니면 isScroll 값 true로 변환
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 0) {
+          setIsScroll(true);
+        } else {
+          setIsScroll(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []); 
+  
   return (
     <div className={styles.container}>
                     <Helmet>
@@ -49,7 +66,7 @@ const FloorPlanVideos= () => {
                     <meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
                     <meta name="twitter:url" content="https://www.vaaclubs.com/FloorPlan/videos" />
                     </Helmet>
-      <Header />
+                    <Header isChanged={isScroll} />
       <FixIcon />
 
       <Bener title="세대안내" />
