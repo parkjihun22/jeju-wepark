@@ -178,7 +178,7 @@ const Header = ({ isChanged }) => {
 							</div>
 
 							<a href="https://naver.me/G58kVeiB" className={styles.phoneNumber}>
-								<IoCall size={25} /> 1533-8848
+								<IoCall size={20} /> 1533-8848
 							</a>
 						</header>
 					)}

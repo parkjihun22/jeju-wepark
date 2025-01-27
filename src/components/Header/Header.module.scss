@@ -1,7 +1,8 @@
 /* Header 전체 스타일 */
 .containerFirst,
 .container {
-    font-family: 'NanumHumanTTFBold';
+    font-family: 'SUIT-Regular';
+    font-weight: 500;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -42,7 +43,8 @@
 
     .title,
     .scrolledTitle {
-        font-family: 'NanumHumanTTFBold';
+        font-family: 'SUIT-Regular';
+        font-weight: 600;
         position: absolute;
         top: 0;
         left: 0;
@@ -57,7 +59,6 @@
     }
 
     .itemBox {
-        
         display: flex;
         flex-direction: row;
         gap: 0.9rem; // 항목 간의 간격을 줄임
@@ -65,6 +66,7 @@
 
         .linkItem,
         .scrolledLinkItem {
+            
             padding: 0.5vw 0; // 패딩 조정
             font-size: 1vw;
             border-bottom: 3px solid rgba(0, 0, 0, 0); // 초기 border-bottom 투명
@@ -84,18 +86,21 @@
         }
 
         .scrolledLinkItem {
+            
             color: #07456E; // 기본 글자색 흰색
             font-weight: bold;
         }
 
         .item,
         .scrolledItem {
+        
             padding: 0.5vw 0; // 패딩 조정
             font-size: 1vw;
             border-bottom: 3px solid rgba(0, 0, 0, 0);
             text-decoration: none;
 
             &:hover {
+                
                 border-bottom: 5px solid #07456E;
             }
         }
@@ -105,14 +110,17 @@
         }
 
         .scrolledItem {
-            color: #000000;
-            font-weight: 300;
+            font-family: 'SUIT-Regular';
+        font-weight: 500;
+            color: #07456E;
+
         }
     }
 
     .phoneNumber,
     .scrolledPhoneNumber {
-        font-family: 'NanumHumanTTFBold';
+        font-family: 'SUIT-Regular';
+        font-weight: 600;
         position: absolute;
         top: 50%;
         right: 3%;
@@ -134,7 +142,8 @@
 
 /* 하위메뉴 스타일 */
 .secondContainer {
-    font-family: 'NanumHumanTTFBold';
+    font-family: 'SUIT-Regular';
+    font-weight: 600;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -165,6 +174,7 @@
 
     .title,
     .scrolledTitle {
+        
         position: absolute;
         top: 0;
         left: 0;
@@ -179,6 +189,7 @@
     }
 
     .itemBox {
+        
         position: absolute;
         top: 10%;
         display: flex;
@@ -199,6 +210,7 @@
         }
 
         .detailItemBox {
+        
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -213,9 +225,11 @@
                 font-weight: 300;
                 border-bottom: 3px solid rgba(0, 0, 0, 0);
                 text-decoration: none;
-                color: #000000;
+                color: #07456E;
 
                 &:hover {
+                    font-family: 'SUIT-Regular';
+        font-weight: 600;
                     border-bottom: 3px solid #d59c38;
                 }
             }
@@ -225,6 +239,8 @@
                 flex-direction: column;
 
                 .subitem {
+                    font-family: 'SUIT-Regular';
+                    font-weight: 600;
                     padding: 0.3vw 0.5vw;
                     border-radius: 0.2vw;
                     text-align: center;
@@ -242,7 +258,8 @@
     }
 
     .phoneNumber {
-        font-family: 'NanumHumanTTFBold';
+        font-family: 'SUIT-Regular';
+        font-weight: 600;
         position: absolute;
         top: 12%;
         right: 3%;
