@@ -18,7 +18,7 @@ const FloorPlanVideos= () => {
 
   // 동영상 파일 경로들 (Vimeo 비디오 URL)
   const videoFiles = [
-    { id: 1, title: "입지환경안내영상", src: "https://player.vimeo.com/video/1050694620?autoplay=1" },
+    { id: 1, title: "입지환경 안내영상", src: "https://player.vimeo.com/video/1050694620?autoplay=1" },
     { id: 2, title: "59타입 안내영상", src: "https://player.vimeo.com/video/1050694286?autoplay=1" },
     { id: 3, title: "84타입 안내영상", src: "https://player.vimeo.com/video/1050686637?autoplay=1" }
   ];
