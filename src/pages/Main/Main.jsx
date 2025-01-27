@@ -320,7 +320,7 @@ const Main = () => {
 			계약금 5%로 내집마련기회<br /> 
 				<span className={styles.greyText}>착한조건</span></div>
         <div className={styles.mainImageTitleBox1}>
-            <div className={styles.mainImageText1}>평택이 기다린 가장 착한 아파트</div>
+            <div className={styles.mainImageText1}>평택이 기다린<br /> 가장 착한 아파트</div>
             <div className={styles.mainImageText1}>브레인시티 수자인</div>
         </div>
     </div>
