@@ -1,6 +1,7 @@
 /* Header 전체 스타일 */
 .containerFirst,
 .container {
+    font-family: 'Gyeonggi_Title_Medium';
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -41,6 +42,7 @@
 
     .title,
     .scrolledTitle {
+        font-family: 'Gyeonggi_Title_Medium';
         position: absolute;
         top: 0;
         left: 0;
@@ -55,6 +57,7 @@
     }
 
     .itemBox {
+        
         display: flex;
         flex-direction: row;
         gap: 0.9rem; // 항목 간의 간격을 줄임
@@ -109,12 +112,12 @@
 
     .phoneNumber,
     .scrolledPhoneNumber {
+        font-family: 'Gyeonggi_Title_Medium';
         position: absolute;
         top: 50%;
-        right: 2%;
+        right: 3%;
         transform: translate(0, -50%);
         text-align: center;
-        font-family: "GmarketSansMedium";
         font-size: 1.5vw;
         text-decoration: none;
     }
@@ -131,6 +134,7 @@
 
 /* 하위메뉴 스타일 */
 .secondContainer {
+    font-family: 'Gyeonggi_Title_Medium';
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -238,12 +242,12 @@
     }
 
     .phoneNumber {
+        font-family: 'Gyeonggi_Title_Medium';
         position: absolute;
-        top: 10%;
-        right: 2%;
+        top: 12%;
+        right: 3%;
         text-align: center;
-        font-family: "GmarketSansMedium";
-        font-size: 1.2vw;
+        font-size: 1.5vw;
         font-weight: bold;
         text-decoration: none;
         color: #07456E;
