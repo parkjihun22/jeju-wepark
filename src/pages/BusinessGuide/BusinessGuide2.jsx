@@ -14,7 +14,7 @@ const BusinessGuide2 = () => {
 	const menuContents = [
 		{ title: "사업안내", url: "/BusinessGuide/intro" },
 		{ title: "분양일정", url: "/BusinessGuide/plan" },
-		{ title: "당첨자서류안내", url: "/BusinessGuide/documents" }
+		{ title: "선착순계약 서류안내", url: "/BusinessGuide/documents" }
 	];
 	const [isScroll, setIsScroll] = useState(false);
 	const [isImageVisible, setIsImageVisible] = useState(false); // isImageVisible 상태 추가

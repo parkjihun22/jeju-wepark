@@ -22,7 +22,7 @@ const menuArray = [
 		subMenu: [
 			{ subTitle: "사업안내", subUrl: "/BusinessGuide/intro" },
 			{ subTitle: "분양일정", subUrl: "/BusinessGuide/plan" },
-			{ subTitle: "당첨자서류안내", subUrl: "/BusinessGuide/documents" },
+			{ subTitle: "선착순계약 서류안내", subUrl: "/BusinessGuide/documents" },
 		],
 	},
 

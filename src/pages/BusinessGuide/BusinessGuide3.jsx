@@ -8,21 +8,17 @@ import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
 import { Helmet } from "react-helmet-async";
 
-import page1 from "../../assets/BusinessGuide/documents/page1.jpg";
-import page2 from "../../assets/BusinessGuide/documents/page2.jpg";
-import page3 from "../../assets/BusinessGuide/documents/page3.jpg";
-import page4 from "../../assets/BusinessGuide/documents/page4.jpg";
-import page5 from "../../assets/BusinessGuide/documents/page5.jpg";
-import page6 from "../../assets/BusinessGuide/documents/page6.jpg";
+import page1 from "../../assets/BusinessGuide/documents/contract.jpg";
 
 const BusinessGuide2 = () => {
 	const menuContents = [
 		{ title: "사업안내", url: "/BusinessGuide/intro" },
 		{ title: "분양일정", url: "/BusinessGuide/plan" },
-		{ title: "당첨자서류안내", url: "/BusinessGuide/documents" }
+		{ title: "선착순계약 서류안내", url: "/BusinessGuide/documents" }
 	];
 	const [isScroll, setIsScroll] = useState(false);
 	const [selectedOption, setSelectedOption] = useState(1); // 선택된 옵션 (1~6)
+	const [isImageVisible, setIsImageVisible] = useState(false); // isImageVisible 상태 추가
 	const { pathname } = useLocation(); // 현재 경로를 가져옴
 
 	useEffect(() => {
@@ -45,86 +41,53 @@ const BusinessGuide2 = () => {
 		};
 	}, []);
 
+	// 이미지 표시 여부를 변경하는 로직 추가 (예시)
+	useEffect(() => {
+		const handleImageVisibility = () => {
+			if (window.scrollY > 200) { // 예시: 스크롤이 200px 이상 내려갔을 때
+				setIsImageVisible(true);
+			} else {
+				setIsImageVisible(false);
+			}
+		};
+
+		window.addEventListener('scroll', handleImageVisibility);
+
+		return () => {
+			window.removeEventListener('scroll', handleImageVisibility);
+		};
+	}, []);
+
 	return (
 		<div className={styles.container}>
+			<Helmet>
+				<title>평택브레인시티수자인 - 계약서류안내</title>
+				<meta name="description" content="계약서류안내 페이지지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다." />
+				<meta property="og:title" content="평택브레인시티수자인 - 계약서류안내" />
+				<meta property="og:description" content="계약서류안내 페이지지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다." />
+				<meta property="og:image" content="https://www.vaaclubs.com/Main1.png" />
+				<meta property="og:url" content="https://www.vaaclubs.com/BusinessGuide/documents" />
+				<meta name="twitter:title" content="평택브레인시티수자인 - 계약서류안내" />
+				<meta name="twitter:description" content="계약서류안내 페이지지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다." />
+				<meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
+				<meta name="twitter:url" content="https://www.vaaclubs.com/BusinessGuide/documents" />
+			</Helmet>  
 
-					<Helmet>
-					<title>평택브레인시티수자인 - 당첨자서류안내</title>
-					<meta name="description" content="당첨자 구비 서류 페이지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다." />
-					<meta property="og:title" content="평택브레인시티수자인 - 당첨자서류안내" />
-					<meta property="og:description" content="당첨자 구비 서류 페이지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다." />
-					<meta property="og:image" content="https://www.vaaclubs.com/Main1.png" />
-					<meta property="og:url" content="https://www.vaaclubs.com/BusinessGuide/documents" />
-					<meta name="twitter:title" content="평택브레인시티수자인 - 당첨자서류안내" />
-					<meta name="twitter:description" content="당첨자 구비 서류 페이지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다." />
-					<meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
-					<meta name="twitter:url" content="https://www.vaaclubs.com/BusinessGuide/documents" />
-					</Helmet>  
-			
 			<Header isChanged={isScroll} />
 			<FixIcon />
 			<Bener title="사업개요" />
 			<MenuBar contents={menuContents} />
 			{/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
-            <h1 className={styles.screenReaderOnly}>평택브레인시티수자인 - 당첨자서류안내</h1>
-			<p className={styles.screenReaderOnly}>당첨자 구비 서류 페이지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다.
-			</p>
+            <h1 className={styles.screenReaderOnly}>평택브레인시티수자인 - 계약서류안내</h1>
+			<p className={styles.screenReaderOnly}>계약서류안내 페이지지에서는 분양 당첨 후 필요한 서류들에 대해 안내합니다. 계약 체결을 위해 준비해야 할 서류 목록과 함께, 각 서류의 제출 기한과 정확한 준비 방법을 안내하여 고객들이 혼동 없이 준비할 수 있도록 돕습니다.</p>
 
 			<div className={styles.textBox}>
 				<div>평택 브레인시티의 눈부신 가치 위에</div>
 				<div>평택 브레인시티 수자인의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
-			{/* 서류 안내 옵션 버튼들 */}
-			<div className={styles.optionSelector}>
-				<button
-					onClick={() => setSelectedOption(1)}
-					className={`${styles.button} ${selectedOption === 1 ? styles['active'] : ''}`}
-				>
-					일반공급
-				</button>
-				<button
-					onClick={() => setSelectedOption(2)}
-					className={`${styles.button} ${selectedOption === 2 ? styles['active'] : ''}`}
-				>
-					기관추천
-				</button>
-				<button
-					onClick={() => setSelectedOption(3)}
-					className={`${styles.button} ${selectedOption === 3 ? styles['active'] : ''}`}
-				>
-					다자녀가구
-				</button>
-				<button
-					onClick={() => setSelectedOption(4)}
-					className={`${styles.button} ${selectedOption === 4 ? styles['active'] : ''}`}
-				>
-					신혼부부
-				</button>
-				<button
-					onClick={() => setSelectedOption(5)}
-					className={`${styles.button} ${selectedOption === 5 ? styles['active'] : ''}`}
-				>
-					노부모부양
-				</button>
-				<button
-					onClick={() => setSelectedOption(6)}
-					className={`${styles.button} ${selectedOption === 6 ? styles['active'] : ''}`}
-				>
-					생애최초
-				</button>
-			</div>
-
-			{/* 선택된 옵션에 따라 이미지 표시 */}
-			<div className={styles.imageContainer}>
-				{selectedOption === 1 && <img src={page1} className={styles.img1} alt="브레인시티수자인일반공급안내-image1" />}
-				{selectedOption === 2 && <img src={page2} className={styles.img1} alt="브레인시티수자인기관추천안내-image2" />}
-				{selectedOption === 3 && <img src={page3} className={styles.img1} alt="브레인시티수자인다자녀가구안내-image3" />}
-				{selectedOption === 4 && <img src={page4} className={styles.img1} alt="브레인시티수자인신혼부부안내-image4" />}
-				{selectedOption === 5 && <img src={page5} className={styles.img1} alt="브레인시티수자인노부모부양안내-image5" />}
-				{selectedOption === 6 && <img src={page6} className={styles.img1} alt="브레인시티수자인생애최초안내-image6" />}
-			</div>
-
+			{/* 이미지에 isImageVisible 상태 적용 */}
+			<img className={`${styles.image4} ${isImageVisible ? styles.visible : ''}`} src={page1} alt="브레인시티수자인계약서류안내-image1" />
 
 			<Footer />
 		</div>
