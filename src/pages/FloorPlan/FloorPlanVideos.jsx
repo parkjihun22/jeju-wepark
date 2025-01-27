@@ -13,7 +13,7 @@ import { Helmet } from "react-helmet-async";
 
 
 
-const FloorPlan3 = () => {
+const FloorPlanVideos= () => {
   const [activeTab, setActiveTab] = useState(1); // 기본적으로 첫 번째 탭 활성화
 
   // 동영상 파일 경로들 (Vimeo 비디오 URL)
@@ -40,11 +40,11 @@ const FloorPlan3 = () => {
                     <Helmet>
                     <title>평택브레인시티수자인 - 세대안내영상</title>
                     <meta name="description" content="세대안내영상 안내 페이지는 평택브레인시티수자인의 각 아파트 세대안내영상를 제공합니다. 고객들이 아파트의 구조를 정확히 이해하고, 자신의 생활 스타일에 맞는 평형을 선택할 수 있도록 돕습니다. 다양한 평면 설계를 확인하고 자신에게 맞는 최적의 공간을 찾아보세요." />
-                    <meta property="og:title" content="평택브레인시티수자인 - 평면안내" />
+                    <meta property="og:title" content="평택브레인시티수자인 - 세대안내영상" />
                     <meta property="og:description" content="세대안내영상 안내 페이지는 평택브레인시티수자인의 각 아파트 세대안내영상를 제공합니다. 고객들이 아파트의 구조를 정확히 이해하고, 자신의 생활 스타일에 맞는 평형을 선택할 수 있도록 돕습니다. 다양한 평면 설계를 확인하고 자신에게 맞는 최적의 공간을 찾아보세요." />
                     <meta property="og:image" content="https://www.vaaclubs.com/Main1.png" />
                     <meta property="og:url" content="https://www.vaaclubs.com/FloorPlan/videos" />
-                    <meta name="twitter:title" content="평택브레인시티수자인 - 평면안내" />
+                    <meta name="twitter:title" content="평택브레인시티수자인 - 세대안내영상" />
                     <meta name="twitter:description" content="세대안내영상 안내 페이지는 평택브레인시티수자인의 각 아파트 세대안내영상를 제공합니다. 고객들이 아파트의 구조를 정확히 이해하고, 자신의 생활 스타일에 맞는 평형을 선택할 수 있도록 돕습니다. 다양한 평면 설계를 확인하고 자신에게 맞는 최적의 공간을 찾아보세요." />
                     <meta name="twitter:image" content="https://www.vaaclubs.com/Main1.png" />
                     <meta name="twitter:url" content="https://www.vaaclubs.com/FloorPlan/videos" />
@@ -96,4 +96,4 @@ const FloorPlan3 = () => {
   );
 };
 
-export default FloorPlan3;
+export default FloorPlanVideos;
