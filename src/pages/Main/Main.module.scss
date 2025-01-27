@@ -15,8 +15,8 @@
 
 .subPinkImg {
     position: absolute;
-    left: 135%; /* 화면 오른쪽 끝으로 배치 */
-    top: 0.5vw; /* 세로 중앙 배치 (필요에 따라 수정 가능) */
+    left: 145%; /* 화면 오른쪽 끝으로 배치 */
+    top: 0.1vw; /* 세로 중앙 배치 (필요에 따라 수정 가능) */
     width: 8vw; /* 크기 조정 (필요에 따라 변경) */
     z-index: 1; /* 텍스트와 겹치지 않도록 설정 */
     animation: subPinkImgFadeIn 1.5s ease-out forwards 1.5s; /* 서서히 나타나게 */
@@ -46,7 +46,7 @@
 .mainImageTextBox {
     font-weight: 900;
     position: absolute;
-    top: 25%;
+    top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FFFFFF;
@@ -292,10 +292,8 @@
     align-items: flex-start;
 
     .textBox {
-        margin-top: 14vw;
-        margin-left: 5.5vw;
-
-        font-family: 'HakgyoansimBareonbatangB';
+        margin-top: 2vw;
+        margin-left: 8vw;
         font-weight: 700;
         font-size: 3.5vw;
 
@@ -354,6 +352,17 @@
         margin-top: 4.8vw;
         margin-right: 5vw;
         width: 30vw;
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -976,7 +985,7 @@
         justify-content: flex-start;
         align-items: flex-start;
 
-        margin: 12vw 0 0 2.5vw;
+        margin: 12vw 0 0 6vw;
         width: 80%;
 
         .title {
