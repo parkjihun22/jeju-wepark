@@ -26,9 +26,12 @@ import mobileImageMain from "../../assets/Main/mobileMain1.jpg";
 import popupPage1 from "../../assets/Popup/page1.jpg";
 import popupPage2 from "../../assets/Popup/page2.jpg";
 import popupPage3 from "../../assets/Popup/page3.jpg";
+import popupPage4 from "../../assets/Popup/page3.jpg";
+
 import mobilePopupPage1 from "../../assets/Popup/mobilepage1.jpg";
 import mobilePopupPage2 from "../../assets/Popup/mobilepage2.jpg";
 import mobilePopupPage3 from "../../assets/Popup/mobilepage3.jpg";
+import mobilePopupPage4 from "../../assets/Popup/mobilepage3.jpg";
 import map1 from "../../assets/Main/map1.jpg";
 import mobilemap1 from "../../assets/Main/mobilemap1.jpg";
 
@@ -78,6 +81,7 @@ const Main = () => {
 	const [isOpenPopup1, setIsOpenPopup1] = useState(true);
 	const [isOpenPopup2, setIsOpenPopup2] = useState(true);
 	const [isOpenPopup3, setIsOpenPopup3] = useState(true);
+	const [isOpenPopup4, setIsOpenPopup4] = useState(true);
 	const isMobile = useMediaQuery({ query: '(max-width: 900px)' }); // 모바일 여부 확인
 
 	// 화면 스크롤이 탑이 아니면 isScroll 값을 true로 변환
@@ -292,8 +296,9 @@ const Main = () => {
 			) : (
 				<div className={styles.mobileMain}>
 					{isOpenPopup1 && <MobilePopup onClosed={() => setIsOpenPopup1(!isOpenPopup1)} popupImage={mobilePopupPage1} numbering={1} />}
-					{isOpenPopup2 && <MobilePopup onClosed={() => setIsOpenPopup2(!isOpenPopup1)} popupImage={mobilePopupPage2} numbering={2} />}
-					{isOpenPopup3 && <MobilePopup onClosed={() => setIsOpenPopup3(!isOpenPopup1)} popupImage={mobilePopupPage3} numbering={3} />}
+					{isOpenPopup2 && <MobilePopup onClosed={() => setIsOpenPopup2(!isOpenPopup2)} popupImage={mobilePopupPage2} numbering={2} />}
+					{isOpenPopup3 && <MobilePopup onClosed={() => setIsOpenPopup3(!isOpenPopup3)} popupImage={mobilePopupPage3} numbering={3} />}
+					{isOpenPopup4 && <MobilePopup onClosed={() => setIsOpenPopup4(!isOpenPopup4)} popupImage={mobilePopupPage3} numbering={4} />}
 					
 					<Header isChanged={isScroll} />
 
