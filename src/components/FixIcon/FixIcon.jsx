@@ -39,17 +39,26 @@ const FixIcon = ({ type }) => {
                 </>
             ) : (
                 <div>
-                    <div className={styles.buttomBtnContainer}>
-                        <a className={styles.btn1} href="https://naver.me/55rUFpYq">
-                            <IoIosCheckboxOutline size={20} />
-                            <div>방문예약</div>
-                        </a>
-                        <a className={styles.btn2} href={`tel:1533-8848`}>
-                            <PiPhoneCallFill size={25} />
-                            <div>전화상담</div>
-                        </a>
-                    </div>
-                </div >
+  <div className={styles.buttomBtnContainer}>
+    <a
+      id="visitReservation"
+      className={styles.btn1}
+      href="https://naver.me/55rUFpYq"
+    >
+      <IoIosCheckboxOutline size={20} />
+      <div>방문예약</div>
+    </a>
+    <a
+      id="phoneConsultation"
+      className={styles.btn2}
+      href="tel:1533-8848"
+    >
+      <PiPhoneCallFill size={25} />
+      <div>전화상담</div>
+    </a>
+  </div>
+</div>
+
             )}
         </>
     )

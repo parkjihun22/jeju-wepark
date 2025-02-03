@@ -324,7 +324,7 @@ const Main = () => {
                   </p>
                 </div>
                 <div className={styles.text3}>
-                  <p>상담문의</p>
+                  <p>상담담문의</p>
                 </div>
                 <div className={styles.text4}>
                   <p>1533-8848</p>
