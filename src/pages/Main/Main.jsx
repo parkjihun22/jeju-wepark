@@ -89,7 +89,7 @@ const Main = () => {
   const [isOpenPopup4, setIsOpenPopup4] = useState(true);
   const isMobile = useMediaQuery({ query: "(max-width: 900px)" });
 
-  // 관심고객 등록 폼 상태 관리 (방문일자 필드 추가)
+  // 관심고객 등록 폼 상태 관리 (방문일자 필드 포함)
   const [registration, setRegistration] = useState({
     name: "",
     phone: "",
@@ -105,14 +105,14 @@ const Main = () => {
     }));
   };
 
-  const handleRegistrationSubmit = (e) => {
-    e.preventDefault();
-    // 실제 API 연동 시 데이터를 전송하면 됩니다.
-    alert(
-      `등록되었습니다!\n이름: ${registration.name}\n연락처: ${registration.phone}\n이메일: ${registration.email}\n방문일자: ${registration.visitDate}`
-    );
-    setRegistration({ name: "", phone: "", email: "", visitDate: "" });
-  };
+  // 기존 제출 핸들러는 Formspree를 사용할 것이므로 제거(또는 사용하지 않음)
+  // const handleRegistrationSubmit = (e) => {
+  //   e.preventDefault();
+  //   alert(
+  //     `등록되었습니다!\n이름: ${registration.name}\n연락처: ${registration.phone}\n이메일: ${registration.email}\n방문일자: ${registration.visitDate}`
+  //   );
+  //   setRegistration({ name: "", phone: "", email: "", visitDate: "" });
+  // };
 
   // 스크롤 시 헤더 변경 처리
   useEffect(() => {
@@ -308,78 +308,83 @@ const Main = () => {
           </div>
 
           {/* 관심고객 등록 섹션 (PC 버전) */}
-<div className={styles.section}>
-  <div className={styles.registrationContainer}>
-    {/* 왼쪽 안내 문구 영역 */}
-    <div className={styles.registrationInfo}>
-      <div className={styles.text1}>
-        <p>
-          평택 브레인시티 수자인
-          <br />
-          주변이 궁금하시나요?
-        </p>
-      </div>
-      <div className={styles.text2}>
-        <p>
-          평택 브레인시티 수자인
-          <br />
-          현장 정보 및 견본주택 정보를 보실 수 있습니다.
-        </p>
-        <p>
-          상담신청을 남겨주시거나 전화로 문의주시면
-          <br />
-          친절하고 자세히 안내해 드리겠습니다.
-        </p>
-      </div>
-      <div className={styles.text3}>
-        <p>상담문의</p>
-      </div>
-      <div className={styles.text4}>
-        <p>1533-8848</p>
-      </div>
-    </div>
-    {/* 오른쪽 관심고객 등록 폼 영역 */}
-    <div className={styles.registrationSection}>
-      <div className={styles.registrationHeader}>방문예약 등록</div>
-      <div className={styles.registrationDescription}>
-        고객님의 정보와 방문일자를 제출해주시면
-        <br />
-        빠른 시일 내에 연락드리겠습니다.
-      </div>
-      <form className={styles.registrationForm} onSubmit={handleRegistrationSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="이름"
-          value={registration.name}
-          onChange={handleInputChange}
-          required
-        />
-        <input
-          type="tel"
-          name="phone"
-          placeholder="연락처"
-          value={registration.phone}
-          onChange={handleInputChange}
-          required
-        />
-        {/* 날짜 선택 입력란에 라벨 추가 */}
-        <div className={styles.dateInputContainer}>
-          <label htmlFor="visitDate">방문일자 선택</label>
-          <input
-            id="visitDate"
-            type="date"
-            name="visitDate"
-            value={registration.visitDate}
-            onChange={handleInputChange}
-            required
-          />
-        </div>
-        <button type="submit">등록하기</button>
-      </form>
-    </div>
-  </div>
-</div>
+          <div className={styles.section}>
+            <div className={styles.registrationContainer}>
+              {/* 왼쪽 안내 문구 영역 */}
+              <div className={styles.registrationInfo}>
+                <div className={styles.text1}>
+                  <p>
+                    평택 브레인시티 수자인
+                    <br />
+                    주변이 궁금하시나요?
+                  </p>
+                </div>
+                <div className={styles.text2}>
+                  <p>
+                    평택 브레인시티 수자인
+                    <br />
+                    현장 정보 및 견본주택 정보를 보실 수 있습니다.
+                  </p>
+                  <p>
+                    상담신청을 남겨주시거나 전화로 문의주시면
+                    <br />
+                    친절하고 자세히 안내해 드리겠습니다.
+                  </p>
+                </div>
+                <div className={styles.text3}>
+                  <p>상담문의</p>
+                </div>
+                <div className={styles.text4}>
+                  <p>1533-8848</p>
+                </div>
+              </div>
+              {/* 오른쪽 관심고객 등록 폼 영역 */}
+              <div className={styles.registrationSection}>
+                <div className={styles.registrationHeader}>방문예약 등록</div>
+                <div className={styles.registrationDescription}>
+                  고객님의 정보와 방문일자를 제출해주시면
+                  <br />
+                  빠른 시일 내에 연락드리겠습니다.
+                </div>
+                {/* Formspree 연동: onSubmit 제거, action, method 추가 */}
+                <form
+                  className={styles.registrationForm}
+                  action="https://formspree.io/f/xvgzrdkj"
+                  method="POST"
+                >
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="이름"
+                    value={registration.name}
+                    onChange={handleInputChange}
+                    required
+                  />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="연락처"
+                    value={registration.phone}
+                    onChange={handleInputChange}
+                    required
+                  />
+                  {/* 날짜 선택 입력란에 라벨 추가 */}
+                  <div className={styles.dateInputContainer}>
+                    <label htmlFor="visitDate">방문일자 선택</label>
+                    <input
+                      id="visitDate"
+                      type="date"
+                      name="visitDate"
+                      value={registration.visitDate}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
+                  <button type="submit">등록하기</button>
+                </form>
+              </div>
+            </div>
+          </div>
 
           <div className={styles.section}>
             <div className={styles.section9}>
@@ -532,43 +537,48 @@ const Main = () => {
           </div>
 
           {/* 관심고객 등록 섹션 (모바일 버전) */}
-<div className={styles.containerRegistration}>
-  <div className={styles.registrationHeader}>관심고객 등록</div>
-  <div className={styles.registrationDescription}>
-    고객님의 정보와 방문일자를 알려주시면<br /> 확인 즉시 연락드리겠습니다.
-  </div>
-  <form className={styles.registrationForm} onSubmit={handleRegistrationSubmit}>
-    <input
-      type="text"
-      name="name"
-      placeholder="이름"
-      value={registration.name}
-      onChange={handleInputChange}
-      required
-    />
-    <input
-      type="tel"
-      name="phone"
-      placeholder="연락처"
-      value={registration.phone}
-      onChange={handleInputChange}
-      required
-    />
-    {/* 날짜 선택 입력란을 감싸는 컨테이너 */}
-    <div className={styles.dateInputContainer}>
-      <label htmlFor="visitDate">방문일자 선택</label>
-      <input
-        id="visitDate"
-        type="date"
-        name="visitDate"
-        value={registration.visitDate}
-        onChange={handleInputChange}
-        required
-      />
-    </div>
-    <button type="submit">등록하기</button>
-  </form>
-</div>
+          <div className={styles.containerRegistration}>
+            <div className={styles.registrationHeader}>관심고객 등록</div>
+            <div className={styles.registrationDescription}>
+              고객님의 정보와 방문일자를 알려주시면<br /> 확인 즉시 연락드리겠습니다.
+            </div>
+            {/* Formspree 연동: onSubmit 제거, action, method 추가 */}
+            <form
+              className={styles.registrationForm}
+              action="https://formspree.io/f/xvgzrdkj"
+              method="POST"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="이름"
+                value={registration.name}
+                onChange={handleInputChange}
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="연락처"
+                value={registration.phone}
+                onChange={handleInputChange}
+                required
+              />
+              {/* 날짜 선택 입력란을 감싸는 컨테이너 */}
+              <div className={styles.dateInputContainer}>
+                <label htmlFor="visitDate">방문일자 선택</label>
+                <input
+                  id="visitDate"
+                  type="date"
+                  name="visitDate"
+                  value={registration.visitDate}
+                  onChange={handleInputChange}
+                  required
+                />
+              </div>
+              <button type="submit">등록하기</button>
+            </form>
+          </div>
 
           <div className={styles.container2}>
             <div>
