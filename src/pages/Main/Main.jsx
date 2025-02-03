@@ -308,65 +308,78 @@ const Main = () => {
           </div>
 
           {/* 관심고객 등록 섹션 (PC 버전) */}
-          <div className={styles.section}>
-            <div className={styles.registrationContainer}>
-              {/* 왼쪽 안내 문구 영역 */}
-              <div className={styles.registrationInfo}>
-                <div className={styles.text1}>
-                  <p>평택 브레인시티 수자인<br/> 주변이 궁금하시나요?</p>
-             
-                </div>
-                <div className={styles.text2}>
-				<p>평택 브레인시티 수자인<br/> 현장 정보 및 견본주택 정보를 보실 수 있습니다.</p>
-                  <p>
-                    상담신청을 남겨주시거나 전화로 문의주시면<br />
-                    친절하고 자세히 안내해 드리겠습니다.
-                  </p>
-                </div>
-                <div className={styles.text3}>
-                  <p>상담문의</p>
-                </div>
-                <div className={styles.text4}>
-                  <p>1533-8848</p>
-                </div>
-              </div>
-              {/* 오른쪽 관심고객 등록 폼 영역 */}
-              <div className={styles.registrationSection}>
-                <div className={styles.registrationHeader}>방문예약 등록</div>
-                <div className={styles.registrationDescription}>
-                  고객님의 정보와 방문일자를 제출해주시면 <br/>빠른 시일 내에 연락드리겠습니다.
-                </div>
-                <form className={styles.registrationForm} onSubmit={handleRegistrationSubmit}>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="이름"
-                    value={registration.name}
-                    onChange={handleInputChange}
-                    required
-                  />
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="연락처"
-                    value={registration.phone}
-                    onChange={handleInputChange}
-                    required
-                  />
-                  
-                  <input
-                    type="date"
-                    name="visitDate"
-                    placeholder="방문일자 선택"
-                    value={registration.visitDate}
-                    onChange={handleInputChange}
-                    required
-                  />
-                  <button type="submit">등록하기</button>
-                </form>
-              </div>
-            </div>
-          </div>
+<div className={styles.section}>
+  <div className={styles.registrationContainer}>
+    {/* 왼쪽 안내 문구 영역 */}
+    <div className={styles.registrationInfo}>
+      <div className={styles.text1}>
+        <p>
+          평택 브레인시티 수자인
+          <br />
+          주변이 궁금하시나요?
+        </p>
+      </div>
+      <div className={styles.text2}>
+        <p>
+          평택 브레인시티 수자인
+          <br />
+          현장 정보 및 견본주택 정보를 보실 수 있습니다.
+        </p>
+        <p>
+          상담신청을 남겨주시거나 전화로 문의주시면
+          <br />
+          친절하고 자세히 안내해 드리겠습니다.
+        </p>
+      </div>
+      <div className={styles.text3}>
+        <p>상담문의</p>
+      </div>
+      <div className={styles.text4}>
+        <p>1533-8848</p>
+      </div>
+    </div>
+    {/* 오른쪽 관심고객 등록 폼 영역 */}
+    <div className={styles.registrationSection}>
+      <div className={styles.registrationHeader}>방문예약 등록</div>
+      <div className={styles.registrationDescription}>
+        고객님의 정보와 방문일자를 제출해주시면
+        <br />
+        빠른 시일 내에 연락드리겠습니다.
+      </div>
+      <form className={styles.registrationForm} onSubmit={handleRegistrationSubmit}>
+        <input
+          type="text"
+          name="name"
+          placeholder="이름"
+          value={registration.name}
+          onChange={handleInputChange}
+          required
+        />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="연락처"
+          value={registration.phone}
+          onChange={handleInputChange}
+          required
+        />
+        {/* 날짜 선택 입력란에 라벨 추가 */}
+        <div className={styles.dateInputContainer}>
+          <label htmlFor="visitDate">방문일자 선택</label>
+          <input
+            id="visitDate"
+            type="date"
+            name="visitDate"
+            value={registration.visitDate}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+        <button type="submit">등록하기</button>
+      </form>
+    </div>
+  </div>
+</div>
 
           <div className={styles.section}>
             <div className={styles.section9}>

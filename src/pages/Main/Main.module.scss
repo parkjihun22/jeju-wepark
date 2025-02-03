@@ -528,7 +528,7 @@
 
         .mainImage {
             width: 100vw;
-            height: 80vh;
+            height: 90vh;
             object-fit: cover; /* 이미지 비율 유지하면서 가득 채우기 */
             filter: brightness(0.8) contrast(1.2); /* 이미지에 어두운 필터 적용, 대비 강조 */
         }
@@ -549,7 +549,7 @@
             justify-content: center; /* 세로로 중앙 정렬 */
             align-items: center; /* 가로로 중앙 정렬 */
             position: absolute;
-            top: 50%;
+            top: 35%;
             left: 50%;
             transform: translate(-50%, -50%); /* 정확히 중앙에 맞추기 위한 이동 */
             color: #FFFFFF;
@@ -1128,15 +1128,6 @@
     font-family: 'NanumHumanTTFBold';
   }
   
-
-  .mainImageTextBox1 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    color: #fff;    
-    text-align: center;
-  }
   
   /* --- 모바일 전용 스타일 --- */
 
@@ -1145,16 +1136,6 @@
   }
   
 
-
-  .mainImageTextBox1 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    color: #fff;
-    text-align: center;
-  }
-  
   /* 관심고객 등록 섹션 (모바일) */
   .containerRegistration {
     background-color: #f8f8f8;
@@ -1222,103 +1203,128 @@
 
 /* pc전체 섹션 여백 및 중앙 정렬 */
 .section {
-  }
-  
-  /* 좌우 2단 레이아웃 컨테이너 */
-  .registrationContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20vw;
-    max-width: 1200px;
-    margin: 6vw 0 0 15vw;
-    padding: 50px 0;
-  }
-  /* 왼쪽 안내 문구 영역 */
-  .registrationInfo {
-    flex: 1;
-    text-align: left;
-    margin-left: -5vw; /* 값은 디자인에 맞게 조절 */
-  }
-  
-  /* 개별 텍스트 스타일 */
-  
-  /* text1: 제목 및 부제 (예시: 크고 진한 텍스트) */
-  .text1 {
-    font-family: 'NanumHumanTTFBold';
-    font-size: 1.8rem;    /* 원하는 크기로 조정 */
-    color: #373535;          /* 원하는 색상으로 조정 */
-    margin-bottom: 20px;
-  }
-  
-  /* text2: 상담 안내 문구 */
-  .text2 {
-    font-size: 1.2rem;
-    color: #484747;
-    margin-bottom: 20px;
-  }
-  
-  /* text3: '분양문의' */
-  .text3 {
-    font-family: 'NanumHumanTTFBold';
-    font-size: 2rem;
-    color: #000;
-    font-weight: bold;
-  }
-  
-  /* text4: 전화번호 */
-  .text4 {
-    
-    font-size: 3rem;
-    color: #07456E;       /* 예: 붉은색 */
-    font-weight: bold;
-  }
-  
-  /* 오른쪽 등록 폼 영역 */
-  .registrationSection {
-    flex: 1;
-    background-color: #f8f8f8;
-    padding: 30px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .registrationHeader {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .registrationDescription {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  
-  .registrationForm {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .registrationForm input {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .registrationForm button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .registrationForm button:hover {
-    background-color: #333;
-  }
+}
+
+/* 좌우 2단 레이아웃 컨테이너 */
+.registrationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20vw;
+  max-width: 1200px;
+  margin: 6vw 0 0 15vw;
+  padding: 50px 0;
+}
+
+/* 왼쪽 안내 문구 영역 */
+.registrationInfo {
+  flex: 1;
+  text-align: left;
+  margin-left: -5vw; /* 값은 디자인에 맞게 조절 */
+}
+
+/* 개별 텍스트 스타일 */
+
+/* text1: 제목 및 부제 (예시: 크고 진한 텍스트) */
+.text1 {
+  font-family: 'NanumHumanTTFBold';
+  font-size: 1.8rem;    /* 원하는 크기로 조정 */
+  color: #373535;       /* 원하는 색상으로 조절 */
+  margin-bottom: 20px;
+}
+
+/* text2: 상담 안내 문구 */
+.text2 {
+  font-size: 1.2rem;
+  color: #484747;
+  margin-bottom: 20px;
+}
+
+/* text3: '분양문의' */
+.text3 {
+  font-family: 'NanumHumanTTFBold';
+  font-size: 2rem;
+  color: #000;
+  font-weight: bold;
+}
+
+/* text4: 전화번호 */
+.text4 {
+  font-size: 3rem;
+  color: #07456E;       /* 예: 붉은색 */
+  font-weight: bold;
+}
+
+/* 오른쪽 등록 폼 영역 */
+.registrationSection {
+  flex: 1;
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.registrationHeader {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.registrationDescription {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.registrationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.registrationForm input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.registrationForm button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.registrationForm button:hover {
+  background-color: #333;
+}
+
+/* 날짜 선택 입력란 관련 스타일 (PC 버전) */
+.dateInputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.dateInputContainer label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  text-align: center;  /* 가운데 정렬 */
+  color: #373535;
+}
+
+.dateInputContainer input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
   
   
