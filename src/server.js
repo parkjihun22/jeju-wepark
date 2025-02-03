@@ -28,7 +28,7 @@ app.post('/submit', async (req, res) => {
   const mailOptions = {
     from: 'eyeful31@naver.com',            // 보내는 메일 주소
     to: 'eyeful31@naver.com',              // 받는 메일 주소 (관리자용)
-    subject: '브레인시티수자인관심고객객',
+    subject: '브레인시티수자인관심고객',
     text: `새로운 관심고객 등록 정보입니다:\n\n이름: ${name}\n이메일: ${email}\n전화번호: ${phone}`
   };
 
