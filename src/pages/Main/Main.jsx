@@ -324,7 +324,7 @@ const Main = () => {
                   </p>
                 </div>
                 <div className={styles.text3}>
-                  <p>상담담문의</p>
+                  <p>상담문의</p>
                 </div>
                 <div className={styles.text4}>
                   <p>1533-8848</p>
@@ -353,13 +353,7 @@ const Main = () => {
                     onChange={handleInputChange}
                     required
                   />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="이메일 (선택)"
-                    value={registration.email}
-                    onChange={handleInputChange}
-                  />
+                  
                   <input
                     type="date"
                     name="visitDate"
@@ -525,46 +519,43 @@ const Main = () => {
           </div>
 
           {/* 관심고객 등록 섹션 (모바일 버전) */}
-          <div className={styles.containerRegistration}>
-            <div className={styles.registrationHeader}>관심고객 등록</div>
-            <div className={styles.registrationDescription}>
-              고객님의 정보와 방문일자를 알려주시면<br/> 확인 즉시 연락드리겠습니다.
-            </div>
-            <form className={styles.registrationForm} onSubmit={handleRegistrationSubmit}>
-              <input
-                type="text"
-                name="name"
-                placeholder="이름"
-                value={registration.name}
-                onChange={handleInputChange}
-                required
-              />
-              <input
-                type="tel"
-                name="phone"
-                placeholder="연락처"
-                value={registration.phone}
-                onChange={handleInputChange}
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="이메일 (선택)"
-                value={registration.email}
-                onChange={handleInputChange}
-              />
-              <input
-                type="date"
-                name="visitDate"
-                placeholder="방문일자 선택"
-                value={registration.visitDate}
-                onChange={handleInputChange}
-                required
-              />
-              <button type="submit">등록하기</button>
-            </form>
-          </div>
+<div className={styles.containerRegistration}>
+  <div className={styles.registrationHeader}>관심고객 등록</div>
+  <div className={styles.registrationDescription}>
+    고객님의 정보와 방문일자를 알려주시면<br /> 확인 즉시 연락드리겠습니다.
+  </div>
+  <form className={styles.registrationForm} onSubmit={handleRegistrationSubmit}>
+    <input
+      type="text"
+      name="name"
+      placeholder="이름"
+      value={registration.name}
+      onChange={handleInputChange}
+      required
+    />
+    <input
+      type="tel"
+      name="phone"
+      placeholder="연락처"
+      value={registration.phone}
+      onChange={handleInputChange}
+      required
+    />
+    {/* 날짜 선택 입력란을 감싸는 컨테이너 */}
+    <div className={styles.dateInputContainer}>
+      <label htmlFor="visitDate">방문일자 선택</label>
+      <input
+        id="visitDate"
+        type="date"
+        name="visitDate"
+        value={registration.visitDate}
+        onChange={handleInputChange}
+        required
+      />
+    </div>
+    <button type="submit">등록하기</button>
+  </form>
+</div>
 
           <div className={styles.container2}>
             <div>
