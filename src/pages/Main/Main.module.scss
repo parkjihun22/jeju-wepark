@@ -1138,12 +1138,13 @@
 
   /* 관심고객 등록 섹션 (모바일) */
   .containerRegistration {
-    background-color: #f8f8f8;
+    background-color: #c3c4c4;
     padding: 30px 20px;
     text-align: center;
     margin: 20px 0;
   }
   .registrationHeader {
+    font-family: 'GongGothicMedium';
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 15px;
@@ -1243,14 +1244,14 @@
 /* text3: '분양문의' */
 .text3 {
   font-family: 'NanumHumanTTFBold';
-  font-size: 2rem;
-  color: #000;
+  font-size: 1.5rem;
+  color: #07456E;
   font-weight: bold;
 }
 
 /* text4: 전화번호 */
 .text4 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: #07456E;       /* 예: 붉은색 */
   font-weight: bold;
 }
@@ -1291,7 +1292,7 @@
 .registrationForm button {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #000;
+  background-color: #07456E;
   color: #fff;
   border: none;
   border-radius: 4px;

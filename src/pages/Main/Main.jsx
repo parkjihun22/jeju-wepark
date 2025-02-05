@@ -340,11 +340,10 @@ const Main = () => {
               </div>
               {/* 오른쪽 관심고객 등록 폼 영역 */}
               <div className={styles.registrationSection}>
-                <div className={styles.registrationHeader}>방문예약 등록</div>
+                <div className={styles.registrationHeader}>브레인시티 수자인</div>
                 <div className={styles.registrationDescription}>
-                  고객님의 정보와 방문일자를 제출해주시면
-                  <br />
-                  빠른 시일 내에 연락드리겠습니다.
+                  방문예약
+                  
                 </div>
                 {/* Formspree 연동: onSubmit 제거, action, method 추가 */}
                 <form
@@ -352,25 +351,27 @@ const Main = () => {
                   action="https://formspree.io/f/xvgzrdkj"
                   method="POST"
                 >
+                  <label htmlFor="name">이름<span style={{ color: 'red' }}>*</span></label>
                   <input
                     type="text"
                     name="name"
-                    placeholder="이름"
+                    placeholder=""
                     value={registration.name}
                     onChange={handleInputChange}
                     required
                   />
+                  <label htmlFor="phonenumber">연락처<span style={{ color: 'red' }}>*</span></label>
                   <input
                     type="tel"
                     name="phone"
-                    placeholder="연락처"
+                    placeholder=""
                     value={registration.phone}
                     onChange={handleInputChange}
                     required
                   />
                   {/* 날짜 선택 입력란에 라벨 추가 */}
-                  <div className={styles.dateInputContainer}>
-                    <label htmlFor="visitDate">방문일자 선택</label>
+                  <div className={styles.registrationForm}>
+                  <label htmlFor="visitDate">방문일자 선택<span style={{ color: 'red' }}>*</span></label>
                     <input
                       id="visitDate"
                       type="date"
@@ -538,9 +539,9 @@ const Main = () => {
 
           {/* 관심고객 등록 섹션 (모바일 버전) */}
           <div className={styles.containerRegistration}>
-            <div className={styles.registrationHeader}>관심고객 등록</div>
+            <div className={styles.registrationHeader}>브레인시티 수자인</div>
             <div className={styles.registrationDescription}>
-              고객님의 정보와 방문일자를 알려주시면<br /> 확인 즉시 연락드리겠습니다.
+              방문예약
             </div>
             {/* Formspree 연동: onSubmit 제거, action, method 추가 */}
             <form
@@ -548,25 +549,27 @@ const Main = () => {
               action="https://formspree.io/f/xvgzrdkj"
               method="POST"
             >
+              <label htmlFor="name">이름<span style={{ color: 'red' }}>*</span></label>
               <input
                 type="text"
                 name="name"
-                placeholder="이름"
+                placeholder=""
                 value={registration.name}
                 onChange={handleInputChange}
                 required
               />
+              <label htmlFor="phonenumber">연락처<span style={{ color: 'red' }}>*</span></label>
               <input
                 type="tel"
                 name="phone"
-                placeholder="연락처"
+                placeholder=""
                 value={registration.phone}
                 onChange={handleInputChange}
                 required
               />
               {/* 날짜 선택 입력란을 감싸는 컨테이너 */}
-              <div className={styles.dateInputContainer}>
-                <label htmlFor="visitDate">방문일자 선택</label>
+              <div className={styles.registrationForm}>
+                <label htmlFor="visitDate">방문일자 선택<span style={{ color: 'red' }}>*</span></label>
                 <input
                   id="visitDate"
                   type="date"
