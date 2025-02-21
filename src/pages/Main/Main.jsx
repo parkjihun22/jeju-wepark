@@ -12,6 +12,8 @@ import UnitplanBox from "../../components/UnitplanBox/UnitplanBox";
 import MobilePopup from "../../components/MobilePopup/MobilePopup";
 import Popup from "../../components/Popup/Popup";
 import MobileSectionBox from "../../components/MobileSectionBox/MobileSectionBox";
+import InterestPopup from "../../components/InterestPopup/InterestPopup"; // 새 팝업 컴포넌트 import
+
 
 import mainImage from "../../assets/Main/Main1.jpg";
 import section1_Image1 from "../../assets/Main/section1-img1.jpg";
@@ -87,6 +89,7 @@ const Main = () => {
   const [isOpenPopup2, setIsOpenPopup2] = useState(true);
   const [isOpenPopup3, setIsOpenPopup3] = useState(true);
   const [isOpenPopup4, setIsOpenPopup4] = useState(true);
+  const [isInterestPopupOpen, setIsInterestPopupOpen] = useState(false); // 방문예약 팝업 상태
   const isMobile = useMediaQuery({ query: "(max-width: 900px)" });
 
   // 관심고객 등록 폼 상태 관리 (방문일자 필드 포함)
@@ -198,9 +201,19 @@ const Main = () => {
                 <div className={styles.mainImageLine}></div>
                 <div className={styles.mainImageText}>평택 브레인시티 수자인</div>
               </div>
-              <a href="https://naver.me/55rUFpYq" target="_blank" rel="noopener noreferrer">
-                <img src={subpinkimg} className={styles.subPinkImg} alt="브레인시티수자인관심고객등록subpink-img" />
-              </a>
+              {/* 기존 관심고객 등록 링크 대신 방문예약 버튼 클릭 시 팝업 오픈 */}
+              <div>
+                <button
+                  onClick={() => setIsInterestPopupOpen(true)}
+                  className={styles.subPinkBtn}
+                >
+                  <img
+                    src={subpinkimg}
+                    className={styles.subPinkImg}
+                    alt="브레인시티푸르지오 관심고객등록"
+                  />
+                </button>
+              </div>
             </div>
             <FixIcon type="absolute" />
           </div>
@@ -409,6 +422,15 @@ const Main = () => {
           <div className={styles.section5}>
             <Footer />
           </div>
+
+          {/* 방문예약 팝업 (PC) */}
+          {isInterestPopupOpen && (
+            <InterestPopup
+              onClose={() => setIsInterestPopupOpen(false)}
+              registration={registration}
+              handleInputChange={handleInputChange}
+            />
+          )}
         </>
       ) : (
         // 모바일 버전
@@ -457,7 +479,7 @@ const Main = () => {
                 <span className={styles.greyText}>착한조건</span>
               </div>
               <div className={styles.mainImageTitleBox1}>
-                <div className={styles.mainImageText1}>평택이 기다린 가장 착한 아파트</div>
+                <div className={styles.mainImageText1}>평택이 기다린<br /> 가장 착한 아파트</div>
                 <div className={styles.mainImageText1}>브레인시티 수자인</div>
               </div>
             </div>
@@ -602,6 +624,14 @@ const Main = () => {
             <Footer />
             <FixIcon />
           </div>
+          {/* 방문예약 팝업 (모바일) */}
+          {isInterestPopupOpen && (
+            <InterestPopup
+              onClose={() => setIsInterestPopupOpen(false)}
+              registration={registration}
+              handleInputChange={handleInputChange}
+            />
+          )}
         </div>
       )}
     </>
