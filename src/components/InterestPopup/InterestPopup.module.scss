@@ -1,11 +1,10 @@
 /* InterestPopup.module.scss */
 .popupOverlay {
     position: fixed;
-    top: 5vw;
+    top: 1vw;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +14,7 @@
   .popupContainer {
     background: #fff;
     width: 60%;
-    max-width: 20vw;
+    max-width: 30vw;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -72,7 +71,7 @@
     .formGroup {
       display: flex;
       flex-direction: column;
-      margin-bottom: 15px;
+      margin-bottom: 1.5vw;
       align-items: center;  // 수평 중앙 정렬
       width: 100%;
       justify-content: center;
@@ -116,7 +115,7 @@
       border-radius: 4px;
       cursor: pointer;
       transition: background-color 0.3s;
-  
+      
       &:hover {
         background-color: #07456E;
       }
