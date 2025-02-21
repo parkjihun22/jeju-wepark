@@ -382,25 +382,14 @@ const Main = () => {
                     onChange={handleInputChange}
                     required
                   />
-                  {/* 날짜 선택 입력란에 라벨 추가 */}
-                  <div className={styles.registrationForm}>
-                  <label htmlFor="visitDate">방문일자 선택<span style={{ color: 'red' }}>*</span></label>
-                    <input
-                      id="visitDate"
-                      type="date"
-                      name="visitDate"
-                      value={registration.visitDate}
-                      onChange={handleInputChange}
-                      required
-                    />
-                  </div>
+                  
                   <button type="submit">등록하기</button>
                 </form>
               </div>
             </div>
           </div>
 
-          <div className={styles.section}>
+          {/* <div className={styles.section}>
             <div className={styles.section9}>
               <div className={styles.textBox}>
                 <div className={styles.title}>
@@ -417,7 +406,7 @@ const Main = () => {
               </div>
               <img src={map1} alt="브레인시티수자인오시는길안내-image1" />
             </div>
-          </div>
+          </div> */}
 
           <div className={styles.section5}>
             <Footer />
@@ -589,18 +578,7 @@ const Main = () => {
                 onChange={handleInputChange}
                 required
               />
-              {/* 날짜 선택 입력란을 감싸는 컨테이너 */}
-              <div className={styles.registrationForm}>
-                <label htmlFor="visitDate">방문일자 선택<span style={{ color: 'red' }}>*</span></label>
-                <input
-                  id="visitDate"
-                  type="date"
-                  name="visitDate"
-                  value={registration.visitDate}
-                  onChange={handleInputChange}
-                  required
-                />
-              </div>
+              
               <button type="submit">등록하기</button>
             </form>
           </div>
@@ -614,11 +592,11 @@ const Main = () => {
             </div>
           </div>
 
-          <div className={styles.section}>
+          {/* <div className={styles.section}>
             <div className={styles.section9}>
               <img src={mobilemap1} alt="브레인시티수자인오시는길안내-mobileimage2" />
             </div>
-          </div>
+          </div> */}
 
           <div className={styles.section5}>
             <Footer />
