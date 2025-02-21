@@ -46,7 +46,7 @@ const InterestPopup = ({ onClose, registration, handleInputChange }) => {
             </div>
             
             <button type="submit" className={styles.submitBtn}>
-              등록하기
+              모델하우스 위치안내 받기 
             </button>
           </form>
         </div>
