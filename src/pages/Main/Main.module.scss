@@ -695,17 +695,20 @@
         background-color: #fffbf5;
 
         .text1 {
+            margin: 0 0 0 7vw;
             font-size: 8vw;
             color: #c98f25;
         }
 
         .text2 {
+            margin: 8vw 0 0 7vw;
             margin-top: 8vw;
             font-size: 4vw;
             color: #461900;
         }
 
         .text3 {
+            margin: 8vw 0 0 7vw;
             margin-top: 8vw;
             font-size: 2.5vw;
             font-family: 'HakgyoansimBareonbatangA';
@@ -715,7 +718,7 @@
         }
 
         .text4 {
-            margin: 15vw 0 17vw 3vw;
+            margin: 15vw 0 17vw 10vw;
             font-size: 3vw;
             color: #241400;
 
@@ -730,6 +733,11 @@
     .container2 {
         width: 100vw;
         height: 100%;
+
+        img {
+            width: 34vw;
+
+        }
 
         div {
             display: flex;
@@ -757,8 +765,6 @@
         position: relative;
         width: 100%;
         height: 80vw;
-
-        height: 80vw;
         background: linear-gradient(to bottom, #fff6ea 85%, #c4825f 15%);
 
         .textbox {
@@ -773,6 +779,7 @@
             .text3,
             .text4,
             .text5 {
+                width: 65%;
                 opacity: 0;
                 animation: fadeUp 1.8s ease forwards;
             }
@@ -1047,13 +1054,14 @@
 }
 
 .section9 {
+    gap: 2vw;
     margin-top: 5vw;
     display: flex;
     flex-direction: row;
     justify-content: center; /* 이미지를 가로 방향으로 중앙 배치 */
     align-items: flex-start; /* 이미지의 세로 정렬 (flex-start는 상단 정렬) */
     width: 100%;
-    height: auto;
+    height: 50%;
     background-color: #fff6ea;
 
     .textBox {
@@ -1062,8 +1070,8 @@
         justify-content: flex-start;
         align-items: flex-start;
 
-        margin: 5vw 0 0 1vw;
-        width: 40%;
+        margin: 12vw 0 0 2vw;
+        width: 35%;
         height: auto;
 
         .title {
