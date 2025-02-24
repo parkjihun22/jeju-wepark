@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 // PC, 모바일 전용 CSS 모듈 (Main.module.scss 안에 모든 스타일을 넣은 경우)
 import styles from "./Main.module.scss";
+import { Helmet } from "react-helmet-async"; // SEO 메타 태그 추가를 위한 Helmet 임포트
 
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
