@@ -173,14 +173,14 @@ const Main = () => {
         />
 
         {/* SEO 최적화를 위한 메타 태그 추가 */}
-        <title>브레인시티 수자인 - 프리미엄 아파트</title>
+        <title>「브레인시티 수자인」</title>
         <meta
           name="description"
           content="브레인시티 수자인 | 평택브레인시티수자인 | 대표홈페이지 ☎ 1533-8848 | 브레인시티수자인 모델하우스| 브레인시티 8BL"
         />
         <meta
           name="keywords"
-          content="힐스테이트용인마크밸리, 용인마크밸리, 힐스테이트용인마크밸리모델하우스"
+          content="브레인시티수자인, 평택브레인시티수자인, 브레인시티수자인모델하우스"
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.vaaclubs.com/" />
@@ -192,7 +192,7 @@ const Main = () => {
         {/* Open Graph - 소셜 미디어(페이스북, LinkedIn 등) 공유 최적화 */}
         <meta
           property="og:title"
-          content="브레인시티 수자인 - 프리미엄 아파트"
+          content="「브레인시티 수자인」"
         />
         <meta
           property="og:description"
@@ -209,7 +209,7 @@ const Main = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="브레인시티 수자인 - 프리미엄 아파트"
+          content="브레인시티 수자인"
         />
         <meta
           name="twitter:description"
@@ -233,8 +233,8 @@ const Main = () => {
         "telephone": "1533-8848",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "주소정보를 입력하세요",
-          "addressLocality": "용인",
+          "streetAddress": "경기도 평택시 장안동",
+          "addressLocality": "평택시 장안동 8BL",
           "addressRegion": "경기도",
           "postalCode": "우편번호"
         }
