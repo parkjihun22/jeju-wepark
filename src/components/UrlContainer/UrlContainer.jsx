@@ -13,7 +13,7 @@ const UrlContainer = () => {
     const handleScroll = (direction) => {
         if (!containerRef.current) return;
     
-        let newIndex = scrollIndex + (direction === "left" ? -1 : 1);
+        let newIndex = scrollIndex + (direction === "left" ? -3 : 3);
     
         // 🔄 원형 스크롤 구현
         if (newIndex < 0) {
@@ -32,7 +32,7 @@ const UrlContainer = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.title}>Affiliated Sites</div>
+            <div className={styles.title}>전국 협력업체 소개</div>
 
             <div className={styles.urlContainer}> {/* ✅ 대소문자 맞춤 */}
                 <button

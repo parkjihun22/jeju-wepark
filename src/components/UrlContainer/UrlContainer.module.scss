@@ -11,7 +11,7 @@
     background-color: #fff6ea;
 
     .title {
-        font-family: 'NanumBarunGothic';
+        font-family: 'Gyeonggi_Title_Medium';
         font-size: 1.5vw;
         font-weight: 500;
     }
@@ -69,7 +69,7 @@
             }
 
             div {
-                font-family: 'MinSans-Regular';
+                font-family: 'Gyeonggi_Title_Medium';
                 margin: 1vw 0 0 0;
                 width: 90%;
 
@@ -78,7 +78,7 @@
                 overflow: hidden; 
                 text-overflow: ellipsis;
 
-                font-size: 1.2vw;
+                font-size: 1vw;
             }
         }
     }
@@ -93,7 +93,8 @@
         background-color: #fff6ea;
 
         .title {
-            font-size: 4vw;
+            font-size: 5vw;
+            margin-bottom: 4vw;
         }
 
         .urlContainer {
@@ -107,11 +108,11 @@
                 margin: 0 1vw;
 
                 img {
-                    border-radius: 1.5vw;
+                    border-radius: 2vw;
                 }
 
                 div {
-                    font-size: 2.2vw;
+                    font-size: 2vw;
                 }
             }
         }
