@@ -472,7 +472,7 @@ const Main = () => {
               </div>
               <div className={styles.mainImageTitleBox1}>
                 <div className={styles.mainImageText1}>평택이 기다린<br /> 가장 착한 아파트</div>
-                <div className={styles.mainImageText1}>브레인시티 수자인</div>
+                <div className={styles.mainImageText5}>브레인시티 수자인</div>
               </div>
             </div>
           </div>
