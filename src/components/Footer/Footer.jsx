@@ -11,13 +11,13 @@ import InterestPopup from "../InterestPopup/InterestPopup";
 
 // FAMILY SITE 목록 예시
 const partnerSites = [
-  { name: "용인 푸르지오 원클래스", url: "https://example1.com" },
-  { name: "용인 푸르지오 원클래스 2단지", url: "https://example2.com" },
-  { name: "평택 브레인시티 중흥 S-클래스", url: "https://example3.com" },
-  { name: "평택 브레인시티 푸르지오", url: "https://example4.com" },
-  { name: "평택 브레인시티 한신더휴", url: "https://example5.com" },
-  { name: "평택 브레인시티 수자인", url: "https://example6.com" },
-  { name: "용인 둔전역 에피트", url: "https://example7.com" },
+  { name: "엘리프 세종 5-1", url: "https://www.sekailog.com" },
+  { name: "용인 푸르지오 원클러스터 2단지", url: "www.beyinegzersizi.com" },
+  { name: "도안 벽산블루밍", url: "https://www.abcya4.com/" },
+  { name: "이편한세상 성성호수공원", url: "https://www.3sha-re.com/" },
+  { name: "힐스테이트 용인마크밸리", url: "https://www.alwatanyh.com" },
+  { name: "평택 브레인시티 푸르지오", url: "https://www.bunyang-114.com" },
+  { name: "브레인시티 푸르지오", url: "https://www.cialisknfrx.com" },
 ];
 
 const Footer = () => {
