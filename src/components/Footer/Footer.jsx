@@ -17,7 +17,8 @@ const partnerSites = [
   { name: "도안 벽산블루밍", url: "https://www.abcya4.com/" },
   { name: "이편한세상 성성호수공원", url: "https://www.3sha-re.com/" },
   { name: "힐스테이트 용인마크밸리", url: "https://www.alwatanyh.com" },
-  { name: "평택 브레인시티 푸르지오", url: "https://www.bunyang-114.com" },
+  { name: "평택화양 동문디이스트", url: "https://www.verficktescheisse.com" },
+  { name: "평택 브레인시티 푸르지오", url: "https://www.a7lashare.com/" },
   { name: "브레인시티 푸르지오", url: "https://www.a7lashare.com" },
 ];
 
