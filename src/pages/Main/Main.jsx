@@ -168,7 +168,7 @@ const Main = () => {
         // PC 버전
         <>
           <Header isChanged={isScroll} />
-          {isOpenPopup1 && (
+          {/* {isOpenPopup1 && (
             <Popup
               onClosed={() => setIsOpenPopup1(false)}
               popupImage={popupPage1}
@@ -188,7 +188,7 @@ const Main = () => {
               popupImage={popupPage3}
               numbering={3}
             />
-          )}
+          )} */}
 
           <div className={styles.imageContainer}>
             <img src={mainImage} className={styles.mainImage} alt="브레인시티수자인-mainimage1" />
@@ -417,7 +417,7 @@ const Main = () => {
       ) : (
         // 모바일 버전
         <div className={styles.mobileMain}>
-          {isOpenPopup1 && (
+          {/* {isOpenPopup1 && (
             <MobilePopup
               onClosed={() => setIsOpenPopup1(!isOpenPopup1)}
               popupImage={mobilePopupPage1}
@@ -444,7 +444,7 @@ const Main = () => {
               popupImage={mobilePopupPage3}
               numbering={4}
             />
-          )}
+          )} */}
 
           <Header isChanged={isScroll} />
 
@@ -462,7 +462,7 @@ const Main = () => {
               </div>
               <div className={styles.mainImageTitleBox1}>
                 <div className={styles.mainImageText1}>평택이 기다린<br /> 가장 착한 아파트</div>
-                <div className={styles.mainImageText5}>브레인시티 수자인</div>
+                <div className={styles.mainImageText5}>평택 브레인시티 수자인</div>
               </div>
             </div>
           </div>

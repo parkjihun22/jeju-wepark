@@ -17,7 +17,7 @@
     position: absolute;
     left: 130%; /* 화면 오른쪽 끝으로 배치 */
     top: 0.1vw; /* 세로 중앙 배치 (필요에 따라 수정 가능) */
-    width: 8vw; /* 크기 조정 (필요에 따라 변경) */
+    width: 6vw; /* 크기 조정 (필요에 따라 변경) */
     z-index: 1; /* 텍스트와 겹치지 않도록 설정 */
     animation: subPinkImgFadeIn 1.5s ease-out forwards 1.5s; /* 서서히 나타나게 */
 }
@@ -146,7 +146,7 @@
     }
 
     .mainImageText1 {
-        font-family: 'GongGothicMedium';
+        font-family: 'Pretendard-Regular';
         font-size: 3.5vw; /* 모바일에서 더 작은 글자 크기 */
         font-weight: bold;
         line-height: 1.4; /* 텍스트 간격 조정 */
@@ -156,7 +156,7 @@
     }
 
     .mainImageText5 {
-        font-family: 'GongGothicMedium';
+        font-family: 'Pretendard-Regular';
         font-size: 4.5vw; /* 모바일에서 더 작은 글자 크기 */
         font-weight: bold;
         line-height: 1.4; /* 텍스트 간격 조정 */
