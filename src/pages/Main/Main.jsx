@@ -233,7 +233,13 @@ const Main = () => {
                   - 모두를 누리는 평택 브레인시티 수자인
                 </div>
                 <div className={styles.text4}>
-                  <a href="https://naver.me/55rUFpYq" target="_black">
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsInterestPopupOpen(true);
+                    }}
+                  >
                     관심고객 등록하기 {">"}
                   </a>
                 </div>
@@ -479,7 +485,15 @@ const Main = () => {
               - 모두를 누리는 반도체밸리 주거 타운의 완성
             </div>
             <div className={styles.text4}>
-              <a href="https://naver.me/55rUFpYq" target="_black">
+              {/* 외부 링크 대신 방문예약 클릭 시 팝업 호출 */}
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsInterestPopupOpen(true);
+                }}
+                className={styles.popupBtn}
+              >
                 관심고객 등록하기 {">"}
               </a>
             </div>
